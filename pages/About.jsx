@@ -225,7 +225,7 @@ const About = () => {
           </p>
           <div className="cta-buttons">
             <Link to="/programs" className="btn btn-outline-primary btn-lg me-3">
-              Explore Programs...............................
+              Explore Programs
             </Link>
             <Link to="/contact" className="btn btn-outline-primary btn-lg">
               Contact Us
