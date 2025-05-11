@@ -704,7 +704,6 @@
     }
     
     .uniqueness-number {
-      left: 50%;
       transform: translateX(-50%);
       top: 1.5rem;
     }
