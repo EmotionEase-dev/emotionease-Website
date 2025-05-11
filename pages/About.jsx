@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
+import mission from '../public/mission-image.png'
+import ElangoPhoto from '../public/ElangoPhoto.jpg';
+import SuchetaImage from '../public/SuchetaImage.jpg';
+import ThilagaMC from '../public/ThilagaMC.jpg';
 
 const About = () => {
   return (
@@ -28,7 +32,7 @@ const About = () => {
             </div>
             <div className="col-lg-6">
               <img 
-                src='/public/images/mission-image.png'
+                src={mission}
                 alt="Team working together" 
                 className="img-fluid rounded shadow"
               />
@@ -100,7 +104,7 @@ const About = () => {
         <div className="team-card p-4 h-100 text-center">
           <div className="team-image-holder mx-auto mb-4">
             <img 
-              src='/public/images/ElangoPhoto.jpg'
+              src={ElangoPhoto}
               alt="Elango Annamalai"
               className="img-fluid rounded-circle"
             />
@@ -126,7 +130,7 @@ const About = () => {
         <div className="team-card p-4 h-100 text-center">
           <div className="team-image-holder mx-auto mb-4">
             <img 
-              src='/public/images/SuchetaImage.jpg' 
+              src={SuchetaImage} 
               alt="Sucheta Sinha"
               className="img-fluid rounded-circle"
             />
@@ -150,7 +154,7 @@ const About = () => {
         <div className="team-card p-4 h-100 text-center">
           <div className="team-image-holder mx-auto mb-4">
             <img 
-              src='/public/images/ThilagaMC.jpg'
+              src={ThilagaMC}
               alt="ThilagavathiMC"
               className="img-fluid rounded-circle"
             />
