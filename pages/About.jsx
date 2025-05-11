@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
-import mission from '../src/assets/images/mission-image.png';
-import ElangoPhoto from '../src/assets/images/ElangoPhoto.jpg';
-import SuchetaImage from '../src/assets/images/SuchetaImage.jpg';
-import ThilagaMC from '../src/assets/images/ThilagaMC.jpg';
 
 const About = () => {
   return (
@@ -32,7 +28,7 @@ const About = () => {
             </div>
             <div className="col-lg-6">
               <img 
-                src={mission} 
+                src='/public/images/mission-image.png'
                 alt="Team working together" 
                 className="img-fluid rounded shadow"
               />
@@ -104,7 +100,7 @@ const About = () => {
         <div className="team-card p-4 h-100 text-center">
           <div className="team-image-holder mx-auto mb-4">
             <img 
-              src={ElangoPhoto}
+              src='/public/images/ElangoPhoto.jpg'
               alt="Elango Annamalai"
               className="img-fluid rounded-circle"
             />
@@ -130,7 +126,7 @@ const About = () => {
         <div className="team-card p-4 h-100 text-center">
           <div className="team-image-holder mx-auto mb-4">
             <img 
-              src={SuchetaImage} 
+              src='/public/images/SuchetaImage.jpg' 
               alt="Sucheta Sinha"
               className="img-fluid rounded-circle"
             />
@@ -154,7 +150,7 @@ const About = () => {
         <div className="team-card p-4 h-100 text-center">
           <div className="team-image-holder mx-auto mb-4">
             <img 
-              src={ThilagaMC}
+              src='/public/images/ThilagaMC.jpg'
               alt="ThilagavathiMC"
               className="img-fluid rounded-circle"
             />

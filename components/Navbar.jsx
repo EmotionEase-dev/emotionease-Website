@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import logo from '../src/assets/images/logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -173,7 +172,7 @@ const Navbar = () => {
           id="logo-brand"
         >
           <span className="logo-text"> 
-            <img src={logo} alt="Logo" style={{ height: '80px', width: 'auto' }} />
+            <img src='/public/images/logo.png' alt="Logo" style={{ height: '80px', width: 'auto' }} />
           </span>
           <span className="logo-text text-success">Emotionease</span>
         </HashLink>

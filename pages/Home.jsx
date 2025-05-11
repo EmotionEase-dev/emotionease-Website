@@ -3,11 +3,6 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 import './Home.css';
-import human from '../src/assets/images/Human.png';
-import cage  from '../src/assets/images/Cage.png';
-import freedom  from '../src/assets/images/Freedom.png';
-import peacefulMeditation  from '../src/assets/images/PeacefulMeditation.png';
-
 
 // Animation variants
 const containerVariants = {
@@ -152,7 +147,7 @@ const Home = () => {
               <div className="carousel-item active h-100">
                 <div className="hero-image-wrapper floating h-100">
                   <img 
-                    src={peacefulMeditation}
+                    src='/public/images/PeacefulMeditation.png'
                     alt="Peaceful meditation" 
                     className="d-block w-100 h-100 img-fluid rounded-4"
                     style={{objectFit: "cover"}}
@@ -166,7 +161,7 @@ const Home = () => {
               {/* Slide 2 */}
               <div className="carousel-item h-100">
                 <img 
-                  src={human}
+                  src='/public/images/Human.png'
                   alt="Second slide" 
                   className="d-block w-100 h-100 img-fluid rounded-4"
                   style={{objectFit: "cover"}}
@@ -176,7 +171,7 @@ const Home = () => {
               {/* Slide 3 */}
               <div className="carousel-item h-100">
                 <img 
-                  src={cage}
+                  src='/public/images/cage.png'
                   alt="Third slide" 
                   className="d-block w-100 h-100 img-fluid rounded-4"
                   style={{objectFit: "cover"}}
@@ -186,7 +181,7 @@ const Home = () => {
               {/* Slide 4 */}
               <div className="carousel-item h-100">
                 <img 
-                  src={freedom}
+                  src='/public/images/cage.png'
                   alt="Fourth slide" 
                   className="d-block w-100 h-100 img-fluid rounded-4"
                   style={{objectFit: "cover"}}
