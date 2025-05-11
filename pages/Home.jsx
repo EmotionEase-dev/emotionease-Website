@@ -186,7 +186,7 @@ const Home = () => {
               {/* Slide 4 */}
               <div className="carousel-item h-100">
                 <img 
-                  src={freedom}
+                  src={Freedom}
                   alt="Fourth slide" 
                   className="d-block w-100 h-100 img-fluid rounded-4"
                   style={{objectFit: "cover"}}
