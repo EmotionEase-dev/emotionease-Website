@@ -4,6 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 import './Home.css';
 
+
 // Animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -181,7 +182,7 @@ const Home = () => {
               {/* Slide 4 */}
               <div className="carousel-item h-100">
                 <img 
-                  src='/public/images/cage.png'
+                  src='/public/images'
                   alt="Fourth slide" 
                   className="d-block w-100 h-100 img-fluid rounded-4"
                   style={{objectFit: "cover"}}
