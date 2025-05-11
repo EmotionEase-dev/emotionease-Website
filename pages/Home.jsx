@@ -6,7 +6,7 @@ import './Home.css';
 import PeacefulMeditation from '../public/PeacefulMeditation.png';
 import Human from '../public/Human.png';
 import Cage from '../public/cage.png';
-import freedom from '../public/freedom.png';
+import Freedom from '../public/Freedom.png';
 
 
 // Animation variants
