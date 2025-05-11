@@ -1,0 +1,10 @@
+html {
+  font-size: 80%; /* Scales all rem units */
+}
+
+/* Then adjust padding/margins as needed */
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
