@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 import './Home.css';
-import human from '../images/Human.png';
-import cage  from '../images/Cage.png';
-import freedom  from '../images/Freedom.png';
-import peacefulMeditation  from '../images/PeacefulMeditation.png';
+import human from '/images/Human.png';
+import cage  from '/images/Cage.png';
+import freedom  from '/images/Freedom.png';
+import peacefulMeditation  from '/images/PeacefulMeditation.png';
 
 
 // Animation variants

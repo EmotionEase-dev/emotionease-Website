@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
-import mission from '../images/mission-image.png';
-import ElangoPhoto from '../images/ElangoPhoto.jpg';
-import SuchetaImage from '../images/SuchetaImage.jpg';
-import ThilagaMC from '../images/ThilagaMC.jpg';
+import mission from '/images/mission-image.png';
+import ElangoPhoto from '/images/ElangoPhoto.jpg';
+import SuchetaImage from '/images/SuchetaImage.jpg';
+import ThilagaMC from '/images/ThilagaMC.jpg';
 
 const About = () => {
   return (
