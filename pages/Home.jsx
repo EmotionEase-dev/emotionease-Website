@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 import './Home.css';
+import human from '../images/Human.png';
+import cage  from '../images/Cage.png';
+import freedom  from '../images/Freedom.png';
+import peacefulMeditation  from '../images/PeacefulMeditation.png';
+
 
 // Animation variants
 const containerVariants = {
@@ -147,7 +152,7 @@ const Home = () => {
               <div className="carousel-item active h-100">
                 <div className="hero-image-wrapper floating h-100">
                   <img 
-                    src="/images/PeacefulMeditation.png" 
+                    src={peacefulMeditation}
                     alt="Peaceful meditation" 
                     className="d-block w-100 h-100 img-fluid rounded-4"
                     style={{objectFit: "cover"}}
@@ -161,7 +166,7 @@ const Home = () => {
               {/* Slide 2 */}
               <div className="carousel-item h-100">
                 <img 
-                  src="../images/Human.png"
+                  src={human}
                   alt="Second slide" 
                   className="d-block w-100 h-100 img-fluid rounded-4"
                   style={{objectFit: "cover"}}
@@ -171,7 +176,7 @@ const Home = () => {
               {/* Slide 3 */}
               <div className="carousel-item h-100">
                 <img 
-                  src="../images/cage.png"
+                  src={cage}
                   alt="Third slide" 
                   className="d-block w-100 h-100 img-fluid rounded-4"
                   style={{objectFit: "cover"}}
@@ -181,7 +186,7 @@ const Home = () => {
               {/* Slide 4 */}
               <div className="carousel-item h-100">
                 <img 
-                  src="../images/Freedom.png"
+                  src={freedom}
                   alt="Fourth slide" 
                   className="d-block w-100 h-100 img-fluid rounded-4"
                   style={{objectFit: "cover"}}
