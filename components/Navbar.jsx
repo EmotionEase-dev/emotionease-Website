@@ -80,11 +80,6 @@ const Navbar = () => {
               <NavItem key={index} item={item} />
             ))}
           </ul>
-          {/* <div className="d-flex ms-lg-3">
-            <button className="btn btn-success btn-glow rounded-pill px-4">
-              Get Started
-            </button>
-          </div> */}
         </div>
       </div>
     </nav> 
