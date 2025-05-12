@@ -2,44 +2,70 @@ html {
   font-size: 85%; /* Scales all rem units */
 }
 
-/* Then adjust padding/margins as needed */
 body {
   padding: 0;
   margin: 0;
   width: 100%;
+  background-color: #FFF9F0;
+  margin: 0 auto;
+  font-family: sans-serif; /* Default for lists and fallback */
 }
 
-        /* Apply fonts to headings and paragraphs */
-        h1 {
-          font-family: 'Caveat', cursive !important;
-          font-size: 2.8em;
-          font-weight: 700; /* Bold */
-          color: #333;
-          margin-bottom: 10px;
-      }
-      
-      h2 {
-          font-family: 'Kalam', cursive !important;
-          font-size: 2.2em;
-          color: #555;
-      }
-      
-      h3 {
-          font-family: 'Indie Flower', cursive !important;
-          font-size: 1.8em;
-          color: #666;
-      }
-      
-      p {
-          font-family: 'Kalam', cursive !important;
-          font-size: 1.2em;
-          line-height: 1.6;
-          color: #444;
-          margin-bottom: 20px;
-      }
-      
-      /* Optional: Add a casual background or border */
-      body {
-          background-color: #FFF9F0;
-          margin: 0 auto;
-      }
+/* Headings */
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2em;
+  color: #555;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.8em;
+  color: #666;
+}
+
+/* Paragraphs */
+p {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Lists - using default sans-serif */
+ul {
+  font-size: 1.1em;
+  color: #444;
+  list-style-type: disc;
+  padding-left: 1.5em;
+  line-height: 1.6;
+}
+
+ul li {
+  margin-bottom: 0.8em;
+}
+
+/* Alternative font combinations you could try */
+/*
+Heading options:
+- 'Lobster', cursive
+- 'Cedarville Cursive', cursive
+- 'Parisienne', cursive
+- 'Great Vibes', cursive
+
+Paragraph options:
+- 'Reenie Beanie', cursive (for larger text)
+- 'Schoolbell', cursive
+- 'Neucha', cursive
+- 'Short Stack', cursive
+*/
