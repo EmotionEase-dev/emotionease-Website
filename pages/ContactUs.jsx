@@ -245,7 +245,7 @@ const ContactUs = () => {
                     <option value="collaboration">Collaboration</option>
                     <option value="workshop">Workshop</option>
                     <option value="support">Support</option>
-                    <option value="feedback">Feedback</option>
+                    {/* Removed "Feedback" option */}
                   </select>
                   {errors.category && <div className="invalid-feedback">{errors.category}</div>}
                 </div>
@@ -290,12 +290,6 @@ const ContactUs = () => {
           <div className="text-center mt-5">
             <h3 className="h4 mb-3">Follow Us</h3>
             <div className="social-links">
-              {/* <a href="#" className="social-link mx-2">
-                <i className="bi bi-facebook"></i>
-              </a> */}
-              {/* <a href="#" className="social-link mx-2">
-                <i className="bi bi-twitter-x"></i>
-              </a> */}
               <a href="#" className="social-link mx-2">
                 <i className="bi bi-instagram"></i>
               </a>

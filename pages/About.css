@@ -338,6 +338,14 @@
   box-shadow: 0 15px 30px rgba(40, 167, 69, 0.15);
 }
 
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+.transition-all {
+  transition: all 0.3s ease;
+}
+
 .method-icon {
   font-size: 2.5rem;
   color: #28a745;
@@ -574,4 +582,39 @@
   .cta-section::after {
     display: none;
   }
+}
+
+/* Image zoom effect */
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+/* Timeline styling */
+.timeline-item {
+  padding-left: 2rem;
+}
+
+.timeline-year {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 1;
+}
+
+/* Card hover effects */
+.hover-shadow {
+  transition: all 0.3s ease;
+}
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Method icons */
+.method-icon i {
+  transition: transform 0.3s ease;
+}
+.method-card:hover .method-icon i {
+  transform: scale(1.2);
 }

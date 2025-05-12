@@ -87,7 +87,7 @@ const Home = () => {
               transition={{ duration: 0.3 }}
             >
               <p className="lead fw-medium">Dear People,</p>
-              <div style={{ paddingLeft: 0 }}>
+              <div style={{ paddingLeft: 0,fontSize: "1.2rem" }}>
   {[
     "Do you feel insecure & stressed frequently?",
     "Do you want to succeed in your career confidently even after a setback?",
@@ -257,7 +257,7 @@ const Home = () => {
             <motion.h2 className="section-title display-3 fw-bold mb-3" variants={itemVariants}>
               What Will You <span className="text-gradient-success">Get?</span>
             </motion.h2>
-            <motion.p className="lead text-muted mx-auto" style={{ maxWidth: '700px' }} variants={itemVariants}>
+            <motion.p className="lead text-muted mx-auto" style={{ maxWidth: '700px',fontWeight:'bold' }} variants={itemVariants}>
               Our comprehensive approach addresses all aspects of emotional & Relational wellbeing
             </motion.p>
           </motion.div>
@@ -436,7 +436,7 @@ const Home = () => {
             <motion.h2 className="section-title display-3 fw-bold mb-3" variants={itemVariants}>
               Our <span className="text-gradient-success">6 Uniqueness</span>
             </motion.h2>
-            <motion.p className="lead text-muted fst-italic" variants={itemVariants}>
+            <motion.p className="lead text-muted fst-italic" variants={itemVariants} style={{fontWeight: 'bold' }}>
               "Seeking Help when needed is a sign of maturity"
             </motion.p>
           </motion.div>
@@ -486,7 +486,7 @@ const Home = () => {
             <motion.h2 className="section-title display-3 fw-bold mb-3" variants={itemVariants}>
               How Our <span className="text-gradient-success">Programs Work</span>
             </motion.h2>
-            <motion.p className="lead text-muted mx-auto" style={{ maxWidth: '700px' }} variants={itemVariants}>
+            <motion.p className="lead text-muted mx-auto" style={{ maxWidth: '700px',fontWeight:'bold' }} variants={itemVariants}>
               A structured approach to emotional wellbeing
             </motion.p>
           </motion.div>

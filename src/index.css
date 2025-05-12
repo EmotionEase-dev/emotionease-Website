@@ -10,6 +10,7 @@ body {
 /* ===== HEADINGS ===== */
 h1 {
   font-family: 'Arial Rounded MT Bold', 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 3rem !important;
 }
 
 h2 {
@@ -27,6 +28,9 @@ p {
 
 ul, ol, li {
   font-family: inherit !important; /* Inherits from body */
+}
+.span{
+  font-family: 'Segoe UI', Roboto, -apple-system, sans-serif !important;
 }
 
 /* ===== NAVBAR ===== */

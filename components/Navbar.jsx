@@ -45,16 +45,26 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container">
-        <HashLink 
-          className="navbar-brand fw-bold fs-3 d-flex align-items-center" 
-          to="/home#top"
-          id="logo-brand"
-        >
-          <span className="logo-text me-2">
-            <img src={logo} alt="Logo" style={{ height: '80px', width: 'auto' }} />
-          </span>
-          <span className="text-success">Emotionease</span>
-        </HashLink>
+      <HashLink 
+  className="navbar-brand d-flex align-items-center gap-2" 
+  to="/home#top"
+  id="logo-brand"
+  style={{ textDecoration: 'none' }}
+>
+  <img 
+    src={logo} 
+    alt="Logo" 
+    style={{ height: '60px', width: 'auto' }} 
+    className="me-2"
+  />
+  <div className="d-flex flex-column">
+    <span className="fw-bold fs-4 text-success">Emotionease</span>
+    <small className="text-muted" style={{ fontSize: '0.9rem', marginTop: '-4px' }}>
+      Empowering Mental Health
+    </small>
+  </div>
+</HashLink>
+
         
         <button 
           className="navbar-toggler" 

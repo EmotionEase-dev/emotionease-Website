@@ -5,7 +5,7 @@ import About from '../pages/About';
 import ContactUs from '../pages/ContactUs';
 import CuratedPrograms from '../pages/CuratedPrograms';
 import PostGallery from '../pages/post';
-
+import TermsAndConditions from '../components/TermsAndConditions';
 function App() {
   return (
     <Router>
@@ -16,6 +16,7 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/programs" element={<CuratedPrograms/>} />
         <Route path="/resources/posts" element={<PostGallery/>} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions/>} />
         <Route path="/resources/blogs" element={<div>Blogs Page</div>} />
         <Route path="/contact" element={<ContactUs/>} />
         {/* Add more routes as needed */}

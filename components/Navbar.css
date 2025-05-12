@@ -38,9 +38,10 @@
 /* Casual Nav Link Styles */
 .nav-link {
   font-weight: 500;
+  font-weight: bold !important;
   padding: 0.5rem 1rem !important;
   margin: 0 0.25rem;
-  color: #5a5a5a !important;
+  color: #1b1919 !important;
   position: relative;
   transition: all 0.3s ease;
   border-radius: 8px;
