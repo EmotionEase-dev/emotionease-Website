@@ -1,49 +1,43 @@
 html {
   font-size: 85%;
 }
-
+/* ===== BASE FONTS ===== */
 body {
-  background-color: #FFF9F0;
-  font-family: sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
+               'Helvetica Neue', sans-serif !important;
 }
 
-/* Headings */
+/* ===== HEADINGS ===== */
 h1 {
-  font-family: 'Dancing Script', cursive !important;
-  font-size: 2.8em !important;
-  font-weight: 700 !important;
+  font-family: 'Arial Rounded MT Bold', 'Segoe UI', Roboto, sans-serif !important;
 }
 
 h2 {
-  font-family: 'Pacifico', cursive !important;
-  font-size: 2.2em !important;
-  font-weight: 400 !important;
+  font-family: 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif !important;
 }
 
 h3 {
-  font-family: 'Satisfy', cursive !important;
-  font-size: 1.8em !important;
+  font-family: 'Segoe UI', Roboto, sans-serif !important;
 }
 
-/* Paragraphs */
+/* ===== PARAGRAPHS & LISTS ===== */
 p {
-  font-family: 'Patrick Hand', cursive !important;
-  font-size: 1.2em !important;
-  line-height: 1.6 !important;
+  font-family: 'Segoe UI', Roboto, -apple-system, sans-serif !important;
 }
 
-/* Lists - completely remove bullets */
-ul {
-  font-family: sans-serif !important;
-  font-size: 1.1em !important;
-  list-style-type: none !important; /* This removes the dots */
-  line-height: 1.6 !important;
-  padding-left: 0 !important; /* Remove default padding */
-}
-li{
-  font-family: sans-serif !important;
+ul, ol, li {
+  font-family: inherit !important; /* Inherits from body */
 }
 
-ul li {
-  list-style: none !important; /* Additional bullet removal */
+/* ===== NAVBAR ===== */
+.navbar, .navbar-brand, .nav-link {
+  font-family: 'Segoe UI', Roboto, -apple-system, sans-serif !important;
+}
+
+/* ===== FOOTER ===== */
+.footer, .footer p, .footer a {
+  font-family: 'Segoe UI', Roboto, -apple-system, sans-serif !important;
+}
+body {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }
