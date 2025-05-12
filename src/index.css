@@ -1,71 +1,51 @@
 html {
-  font-size: 85%; /* Scales all rem units */
+  font-size: 85%;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
   background-color: #FFF9F0;
-  margin: 0 auto;
-  font-family: sans-serif; /* Default for lists and fallback */
+  font-family: sans-serif !important;
 }
 
 /* Headings */
 h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2.8em;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 2.8em !important;
+  font-weight: 700 !important;
+  color: #333 !important;
 }
 
 h2 {
-  font-family: 'Pacifico', cursive;
-  font-size: 2.2em;
-  color: #555;
-  font-weight: 400;
+  font-family: 'Pacifico', cursive !important;
+  font-size: 2.2em !important;
+  color: #555 !important;
+  font-weight: 400 !important;
 }
 
 h3 {
-  font-family: 'Satisfy', cursive;
-  font-size: 1.8em;
-  color: #666;
+  font-family: 'Satisfy', cursive !important;
+  font-size: 1.8em !important;
+  color: #666 !important;
 }
 
 /* Paragraphs */
 p {
-  font-family: 'Patrick Hand', cursive;
-  font-size: 1.2em;
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 20px;
+  font-family: 'Patrick Hand', cursive !important;
+  font-size: 1.2em !important;
+  line-height: 1.6 !important;
+  color: #444 !important;
 }
 
-/* Lists - using default sans-serif */
+/* Lists - completely remove bullets */
 ul {
-  font-size: 1.1em;
-  color: #444;
-  list-style-type: disc;
-  padding-left: 1.5em;
-  line-height: 1.6;
+  font-family: sans-serif !important;
+  font-size: 1.1em !important;
+  color: #444 !important;
+  list-style-type: none !important; /* This removes the dots */
+  line-height: 1.6 !important;
+  padding-left: 0 !important; /* Remove default padding */
 }
 
 ul li {
-  margin-bottom: 0.8em;
+  list-style: none !important; /* Additional bullet removal */
 }
-
-/* Alternative font combinations you could try */
-/*
-Heading options:
-- 'Lobster', cursive
-- 'Cedarville Cursive', cursive
-- 'Parisienne', cursive
-- 'Great Vibes', cursive
-
-Paragraph options:
-- 'Reenie Beanie', cursive (for larger text)
-- 'Schoolbell', cursive
-- 'Neucha', cursive
-- 'Short Stack', cursive
-*/
