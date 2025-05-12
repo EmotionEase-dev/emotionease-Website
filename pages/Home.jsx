@@ -87,26 +87,30 @@ const Home = () => {
               transition={{ duration: 0.3 }}
             >
               <p className="lead fw-medium">Dear People,</p>
-              <ul className="list-unstyled">
-                {[
-                  "Do you feel insecure & stressed frequently?",
-                  "Do you want to succeed in your career confidently even after a setback?",
-                  "Do your past events or circumstances haunt you even now?",
-                  "Are you feeling Hurt or irritated often?",
-                  "Are your dear ones Not listening & not respecting you?",
-                  "Are you facing a strained unhappy relationship?",
-                  "Are your thoughts making you feel anxious?"
-                ].map((question, index) => (
-                  <motion.li 
-                    key={index} 
-                    className="d-flex mb-2"
-                    variants={itemVariants}
-                  >
-                    <i className="bi bi-check-circle-fill text-success me-2 mt-1"></i>
-                    <span>{question}</span>
-                  </motion.li>
-                ))}
-              </ul>
+              <div style={{ paddingLeft: 0 }}>
+  {[
+    "Do you feel insecure & stressed frequently?",
+    "Do you want to succeed in your career confidently even after a setback?",
+    "Do your past events or circumstances haunt you even now?",
+    "Are you feeling Hurt or irritated often?",
+    "Are your dear ones Not listening & not respecting you?",
+    "Are you facing a strained unhappy relationship?",
+    "Are your thoughts making you feel anxious?"
+  ].map((question, index) => (
+    <motion.div
+      key={index}
+      className="d-flex mb-2"
+      variants={itemVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <i className="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+      <span>{question}</span>
+    </motion.div>
+  ))}
+</div>
+
+
             </motion.div>
           </div>
           

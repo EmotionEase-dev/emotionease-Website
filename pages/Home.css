@@ -122,6 +122,8 @@
     background: linear-gradient(135deg, #f0fdf4 0%, var(--lighter) 100%);
     position: relative;
     overflow: hidden;
+    padding-top: 0%;
+    padding-bottom: 0;
   }
   
   .hero-section::before {

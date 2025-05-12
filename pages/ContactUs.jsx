@@ -72,7 +72,7 @@ const ContactUs = () => {
 
   return (
     <div className="contact-us-container container py-5">
-      <div className="row justify-content-center" style={{paddingTop: '80px'}}>
+      <div className="row justify-content-center">
         <div className="col-lg-10">
           <div className="text-center mb-5">
             <h1 className="display-4 fw-bold mb-3 text-gradient">Contact Us</h1>

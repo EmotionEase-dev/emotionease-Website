@@ -45,6 +45,9 @@ ul {
   line-height: 1.6 !important;
   padding-left: 0 !important; /* Remove default padding */
 }
+li{
+  font-family: sans-serif !important;
+}
 
 ul li {
   list-style: none !important; /* Additional bullet removal */
