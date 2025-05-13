@@ -764,12 +764,14 @@ const Home = () => {
             </motion.p>
             <motion.div className="d-flex justify-content-center gap-3 flex-wrap" variants={itemVariants}>
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                <Link 
-                  to="https://forms.gle/YbcSchKPpTkaxu1ZA" 
+                <a 
+                  href="https://forms.gle/YbcSchKPpTkaxu1ZA"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn-success btn-lg px-4 py-3 fw-medium"
                 >
                   Book My Free First Session <i className="bi bi-arrow-right ms-2"></i>
-                </Link>
+                </a>
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               </motion.div>

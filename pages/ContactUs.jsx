@@ -81,83 +81,83 @@ const ContactUs = () => {
           </div>
 
           <div className="row g-4 mb-5">
-            {/* Email */}
-            <div className="col-md-4">
-              <div 
-                className="contact-method p-4 h-100"
-                onMouseEnter={() => setIsHovering('email')}
-                onMouseLeave={() => setIsHovering(false)}
-              >
-                <div className="d-flex align-items-center mb-3">
-                  <div className={`icon-wrapper ${isHovering === 'email' ? 'pulse' : ''}`}>
-                    <i className="bi bi-envelope-fill fs-3"></i>
-                  </div>
-                  <h3 className="h5 mb-0 ms-3">Email</h3>
-                </div>
-                <div className="ps-5">
-                  <a href="mailto:emotionease@gmail.com" className="d-block text-decoration-none mb-2 transition-all">
-                    <i className="bi bi-envelope me-2"></i> emotionease@gmail.com
-                  </a>
-                  <a href="mailto:info@emotionease.in" className="d-block text-decoration-none transition-all">
-                    <i className="bi bi-envelope me-2"></i> info@emotionease.in
-                  </a>
-                </div>
-              </div>
-            </div>
+  {/* Email */}
+  <div className="col-lg-4 col-md-6">
+    <div 
+      className="contact-method p-3 p-md-4 h-100"
+      onMouseEnter={() => setIsHovering('email')}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      <div className="d-flex align-items-center mb-2 mb-md-3">
+        <div className={`icon-wrapper ${isHovering === 'email' ? 'pulse' : ''}`}>
+          <i className="bi bi-envelope-fill fs-4 fs-md-3"></i>
+        </div>
+        <h3 className="h5 mb-0 ms-2 ms-md-3">Email</h3>
+      </div>
+      <div className="ps-4 ps-md-5">
+        <a href="mailto:emotionease@gmail.com" className="d-block text-decoration-none mb-1 mb-md-2 transition-all small-text">
+          <i className="bi bi-envelope me-2"></i> emotionease@gmail.com
+        </a>
+        <a href="mailto:info@emotionease.in" className="d-block text-decoration-none transition-all small-text">
+          <i className="bi bi-envelope me-2"></i> info@emotionease.in
+        </a>
+      </div>
+    </div>
+  </div>
 
-            {/* Phone */}
-            <div className="col-md-4">
-              <div 
-                className="contact-method p-4 h-100"
-                onMouseEnter={() => setIsHovering('phone')}
-                onMouseLeave={() => setIsHovering(false)}
-              >
-                <div className="d-flex align-items-center mb-3">
-                  <div className={`icon-wrapper ${isHovering === 'phone' ? 'pulse' : ''}`}>
-                    <i className="bi bi-telephone-fill fs-3"></i>
-                  </div>
-                  <h3 className="h5 mb-0 ms-3">Phone</h3>
-                </div>
-                <div className="ps-5">
-                  <a href="tel:+919876543210" className="d-block text-decoration-none mb-2 transition-all">
-                    <i className="bi bi-phone me-2"></i> +91 98765 43210
-                  </a>
-                  <a href="tel:+911234567890" className="d-block text-decoration-none transition-all">
-                    <i className="bi bi-phone me-2"></i> +91 96771 98550
-                  </a>
-                </div>
-              </div>
-            </div>
+  {/* Phone */}
+  <div className="col-lg-4 col-md-6">
+    <div 
+      className="contact-method p-3 p-md-4 h-100"
+      onMouseEnter={() => setIsHovering('phone')}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      <div className="d-flex align-items-center mb-2 mb-md-3">
+        <div className={`icon-wrapper ${isHovering === 'phone' ? 'pulse' : ''}`}>
+          <i className="bi bi-telephone-fill fs-4 fs-md-3"></i>
+        </div>
+        <h3 className="h5 mb-0 ms-2 ms-md-3">Phone</h3>
+      </div>
+      <div className="ps-4 ps-md-5">
+        <a href="tel:+919876543210" className="d-block text-decoration-none mb-1 mb-md-2 transition-all small-text">
+          <i className="bi bi-phone me-2"></i> +91 98765 43210
+        </a>
+        <a href="tel:+911234567890" className="d-block text-decoration-none transition-all small-text">
+          <i className="bi bi-phone me-2"></i> +91 96771 98550
+        </a>
+      </div>
+    </div>
+  </div>
 
-            {/* Address */}
-            <div className="col-md-4">
-              <div 
-                className="contact-method p-4 h-100"
-                onMouseEnter={() => setIsHovering('address')}
-                onMouseLeave={() => setIsHovering(false)}
-              >
-                <div className="d-flex align-items-center mb-3">
-                  <div className={`icon-wrapper ${isHovering === 'address' ? 'pulse' : ''}`}>
-                    <i className="bi bi-geo-alt-fill fs-3"></i>
-                  </div>
-                  <h3 className="h5 mb-0 ms-3">Address</h3>
-                </div>
-                <div className="ps-5">
-                  <p className="mb-0">
-                    <i className="bi bi-geo me-2"></i> Chennai, Tamil Nadu, India
-                  </p>
-                  <a 
-                    href="https://maps.google.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="btn btn-sm mt-3 map-btn"
-                  >
-                    View on Map <i className="bi bi-arrow-right ms-1"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+  {/* Address */}
+  <div className="col-lg-4 col-md-12">
+    <div 
+      className="contact-method p-3 p-md-4 h-100"
+      onMouseEnter={() => setIsHovering('address')}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      <div className="d-flex align-items-center mb-2 mb-md-3">
+        <div className={`icon-wrapper ${isHovering === 'address' ? 'pulse' : ''}`}>
+          <i className="bi bi-geo-alt-fill fs-4 fs-md-3"></i>
+        </div>
+        <h3 className="h5 mb-0 ms-2 ms-md-3">Address</h3>
+      </div>
+      <div className="ps-4 ps-md-5">
+        <p className="mb-1 mb-md-2 small-text">
+          <i className="bi bi-geo me-2"></i> Chennai, Tamil Nadu, India
+        </p>
+        <a 
+          href="https://maps.google.com" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="btn btn-sm mt-2 mt-md-3 map-btn"
+        >
+          View on Map <i className="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
           {submitted ? (
             <div className="alert alert-success text-center animate__animated animate__bounceIn">
