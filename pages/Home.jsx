@@ -7,7 +7,7 @@ import PeacefulMeditation from '../public/PeacefulMeditation.png';
 import Human from '../public/Human.png';
 import Cage from '../public/cage.png';
 import Freedom from '../public/Freedom.png';
-
+//Ani
 // Animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
