@@ -150,7 +150,7 @@ const CuratedPrograms = () => {
                   <a href="https://forms.gle/YbcSchKPpTkaxu1ZA" className="btn btn-light btn-lg px-4" target="_blank" 
   rel="noopener noreferrer"
 >
-Book Free Consultation
+Book First Free Session
               </a>
                 </motion.div>
               </motion.div>
