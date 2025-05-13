@@ -141,105 +141,178 @@ const Home = () => {
       </div>
       
       <div className="col-lg-6 order-lg-2 order-1">
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ 
-            duration: 0.8,
-            ease: [0.43, 0.13, 0.23, 0.96]
-          }}
-          className="position-relative h-100"
-        >
-          <div id="heroCarousel" className="carousel slide rounded-4 shadow-lg h-100" data-bs-ride="carousel">
-            <div className="carousel-inner rounded-4 h-100">
-              {/* Slide 1 */}
-              <div className="carousel-item active h-100">
-                <div className="hero-image-wrapper floating h-100">
-                  <img 
-                    src={PeacefulMeditation}
-                    alt="Peaceful meditation" 
-                    className="d-block w-100 h-100 img-fluid rounded-4"
-                    style={{objectFit: "cover"}}
-                  />
-                  <div className="position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-index-1">
-                    <div className="position-absolute top-0 start-0 w-100 h-100 bg-success bg-opacity-10"></div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Slide 2 */}
-              <div className="carousel-item h-100">
-                <img 
-                  src={Human}
-                  alt="Second slide" 
-                  className="d-block w-100 h-100 img-fluid rounded-4"
-                  style={{objectFit: "cover"}}
-                />
-              </div>
-
-              {/* Slide 3 */}
-              <div className="carousel-item h-100">
-                <img 
-                  src={Cage}
-                  alt="Third slide" 
-                  className="d-block w-100 h-100 img-fluid rounded-4"
-                  style={{objectFit: "cover"}}
-                />
-              </div>
-
-              {/* Slide 4 */}
-              <div className="carousel-item h-100">
-                <img 
-                  src={Freedom}
-                  alt="Fourth slide" 
-                  className="d-block w-100 h-100 img-fluid rounded-4"
-                  style={{objectFit: "cover"}}
-                />
-              </div>
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ 
+      duration: 0.8,
+      ease: "easeOut"
+    }}
+    className="position-relative h-100"
+  >
+    <div id="heroCarousel" className="carousel slide carousel-fade rounded-4 shadow-lg overflow-hidden h-100" data-bs-ride="carousel" data-bs-interval="3000">
+      <div className="carousel-inner h-100">
+        {/* Slide 1 */}
+        <div className="carousel-item active h-100">
+          <motion.div
+            className="position-relative h-100"
+            animate={{
+              y: [0, -10, 0],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          >
+            <img 
+              src={PeacefulMeditation}
+              alt="Peaceful meditation" 
+              className="d-block w-100 h-100 img-fluid object-cover"
+            />
+            <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+              <h5 className="display-6 fw-bold">Inner Peace</h5>
+              <p>Find your center through mindful meditation</p>
             </div>
+          </motion.div>
+        </div>
 
-            {/* Carousel Controls */}
-            <button className="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-
-            {/* Carousel Indicators */}
-            <div className="carousel-indicators">
-              <button 
-                type="button" 
-                data-bs-target="#heroCarousel" 
-                data-bs-slide-to="0" 
-                className="active" 
-                aria-current="true" 
-                aria-label="Slide 1"
-              ></button>
-              <button 
-                type="button" 
-                data-bs-target="#heroCarousel" 
-                data-bs-slide-to="1" 
-                aria-label="Slide 2"
-              ></button>
-              <button 
-                type="button" 
-                data-bs-target="#heroCarousel" 
-                data-bs-slide-to="2" 
-                aria-label="Slide 3"
-              ></button>
-              <button 
-                type="button" 
-                data-bs-target="#heroCarousel" 
-                data-bs-slide-to="3" 
-                aria-label="Slide 4"
-              ></button>
+        {/* Slide 2 */}
+        <div className="carousel-item h-100">
+          <motion.div
+            className="position-relative h-100"
+            animate={{
+              y: [0, -10, 0],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          >
+            <img 
+              src={Human}
+              alt="Human connection" 
+              className="d-block w-100 h-100 img-fluid object-cover"
+            />
+            <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+              <h5 className="display-6 fw-bold">Human Connection</h5>
+              <p>Building meaningful relationships</p>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
+
+        {/* Slide 3 */}
+        <div className="carousel-item h-100">
+          <motion.div
+            className="position-relative h-100"
+            animate={{
+              y: [0, -10, 0],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          >
+            <img 
+              src={Cage}
+              alt="Breaking free" 
+              className="d-block w-100 h-100 img-fluid object-cover"
+            />
+            <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+              <h5 className="display-6 fw-bold">Break Barriers</h5>
+              <p>Overcome limitations and grow</p>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Slide 4 */}
+        <div className="carousel-item h-100">
+          <motion.div
+            className="position-relative h-100"
+            animate={{
+              y: [0, -10, 0],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          >
+            <img 
+              src={Freedom}
+              alt="Freedom" 
+              className="d-block w-100 h-100 img-fluid object-cover"
+            />
+            <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+              <h5 className="display-6 fw-bold">True Freedom</h5>
+              <p>Discover the liberty within yourself</p>
+            </div>
+          </motion.div>
+        </div>
       </div>
+
+      {/* Carousel Controls */}
+      <button 
+        className="carousel-control-prev" 
+        type="button" 
+        data-bs-target="#heroCarousel" 
+        data-bs-slide="prev"
+      >
+        <span className="carousel-control-prev-icon bg-dark bg-opacity-50 rounded-circle p-3" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button 
+        className="carousel-control-next" 
+        type="button" 
+        data-bs-target="#heroCarousel" 
+        data-bs-slide="next"
+      >
+        <span className="carousel-control-next-icon bg-dark bg-opacity-50 rounded-circle p-3" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+
+      {/* Carousel Indicators */}
+      <div className="carousel-indicators">
+        <button 
+          type="button" 
+          data-bs-target="#heroCarousel" 
+          data-bs-slide-to="0" 
+          className="active rounded-circle" 
+          style={{width: "10px", height: "10px"}}
+          aria-current="true" 
+          aria-label="Slide 1"
+        ></button>
+        <button 
+          type="button" 
+          data-bs-target="#heroCarousel" 
+          data-bs-slide-to="1" 
+          className="rounded-circle"
+          style={{width: "10px", height: "10px"}}
+          aria-label="Slide 2"
+        ></button>
+        <button 
+          type="button" 
+          data-bs-target="#heroCarousel" 
+          data-bs-slide-to="2" 
+          className="rounded-circle"
+          style={{width: "10px", height: "10px"}}
+          aria-label="Slide 3"
+        ></button>
+        <button 
+          type="button" 
+          data-bs-target="#heroCarousel" 
+          data-bs-slide-to="3" 
+          className="rounded-circle"
+          style={{width: "10px", height: "10px"}}
+          aria-label="Slide 4"
+        ></button>
+      </div>
+    </div>
+  </motion.div>
+</div>
+
     </div>
   </div>
 </section>

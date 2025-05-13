@@ -77,7 +77,7 @@ const ContactUs = () => {
           <div className="text-center mb-5">
             <h1 className="display-4 fw-bold mb-3 text-gradient">Contact Us</h1>
             <div className="divider mx-auto"></div>
-            <p className="lead text-muted">Have questions? Get in touch with our team. We're here to help!</p>
+            <p className="lead " style={{fontWeight:'normal'}}>Have questions? Get in touch with our team. We're here to help!</p>
           </div>
 
           <div className="row g-4 mb-5">
@@ -123,7 +123,7 @@ const ContactUs = () => {
                     <i className="bi bi-phone me-2"></i> +91 98765 43210
                   </a>
                   <a href="tel:+911234567890" className="d-block text-decoration-none transition-all">
-                    <i className="bi bi-phone me-2"></i> +91 12345 67890
+                    <i className="bi bi-phone me-2"></i> +91 96771 98550
                   </a>
                 </div>
               </div>
@@ -290,10 +290,14 @@ const ContactUs = () => {
           <div className="text-center mt-5">
             <h3 className="h4 mb-3">Follow Us</h3>
             <div className="social-links">
-              <a href="#" className="social-link mx-2">
+              <a href="https://www.instagram.com/emotionease/" className="social-link mx-2"target="_blank" 
+  rel="noopener noreferrer"
+>
                 <i className="bi bi-instagram"></i>
               </a>
-              <a href="#" className="social-link mx-2">
+              <a href="https://www.linkedin.com/company/emotionease" className="social-link mx-2" target="_blank" 
+  rel="noopener noreferrer"
+>
                 <i className="bi bi-linkedin"></i>
               </a>
             </div>

@@ -147,9 +147,11 @@ const CuratedPrograms = () => {
                 transition={{ delay: 0.6 }}
               >
                 <motion.div whileHover={buttonHover} whileTap={{ scale: 0.95 }}>
-                  <Link to="https://forms.gle/YbcSchKPpTkaxu1ZA" className="btn btn-light btn-lg px-4">
-                    Book Free Consultation
-                  </Link>
+                  <a href="https://forms.gle/YbcSchKPpTkaxu1ZA" className="btn btn-light btn-lg px-4" target="_blank" 
+  rel="noopener noreferrer"
+>
+Book Free Consultation
+              </a>
                 </motion.div>
               </motion.div>
             </div>
@@ -253,9 +255,9 @@ const CuratedPrograms = () => {
                   </div>
                   <div className="card-footer">
                     <motion.div whileHover={buttonHover} whileTap={{ scale: 0.95 }}>
-                      <Link to={program.formLink} className="btn w-100">
+                      <a href={program.formLink} className="btn w-100" target="_blank" rel="noopener noreferrer">
                         {program.cta} <i className="bi bi-arrow-right ms-2"></i>
-                      </Link>
+                      </a>
                     </motion.div>
                   </div>
                 </motion.div>
