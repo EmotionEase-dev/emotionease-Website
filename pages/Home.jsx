@@ -7,7 +7,10 @@ import PeacefulMeditation from '../public/PeacefulMeditation.png';
 import Human from '../public/Human.png';
 import Cage from '../public/cage.png';
 import Freedom from '../public/Freedom.png';
-//Ani
+import { useState } from 'react';
+import TermsModal from '../components/TermsModal';
+
+
 // Animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -59,6 +62,8 @@ const cardHover = {
 
 const Home = () => {
   const [currentTestimonialPage, setCurrentTestimonialPage] = React.useState(1);
+const [showTerms, setShowTerms] = useState(false);
+
 
   const handleTestimonialPageChange = (pageNumber) => {
     setCurrentTestimonialPage(pageNumber);
@@ -66,6 +71,7 @@ const Home = () => {
 
   return (
     <div className="home-page">
+
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container py-5 py-lg-5">
@@ -645,7 +651,20 @@ const Home = () => {
                   <span>50% money back guarantee</span>
                 </div>
               </div>
-              <p className="small text-muted text-center mb-0">*Terms and conditions apply</p>
+              <p className="small text-muted text-center mb-0"><div>
+      <button 
+        className="btn btn-link" 
+        style={{ textDecoration: 'none', color: '#000000' }}
+        onClick={() => setShowTerms(true)}
+      >
+        *View Terms and Conditions
+      </button>
+      
+      <TermsModal 
+        show={showTerms} 
+        onHide={() => setShowTerms(false)} 
+      />
+    </div></p>
             </motion.div>
             
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
@@ -764,7 +783,7 @@ const Home = () => {
                     program: "Level 3 Program"
                   }
                 ].map((testimonial, index) => (
-                  <motion.div key={index} className="col-md-4 col-sm-6" variants={itemVariants}>
+                  <motion.div key={index} className="col-md-4 col-sm-6 mb-6" variants={itemVariants}>
                     <motion.div 
                       className="testimonial-card h-100 p-4 p-lg-5 rounded-4 bg-white shadow-sm"
                       whileHover="hover"

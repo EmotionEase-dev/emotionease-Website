@@ -1,104 +1,99 @@
 import React from 'react';
 
-const TermsAndConditions = () => {
+const TermsAndConditions = ({ onClose }) => {
   return (
-    <div className="container py-5">
-      <h1 className="mb-4 text-center text-success">Terms and Conditions</h1>
-      <p className="text-muted text-end">Last Updated: [Insert Date]</p>
+    <div className="modal-content p-4" style={{ maxHeight: '80vh', overflowY: 'auto' }}>
+      <div className="modal-header border-bottom-0 pb-0">
+        <h3 className="modal-title text-success mb-1">Terms and Conditions</h3>
+        <button 
+          type="button" 
+          className="btn-close" 
+          onClick={onClose} 
+          aria-label="Close"
+        ></button>
+      </div>
+      <p className="text-muted text-end mb-3 small pt-1">Last Updated: 14/05/2025</p>
 
-      <section className="mb-4">
-        <p>
-          Welcome to <strong>EmotionEase</strong>. These Terms and Conditions (“Terms”) govern your access to and use of our website, mobile application, and services (collectively, the “Platform”). Please read them carefully.
-        </p>
-        <p>
-          By accessing or using EmotionEase, you agree to be bound by these Terms. If you do not agree, please refrain from using our services.
-        </p>
-      </section>
+      <div className="modal-body p-0">
+        <section className="mb-3 p-1">
+          <p className="mb-2 ">
+            Welcome to our emotional well-being website. By using our services, you agree to the following terms and conditions. Please read them carefully.
+          </p>
+        </section>
 
-      <section className="mb-4">
-        <h4>1. Overview of Our Services</h4>
-        <p>
-          EmotionEase provides emotional wellbeing programs that include self-guided content, tools, and techniques such as NLP (Neuro-Linguistic Programming), mindfulness, and emotional regulation strategies. These resources are educational and supportive in nature.
-        </p>
-        <p className="text-danger fw-semibold">
-          Disclaimer: EmotionEase does not provide clinical diagnosis or medical treatment. Our services are not a substitute for professional mental health or medical advice.
-        </p>
-      </section>
+        <section className="mb-3 p-1">
+          <h5 className="fw-bold">1. Purpose of the Website</h5>
+          <p className="mb-2 small">
+            This website provides information, resources, and access to emotional well-being support or counseling. It is not a substitute for professional medical advice, diagnosis, or emergency services.
+          </p>
+        </section>
 
-      <section className="mb-4">
-        <h4>2. Eligibility</h4>
-        <p>
-          You must be at least <strong>18 years of age</strong> to use our Platform. By using the Platform, you affirm that you are legally eligible to enter into this agreement.
-        </p>
-      </section>
+        <section className="mb-3 p-1">
+          <h5 className="fw-bold">2. Not an Emergency Service</h5>
+          <p className="text-danger small mb-2">
+            If you are in crisis or need immediate help, please contact emergency services or a local mental health crisis line. This website does not offer emergency mental health support.
+          </p>
+        </section>
 
-      <section className="mb-4">
-        <h4>3. Your Responsibilities</h4>
-        <ul>
-          <li>Use the Platform only for lawful, personal, and non-commercial purposes.</li>
-          <li>Provide accurate and up-to-date information.</li>
-          <li>Respect the rights, privacy, and wellbeing of other users and our team.</li>
-          <li>Refrain from using the Platform to spread harmful or offensive content.</li>
-        </ul>
-      </section>
+        <section className="mb-3 p-1">
+          <h5 className="fw-bold">3. User Responsibility</h5>
+          <p className="small mb-2">
+            You agree to use this website respectfully and for its intended purpose. You are responsible for any information you share and for keeping your login details (if any) secure.
+          </p>
+        </section>
 
-      <section className="mb-4">
-        <h4>4. Emergency & Medical Situations</h4>
-        <p className="text-danger">
-          EmotionEase is <strong>not a crisis service</strong>. If you are in danger or experiencing a medical or psychiatric emergency, please call emergency services or a licensed mental health professional immediately.
-        </p>
-      </section>
+        <section className="mb-3 p-1">
+          <h5 className="fw-bold">4. Confidentiality</h5>
+          <p className="small mb-2">
+            We respect your privacy. Personal information you provide through contact forms or sessions will be kept confidential, except when required by law (e.g., risk of harm to yourself or others).
+          </p>
+        </section>
 
-      <section className="mb-4">
-        <h4>5. Intellectual Property</h4>
-        <p>
-          All content on EmotionEase—including text, graphics, videos, programs, and branding—is the exclusive property of EmotionEase or its content providers. You may not copy, modify, distribute, or reproduce any part of the Platform without written permission.
-        </p>
-      </section>
+        <section className="mb-3 p-1">
+          <h5 className="fw-bold">5. Booking, Cancellations, and Refunds</h5>
+          <ul className="small mb-2">
+            <li className="mb-1">You can schedule sessions through our booking page.</li>
+            <li className="mb-1">Please cancel or reschedule at least 24 hours in advance.</li>
+            <li className="mb-1">If you are not satisfied with a paid session and choose to end it before halfway through, you are eligible for a 50% money-back refund.</li>
+            <li className="mb-1">Refunds will not be provided after more than half of the session is completed.</li>
+            <li className="mb-1" style={{fontWeight:'bold'}}>Free sessions do not require any bank account or payment details.</li>
+            <li className="mb-1">Refunds will be processed within 1-5 business days.</li>
 
-      <section className="mb-4">
-        <h4>6. Account Security</h4>
-        <p>
-          If you create an account with us, you are responsible for maintaining the confidentiality of your login credentials. Notify us immediately of any unauthorized use.
-        </p>
-      </section>
+          </ul>
+        </section>
 
-      <section className="mb-4">
-        <h4>7. Limitation of Liability</h4>
-        <p>
-          EmotionEase will not be held liable for emotional distress or any outcomes related to the use of our services. Your use of the Platform is at your own risk.
-        </p>
-      </section>
+        <section className="mb-3 p-1">
+          <h5 className="fw-bold">6. Limitation of Liability</h5>
+          <p className="small mb-2">
+            While we aim to provide helpful and supportive services, we are not liable for any decisions or actions taken based on information from this website.
+          </p>
+        </section>
 
-      <section className="mb-4">
-        <h4>8. Modifications to Terms</h4>
-        <p>
-          We may update these Terms at any time. Changes are effective upon posting. Continued use indicates your acceptance of the updated Terms.
-        </p>
-      </section>
+        <section className="mb-3 p-1">
+          <h5 className="fw-bold">7. Changes to These Terms</h5>
+          <p className="small mb-2">
+            We may update these terms from time to time. Please check back regularly. By continuing to use our website, you agree to the latest version.
+          </p>
+        </section>
 
-      <section className="mb-4">
-        <h4>9. Termination</h4>
-        <p>
-          We may suspend or terminate your access to the Platform without notice if you violate these Terms.
-        </p>
-      </section>
+        <section className="mb-3 p-1">
+          <h5 className="fw-bold">8. Contact Us</h5>
+          <p className="small mb-2">
+            If you have any questions about these terms, please contact us at: <br />
+            📧 <a href="mailto:info@emotionease.in" className="text-decoration-none">info@emotionease.in</a>
+          </p>
+        </section>
+      </div>
 
-      <section className="mb-4">
-        <h4>10. Governing Law</h4>
-        <p>
-          These Terms are governed by the laws of <strong>[Insert State/Country]</strong>. Any disputes shall be resolved in the courts of <strong>[Insert Jurisdiction]</strong>.
-        </p>
-      </section>
-
-      <section className="mb-4">
-        <h4>11. Contact Us</h4>
-        <p>
-          For questions or concerns about these Terms, please contact us at: <br />
-          📧 <a href="mailto:support@emotionease.com">support@emotionease.com</a> <br />
-          🌐 <a href="http://www.emotionease.com" target="_blank" rel="noopener noreferrer">www.emotionease.com</a>
-        </p>
-      </section>
+      <div className="modal-footer border-top-0 pt-0">
+        <button 
+          type="button" 
+          className="btn btn-outline-secondary btn-sm" 
+          onClick={onClose}
+        >
+          Close
+        </button>
+      </div>
     </div>
   );
 };
