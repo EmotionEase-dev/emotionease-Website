@@ -252,7 +252,7 @@ Book First Free Session
               
               {program.requirement && (
                 <div className="program-requirement">
-                  <i className="bi bi-info-circle-fill"></i>
+                  <i className="bi bi-info-circle-fill" style={{margin:'4px'}}></i>
                   {program.requirement}
                 </div>
               )}
