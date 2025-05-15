@@ -121,9 +121,9 @@ const About = () => {
                   <h3 className="h5 mb-2">Elango Annamalai</h3>
                   <p className="mb-3 fw-semibold">Founder & Emotion Regulation Specialist</p>
                   <div className="d-flex flex-wrap justify-content-center gap-2 mb-3">
-                    <span className="badge bg-success bg-opacity-10 text-success">NLP Practitioner</span>
-                    <span className="badge bg-success bg-opacity-10 text-success">Certified Counselor</span>
-                    <span className="badge bg-success bg-opacity-10 text-success">Trauma-Informed Care</span>
+                    <span className="badge bg-success bg-opacity-10 text-light">NLP Practitioner</span>
+                    <span className="badge bg-success bg-opacity-10 text-light">Certified Counselor</span>
+                    <span className="badge bg-success bg-opacity-10 text-light">Trauma-Informed Care</span>
                   </div>
                   
                   <p className="text-muted mb-0">
@@ -150,8 +150,8 @@ const About = () => {
                   <p className="mb-3 fw-semibold">Content & Marketing Expert</p>
                   
                   <div className="d-flex flex-wrap justify-content-center gap-2 mb-3">
-                    <span className="badge bg-success bg-opacity-10 text-success">Digital Marketing</span>
-                    <span className="badge bg-success bg-opacity-10 text-success">Content Strategy</span>
+                    <span className="badge bg-success bg-opacity-10 text-light">Digital Marketing</span>
+                    <span className="badge bg-success bg-opacity-10 text-light">Content Strategy</span>
                   </div>
                   
                   <p className="text-muted mb-0">
@@ -178,8 +178,8 @@ const About = () => {
                   <p className="mb-3 fw-semibold">Creative Designer</p>
                   
                   <div className="d-flex flex-wrap justify-content-center gap-2 mb-3">
-                    <span className="badge bg-success bg-opacity-10 text-success">MERN Stack</span>
-                    <span className="badge bg-success bg-opacity-10 text-success">IAM Specialist</span>
+                    <span className="badge bg-success bg-opacity-10 text-light">MERN Stack</span>
+                    <span className="badge bg-success bg-opacity-10 text-light">IAM Specialist</span>
                   </div>
                   
                   <p className="text-muted mb-0">
