@@ -1170,7 +1170,7 @@ const Home = () => {
             <div className="col-lg-2 col-md-4">
               <h4 className="h5 fw-bold mb-3">Quick Links</h4>
               <ul className="list-unstyled">
-                {["Home", "About", "Programs", "Contact"].map((link, index) => (
+                {["Home", "About", "Programs", "Contact","Privacy & Policy"].map((link, index) => (
                   <motion.li key={index} className="mb-2" whileHover={{ x: 5 }}>
                     <HashLink
                       to={`/${link.toLowerCase()}#top`}
