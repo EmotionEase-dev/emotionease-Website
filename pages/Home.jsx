@@ -1,27 +1,26 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
-import { motion } from 'framer-motion';
-import './Home.css';
-import PeacefulMeditation from '../public/PeacefulMeditation.png';
-import Human from '../public/Human.png';
-import Cage from '../public/cage.png';
-import Freedom from '../public/Freedom.png';
-import { useState } from 'react';
-import TermsModal from '../components/TermsModal';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import { motion } from "framer-motion";
+import "./Home.css";
+import PeacefulMeditation from "../public/PeacefulMeditation.png";
+import Human from "../public/Human.png";
+import Cage from "../public/cage.png";
+import Freedom from "../public/Freedom.png";
+import { useState } from "react";
+import TermsModal from "../components/TermsModal";
 
 // Animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { 
+    transition: {
       staggerChildren: 0.15,
       delayChildren: 0.3,
-      ease: [0.43, 0.13, 0.23, 0.96]
-    }
-  }
+      ease: [0.43, 0.13, 0.23, 0.96],
+    },
+  },
 };
 
 const itemVariants = {
@@ -29,24 +28,24 @@ const itemVariants = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { 
-      type: 'spring', 
+    transition: {
+      type: "spring",
       stiffness: 100,
       damping: 10,
-      mass: 0.5
-    }
-  }
+      mass: 0.5,
+    },
+  },
 };
 
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { 
-    opacity: 1, 
-    transition: { 
+  visible: {
+    opacity: 1,
+    transition: {
       duration: 0.8,
-      ease: "easeOut"
-    } 
-  }
+      ease: "easeOut",
+    },
+  },
 };
 
 const cardHover = {
@@ -55,15 +54,14 @@ const cardHover = {
     boxShadow: "0 15px 30px rgba(40, 167, 69, 0.15)",
     transition: {
       duration: 0.3,
-      ease: "easeOut"
-    }
-  }
+      ease: "easeOut",
+    },
+  },
 };
 
 const Home = () => {
   const [currentTestimonialPage, setCurrentTestimonialPage] = React.useState(1);
-const [showTerms, setShowTerms] = useState(false);
-
+  const [showTerms, setShowTerms] = useState(false);
 
   const handleTestimonialPageChange = (pageNumber) => {
     setCurrentTestimonialPage(pageNumber);
@@ -71,12 +69,14 @@ const [showTerms, setShowTerms] = useState(false);
 
   return (
     <div className="home-page">
-
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container py-5 py-lg-5">
           <div className="row align-items-center g-3">
-            <div className="col-lg-6 order-lg-1 order-2 d-flex flex-column" style={{height: "100%"}}>
+            <div
+              className="col-lg-6 order-lg-1 order-2 d-flex flex-column"
+              style={{ height: "100%" }}
+            >
               <motion.div
                 initial="hidden"
                 animate="visible"
@@ -85,19 +85,22 @@ const [showTerms, setShowTerms] = useState(false);
               >
                 <div className="flex-grow-1 d-flex flex-column justify-content-center">
                   <motion.h1 className="hero-title display-3 fw-bold mb-4">
-                    Life Situations Causing <span className="text-gradient-success">Emotional Turbulence!</span>
+                    Life Situations Causing{" "}
+                    <span className="text-gradient-success">
+                      Emotional Turbulence!
+                    </span>
                   </motion.h1>
-                  
-                  <motion.div 
-                    className="hero-questions bg-white p-4 p-lg-5 rounded-4 shadow-sm mb-4" 
+
+                  <motion.div
+                    className="hero-questions bg-white p-4 p-lg-5 rounded-4 shadow-sm mb-4"
                     variants={itemVariants}
                     whileHover={{
-                      boxShadow: "0 10px 25px rgba(0, 0, 0, 0.08)"
+                      boxShadow: "0 10px 25px rgba(0, 0, 0, 0.08)",
                     }}
                     transition={{ duration: 0.3 }}
                   >
                     <p className="lead fw-medium">Dear People,</p>
-                    <div style={{ paddingLeft: 0,fontSize: "1.2rem" }}>
+                    <div style={{ paddingLeft: 0, fontSize: "1.2rem" }}>
                       {[
                         "Do you feel insecure & stressed frequently?",
                         "Do you want to succeed in your career confidently even after a setback?",
@@ -105,7 +108,7 @@ const [showTerms, setShowTerms] = useState(false);
                         "Are you feeling Hurt or irritated often?",
                         "Are your dear ones Not listening & not respecting you?",
                         "Are you facing a strained unhappy relationship?",
-                        "Are your thoughts making you feel anxious?"
+                        "Are your thoughts making you feel anxious?",
                       ].map((question, index) => (
                         <motion.div
                           key={index}
@@ -121,24 +124,27 @@ const [showTerms, setShowTerms] = useState(false);
                     </div>
                   </motion.div>
                 </div>
-                
-                <motion.div 
-                  className="hero-cta bg-success bg-opacity-10 p-4 p-lg-5 rounded-4" 
+
+                <motion.div
+                  className="hero-cta bg-success bg-opacity-10 p-4 p-lg-5 rounded-4"
                   variants={itemVariants}
                   whileHover={{
-                    boxShadow: "0 10px 25px rgba(40, 167, 69, 0.15)"
+                    boxShadow: "0 10px 25px rgba(40, 167, 69, 0.15)",
                   }}
                   transition={{ duration: 0.3 }}
                 >
                   <h3 className="text-success fw-bold mb-3">We Support!</h3>
                   <p className="mb-4">
-                    Our unique, structured programs are designed to empower you to take control 
-                    of your emotional wellbeing and live a more fulfilled life—both personally 
-                    and professionally.
+                    Our unique, structured programs are designed to empower you
+                    to take control of your emotional wellbeing and live a more
+                    fulfilled life—both personally and professionally.
                   </p>
-                  <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                    <Link 
-                      to="/contact" 
+                  <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <Link
+                      to="/contact"
                       className="btn btn-success btn-lg px-4 py-3 fw-medium"
                     >
                       Reach Out to Us <i className="bi bi-arrow-right ms-2"></i>
@@ -147,18 +153,23 @@ const [showTerms, setShowTerms] = useState(false);
                 </motion.div>
               </motion.div>
             </div>
-            
+
             <div className="col-lg-6 order-lg-2 order-1">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ 
+                transition={{
                   duration: 0.8,
-                  ease: "easeOut"
+                  ease: "easeOut",
                 }}
                 className="position-relative h-100"
               >
-                <div id="heroCarousel" className="carousel slide carousel-fade rounded-4 shadow-lg overflow-hidden h-100" data-bs-ride="carousel" data-bs-interval="3000">
+                <div
+                  id="heroCarousel"
+                  className="carousel slide carousel-fade rounded-4 shadow-lg overflow-hidden h-100"
+                  data-bs-ride="carousel"
+                  data-bs-interval="3000"
+                >
                   <div className="carousel-inner h-100">
                     {/* Slide 1 */}
                     <div className="carousel-item active h-100">
@@ -170,12 +181,12 @@ const [showTerms, setShowTerms] = useState(false);
                         transition={{
                           duration: 8,
                           repeat: Infinity,
-                          ease: "easeInOut"
+                          ease: "easeInOut",
                         }}
                       >
-                        <img 
+                        <img
                           src={PeacefulMeditation}
-                          alt="Peaceful meditation" 
+                          alt="Peaceful meditation"
                           className="d-block w-100 h-100 img-fluid object-cover"
                         />
                         <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
@@ -195,16 +206,18 @@ const [showTerms, setShowTerms] = useState(false);
                         transition={{
                           duration: 8,
                           repeat: Infinity,
-                          ease: "easeInOut"
+                          ease: "easeInOut",
                         }}
                       >
-                        <img 
+                        <img
                           src={Human}
-                          alt="Human connection" 
+                          alt="Human connection"
                           className="d-block w-100 h-100 img-fluid object-cover"
                         />
                         <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
-                          <h5 className="display-6 fw-bold">Human Connection</h5>
+                          <h5 className="display-6 fw-bold">
+                            Human Connection
+                          </h5>
                           <p>Building meaningful relationships</p>
                         </div>
                       </motion.div>
@@ -220,12 +233,12 @@ const [showTerms, setShowTerms] = useState(false);
                         transition={{
                           duration: 8,
                           repeat: Infinity,
-                          ease: "easeInOut"
+                          ease: "easeInOut",
                         }}
                       >
-                        <img 
+                        <img
                           src={Cage}
-                          alt="Breaking free" 
+                          alt="Breaking free"
                           className="d-block w-100 h-100 img-fluid object-cover"
                         />
                         <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
@@ -245,12 +258,12 @@ const [showTerms, setShowTerms] = useState(false);
                         transition={{
                           duration: 8,
                           repeat: Infinity,
-                          ease: "easeInOut"
+                          ease: "easeInOut",
                         }}
                       >
-                        <img 
+                        <img
                           src={Freedom}
-                          alt="Freedom" 
+                          alt="Freedom"
                           className="d-block w-100 h-100 img-fluid object-cover"
                         />
                         <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
@@ -262,58 +275,64 @@ const [showTerms, setShowTerms] = useState(false);
                   </div>
 
                   {/* Carousel Controls */}
-                  <button 
-                    className="carousel-control-prev" 
-                    type="button" 
-                    data-bs-target="#heroCarousel" 
+                  <button
+                    className="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#heroCarousel"
                     data-bs-slide="prev"
                   >
-                    <span className="carousel-control-prev-icon bg-dark bg-opacity-50 rounded-circle p-3" aria-hidden="true"></span>
+                    <span
+                      className="carousel-control-prev-icon bg-dark bg-opacity-50 rounded-circle p-3"
+                      aria-hidden="true"
+                    ></span>
                     <span className="visually-hidden">Previous</span>
                   </button>
-                  <button 
-                    className="carousel-control-next" 
-                    type="button" 
-                    data-bs-target="#heroCarousel" 
+                  <button
+                    className="carousel-control-next"
+                    type="button"
+                    data-bs-target="#heroCarousel"
                     data-bs-slide="next"
                   >
-                    <span className="carousel-control-next-icon bg-dark bg-opacity-50 rounded-circle p-3" aria-hidden="true"></span>
+                    <span
+                      className="carousel-control-next-icon bg-dark bg-opacity-50 rounded-circle p-3"
+                      aria-hidden="true"
+                    ></span>
                     <span className="visually-hidden">Next</span>
                   </button>
 
                   {/* Carousel Indicators */}
                   <div className="carousel-indicators">
-                    <button 
-                      type="button" 
-                      data-bs-target="#heroCarousel" 
-                      data-bs-slide-to="0" 
-                      className="active rounded-circle" 
-                      style={{width: "10px", height: "10px"}}
-                      aria-current="true" 
+                    <button
+                      type="button"
+                      data-bs-target="#heroCarousel"
+                      data-bs-slide-to="0"
+                      className="active rounded-circle"
+                      style={{ width: "10px", height: "10px" }}
+                      aria-current="true"
                       aria-label="Slide 1"
                     ></button>
-                    <button 
-                      type="button" 
-                      data-bs-target="#heroCarousel" 
-                      data-bs-slide-to="1" 
+                    <button
+                      type="button"
+                      data-bs-target="#heroCarousel"
+                      data-bs-slide-to="1"
                       className="rounded-circle"
-                      style={{width: "10px", height: "10px"}}
+                      style={{ width: "10px", height: "10px" }}
                       aria-label="Slide 2"
                     ></button>
-                    <button 
-                      type="button" 
-                      data-bs-target="#heroCarousel" 
-                      data-bs-slide-to="2" 
+                    <button
+                      type="button"
+                      data-bs-target="#heroCarousel"
+                      data-bs-slide-to="2"
                       className="rounded-circle"
-                      style={{width: "10px", height: "10px"}}
+                      style={{ width: "10px", height: "10px" }}
                       aria-label="Slide 3"
                     ></button>
-                    <button 
-                      type="button" 
-                      data-bs-target="#heroCarousel" 
-                      data-bs-slide-to="3" 
+                    <button
+                      type="button"
+                      data-bs-target="#heroCarousel"
+                      data-bs-slide-to="3"
                       className="rounded-circle"
-                      style={{width: "10px", height: "10px"}}
+                      style={{ width: "10px", height: "10px" }}
                       aria-label="Slide 4"
                     ></button>
                   </div>
@@ -334,56 +353,64 @@ const [showTerms, setShowTerms] = useState(false);
             variants={containerVariants}
             className="text-center mb-5 mb-lg-7 delay-100"
           >
-            <motion.h2 className="section-title display-3 fw-bold mb-3" variants={itemVariants}>
+            <motion.h2
+              className="section-title display-3 fw-bold mb-3"
+              variants={itemVariants}
+            >
               What Will You <span className="text-gradient-success">Get?</span>
             </motion.h2>
-            <motion.p className="lead text-muted mx-auto" style={{ maxWidth: '700px',fontWeight:'bold' }} variants={itemVariants}>
-              Our comprehensive approach addresses all aspects of emotional & Relational wellbeing
+            <motion.p
+              className="lead text-muted mx-auto"
+              style={{ maxWidth: "700px", fontWeight: "bold" }}
+              variants={itemVariants}
+            >
+              Our comprehensive approach addresses all aspects of emotional &
+              Relational wellbeing
             </motion.p>
           </motion.div>
-          
+
           <div className="row g-4">
             {[
-              { 
-                title: "Transform Your Thinking", 
+              {
+                title: "Transform Your Thinking",
                 icon: "bi-arrow-repeat",
-                desc: "Shift from negative to positive thought patterns"
+                desc: "Shift from negative to positive thought patterns",
               },
-              { 
-                title: "Heal Emotionally", 
+              {
+                title: "Heal Emotionally",
                 icon: "bi-heart",
-                desc: "Process and release past emotional wounds"
+                desc: "Process and release past emotional wounds",
               },
-              { 
-                title: "Develop Healthy Emotions", 
+              {
+                title: "Develop Healthy Emotions",
                 icon: "bi-emoji-smile",
-                desc: "Cultivate emotional resilience and balance"
+                desc: "Cultivate emotional resilience and balance",
               },
-              { 
-                title: "Build Harmonious Relationships", 
+              {
+                title: "Build Harmonious Relationships",
                 icon: "bi-people",
-                desc: "Create deeper connections with others"
+                desc: "Create deeper connections with others",
               },
-              { 
-                title: "Communicate Skillfully", 
+              {
+                title: "Communicate Skillfully",
                 icon: "bi-chat-square-text",
-                desc: "Express yourself clearly and effectively"
+                desc: "Express yourself clearly and effectively",
               },
-              { 
-                title: "Achieve Personal & Professional Goals", 
+              {
+                title: "Achieve Personal & Professional Goals",
                 icon: "bi-trophy",
-                desc: "Overcome emotional barriers to success"
+                desc: "Overcome emotional barriers to success",
               },
-              { 
-                title: "Develop Fearlessness", 
+              {
+                title: "Develop Fearlessness",
                 icon: "bi-shield-check",
-                desc: "Face challenges with confidence"
+                desc: "Face challenges with confidence",
               },
-              { 
-                title: "Find Inner Peace", 
+              {
+                title: "Find Inner Peace",
                 icon: "bi-brightness-high",
-                desc: "Cultivate lasting calm and contentment"
-              }
+                desc: "Cultivate lasting calm and contentment",
+              },
             ].map((benefit, index) => (
               <div key={index} className="col-md-6 col-lg-4 col-xl-3">
                 <motion.div
@@ -408,7 +435,7 @@ const [showTerms, setShowTerms] = useState(false);
 
       {/* Emotions Wisdom Section */}
       <section className="wisdom-section py-5 py-lg-7 position-relative">
-        <div className="container position-relative z-index-1"  >
+        <div className="container position-relative z-index-1">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -416,11 +443,15 @@ const [showTerms, setShowTerms] = useState(false);
             variants={containerVariants}
             className="text-center mb-5 mb-lg-7"
           >
-            <motion.h2 className="section-title display-3 fw-bold mb-3" variants={itemVariants}>
-              Few Words on <span className="text-gradient-success">Emotions…</span>
+            <motion.h2
+              className="section-title display-3 fw-bold mb-3"
+              variants={itemVariants}
+            >
+              Few Words on{" "}
+              <span className="text-gradient-success">Emotions…</span>
             </motion.h2>
           </motion.div>
-          
+
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -430,11 +461,11 @@ const [showTerms, setShowTerms] = useState(false);
           >
             <motion.div className="row g-4" variants={containerVariants}>
               <motion.div className="col-lg-4 " variants={itemVariants}>
-                <motion.div 
+                <motion.div
                   className="h-100 p-3 p-lg-4 rounded-3 border border-2 border-transparent  "
                   whileHover={{
                     borderColor: "#198754", // Bootstrap success color
-                    transition: { duration: 0.3 }
+                    transition: { duration: 0.3 },
                   }}
                 >
                   <div className="d-flex align-items-center mb-3 ">
@@ -444,19 +475,20 @@ const [showTerms, setShowTerms] = useState(false);
                     <h3 className="h5 fw-bold mb-0">Emotion is Energy</h3>
                   </div>
                   <p className="mb-0">
-                    Emotion is our energy to move so respect it. By managing and expressing our 
-                    emotions effortlessly and in a healthy fashion by our choice gives us organic 
-                    happiness, health and efficiency.
+                    Emotion is our energy to move so respect it. By managing and
+                    expressing our emotions effortlessly and in a healthy
+                    fashion by our choice gives us organic happiness, health and
+                    efficiency.
                   </p>
                 </motion.div>
               </motion.div>
-              
+
               <motion.div className="col-lg-4" variants={itemVariants}>
-                <motion.div 
+                <motion.div
                   className="h-100 p-3 p-lg-4 rounded-3 border border-2 border-transparent"
                   whileHover={{
                     borderColor: "#198754", // Bootstrap success color
-                    transition: { duration: 0.3 }
+                    transition: { duration: 0.3 },
                   }}
                 >
                   <div className="d-flex align-items-center mb-3">
@@ -466,19 +498,20 @@ const [showTerms, setShowTerms] = useState(false);
                     <h3 className="h5 fw-bold mb-0">Every Emotion Matters</h3>
                   </div>
                   <p className="mb-0">
-                    Every emotion is valuable, even anger is a healthy emotion if it's used to 
-                    establish boundaries with our love's ones. We could reduce the intensity of 
-                    our emotions by breathing slowly & deeply.
+                    Every emotion is valuable, even anger is a healthy emotion
+                    if it's used to establish boundaries with our love's ones.
+                    We could reduce the intensity of our emotions by breathing
+                    slowly & deeply.
                   </p>
                 </motion.div>
               </motion.div>
-              
+
               <motion.div className="col-lg-4" variants={itemVariants}>
-                <motion.div 
+                <motion.div
                   className="h-100 p-3 p-lg-4 rounded-3 border border-2 border-transparent"
                   whileHover={{
                     borderColor: "#198754", // Bootstrap success color
-                    transition: { duration: 0.3 }
+                    transition: { duration: 0.3 },
                   }}
                 >
                   <div className="d-flex align-items-center mb-3">
@@ -488,9 +521,10 @@ const [showTerms, setShowTerms] = useState(false);
                     <h3 className="h5 fw-bold mb-0">Meeting Emotional Needs</h3>
                   </div>
                   <p className="mb-0">
-                    If our emotional needs are unmet then it would lead to emotional 
-                    stagnation so work towards meeting your needs in a healthier fashion.
-                    Resist the temptation to take decisions when emotions are low.
+                    If our emotional needs are unmet then it would lead to
+                    emotional stagnation so work towards meeting your needs in a
+                    healthier fashion. Resist the temptation to take decisions
+                    when emotions are low.
                   </p>
                 </motion.div>
               </motion.div>
@@ -500,7 +534,10 @@ const [showTerms, setShowTerms] = useState(false);
       </section>
 
       {/* Uniqueness Section */}
-      <section id="uniqueness-section" className="uniqueness-section py-5 py-lg-7 bg-light">
+      <section
+        id="uniqueness-section"
+        className="uniqueness-section py-5 py-lg-7 bg-light"
+      >
         <div className="container">
           <motion.div
             initial="hidden"
@@ -509,14 +546,21 @@ const [showTerms, setShowTerms] = useState(false);
             variants={containerVariants}
             className="text-center mb-5 mb-lg-7"
           >
-            <motion.h2 className="section-title display-3 fw-bold mb-3" variants={itemVariants}>
+            <motion.h2
+              className="section-title display-3 fw-bold mb-3"
+              variants={itemVariants}
+            >
               Our <span className="text-gradient-success">6 Uniqueness</span>
             </motion.h2>
-            <motion.p className="lead text-muted fst-italic" variants={itemVariants} style={{fontWeight: 'bold' }}>
+            <motion.p
+              className="lead text-muted fst-italic"
+              variants={itemVariants}
+              style={{ fontWeight: "bold" }}
+            >
               "Seeking Help when needed is a sign of maturity"
             </motion.p>
           </motion.div>
-          
+
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -530,10 +574,14 @@ const [showTerms, setShowTerms] = useState(false);
               "We provide Unlimited sessions until you feel fully empowered with confidence (for Level 2 & 3 participants).",
               "We follow up with you for 3-months post enablement as we never let you down.",
               "We give 50% refund of your money if in case you are unhappy with the results anytime as your satisfaction is our primary goal.",
-              "We give a 'Free First session' so that people get a better chance to understand our work."
+              "We give a 'Free First session' so that people get a better chance to understand our work.",
             ].map((item, index) => (
-              <motion.div key={index} className="col-md-6" variants={itemVariants}>
-                <motion.div 
+              <motion.div
+                key={index}
+                className="col-md-6"
+                variants={itemVariants}
+              >
+                <motion.div
                   className="uniqueness-card h-100 p-4 p-lg-5 rounded-4 bg-white position-relative shadow-sm"
                   whileHover="hover"
                   variants={cardHover}
@@ -559,14 +607,22 @@ const [showTerms, setShowTerms] = useState(false);
             variants={containerVariants}
             className="text-center mb-5 mb-lg-7"
           >
-            <motion.h2 className="section-title display-3 fw-bold mb-3" variants={itemVariants}>
-              How Our <span className="text-gradient-success">Programs Work</span>
+            <motion.h2
+              className="section-title display-3 fw-bold mb-3"
+              variants={itemVariants}
+            >
+              How Our{" "}
+              <span className="text-gradient-success">Programs Work</span>
             </motion.h2>
-            <motion.p className="lead text-muted mx-auto" style={{ maxWidth: '700px',fontWeight:'bold' }} variants={itemVariants}>
+            <motion.p
+              className="lead text-muted mx-auto"
+              style={{ maxWidth: "700px", fontWeight: "bold" }}
+              variants={itemVariants}
+            >
               A structured approach to emotional wellbeing
             </motion.p>
           </motion.div>
-          
+
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -579,23 +635,27 @@ const [showTerms, setShowTerms] = useState(false);
                 title: "Foundation Workshop",
                 desc: "Start with our 5-day intensive to build emotional awareness and basic regulation skills.",
                 features: ["Group Sessions", "Daily Exercises"],
-                icon: "bi-layers"
+                icon: "bi-layers",
               },
               {
                 title: "Personal Transformation",
                 desc: "1-on-1 sessions to heal deeper emotional patterns and build resilience.",
                 features: ["Customized Plan", "Unlimited Support"],
-                icon: "bi-person"
+                icon: "bi-person",
               },
               {
                 title: "Relationship Mastery",
                 desc: "Apply your skills to create fulfilling personal and professional relationships.",
                 features: ["Dyadic Sessions", "Family Dynamics"],
-                icon: "bi-people"
-              }
+                icon: "bi-people",
+              },
             ].map((step, index) => (
-              <motion.div key={index} className="col-md-4" variants={itemVariants}>
-                <motion.div 
+              <motion.div
+                key={index}
+                className="col-md-4"
+                variants={itemVariants}
+              >
+                <motion.div
                   className="step-card h-100 p-4 p-lg-5 rounded-4 bg-white shadow-sm border border-2 border-success border-opacity-10"
                   whileHover="hover"
                   variants={cardHover}
@@ -607,8 +667,8 @@ const [showTerms, setShowTerms] = useState(false);
                   <p className="text-muted text-center mb-4">{step.desc}</p>
                   <div className="d-flex justify-content-center flex-wrap gap-2">
                     {step.features.map((feature, i) => (
-                      <motion.span 
-                        key={i} 
+                      <motion.span
+                        key={i}
                         className="badge bg-opacity-10 rounded-pill px-3 py-2"
                         whileHover={{ scale: 1.05 }}
                       >
@@ -620,7 +680,7 @@ const [showTerms, setShowTerms] = useState(false);
               </motion.div>
             ))}
           </motion.div>
-          
+
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -628,11 +688,13 @@ const [showTerms, setShowTerms] = useState(false);
             variants={fadeIn}
             className="text-center"
           >
-            <motion.div 
+            <motion.div
               className="bg-success bg-opacity-10 p-4 rounded-4 border border-success border-opacity-25 d-inline-block mb-5"
               whileHover={{ scale: 1.02 }}
             >
-              <p className="text-uppercase small fw-bold text-success mb-3">ALL PROGRAMS INCLUDE:</p>
+              <p className="text-uppercase small fw-bold text-success mb-3">
+                ALL PROGRAMS INCLUDE:
+              </p>
               <div className="d-flex flex-wrap justify-content-center gap-4 mb-3">
                 <div className="d-flex align-items-center">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
@@ -651,28 +713,31 @@ const [showTerms, setShowTerms] = useState(false);
                   <span>50% money back guarantee</span>
                 </div>
               </div>
-              <p className="small text-muted text-center mb-0"><div>
-      <button 
-        className="btn btn-link" 
-        style={{ textDecoration: 'none', color: '#000000' }}
-        onClick={() => setShowTerms(true)}
-      >
-        *View Terms and Conditions
-      </button>
-      
-      <TermsModal 
-        show={showTerms} 
-        onHide={() => setShowTerms(false)} 
-      />
-    </div></p>
+              <p className="small text-muted text-center mb-0">
+                <div>
+                  <button
+                    className="btn btn-link"
+                    style={{ textDecoration: "none", color: "#000000" }}
+                    onClick={() => setShowTerms(true)}
+                  >
+                    *View Terms and Conditions
+                  </button>
+
+                  <TermsModal
+                    show={showTerms}
+                    onHide={() => setShowTerms(false)}
+                  />
+                </div>
+              </p>
             </motion.div>
-            
+
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-              <Link 
-                to="/programs" 
+              <Link
+                to="/programs"
                 className="btn btn-success btn-lg px-5 py-3 fw-medium"
               >
-                Explore All Program Details <i className="bi bi-arrow-right ms-2"></i>
+                Explore All Program Details{" "}
+                <i className="bi bi-arrow-right ms-2"></i>
               </Link>
             </motion.div>
           </motion.div>
@@ -680,7 +745,10 @@ const [showTerms, setShowTerms] = useState(false);
       </section>
 
       {/* Review Section */}
-      <section id="review-section" className="review-section py-5 py-lg-7 bg-light">
+      <section
+        id="review-section"
+        className="review-section py-5 py-lg-7 bg-light"
+      >
         <div className="container">
           <motion.div
             initial="hidden"
@@ -689,10 +757,18 @@ const [showTerms, setShowTerms] = useState(false);
             variants={containerVariants}
             className="text-center mb-5 mb-lg-7"
           >
-            <motion.h2 className="section-title display-3 fw-bold mb-3" variants={itemVariants}>
-              What Our <span className="text-gradient-success">Clients Say</span>
+            <motion.h2
+              className="section-title display-3 fw-bold mb-3"
+              variants={itemVariants}
+            >
+              What Our{" "}
+              <span className="text-gradient-success">Clients Say</span>
             </motion.h2>
-            <motion.p className="lead text-muted mx-auto" style={{ maxWidth: '700px' }} variants={itemVariants}>
+            <motion.p
+              className="lead text-muted mx-auto"
+              style={{ maxWidth: "700px" }}
+              variants={itemVariants}
+            >
               Real stories from people who transformed their emotional wellbeing
             </motion.p>
           </motion.div>
@@ -706,51 +782,82 @@ const [showTerms, setShowTerms] = useState(false);
               className="row g-4"
             >
               {/* Page 1 - Visible based on state */}
-              <div className="row" style={{ display: currentTestimonialPage === 1 ? 'flex' : 'none' }}>
+              <div
+                className="row"
+                style={{
+                  display: currentTestimonialPage === 1 ? "flex" : "none",
+                }}
+              >
                 {[
                   {
-                    quote: "The Level 1 workshop transformed how I handle work stress. The mindset techniques helped me stay calm during high-pressure situations.",
+                    quote:
+                      "The Level 1 workshop transformed how I handle work stress. The mindset techniques helped me stay calm during high-pressure situations.",
                     name: "Rahul K.",
                     role: "Startup Founder",
                     rating: 5,
-                    program: "Level 1 Workshop"
+                    program: "Level 1 Workshop",
                   },
                   {
-                    quote: "After Level 2, I finally processed childhood trauma that was affecting my relationships. The personalized approach made me feel truly heard.",
+                    quote:
+                      "After Level 2, I finally processed childhood trauma that was affecting my relationships. The personalized approach made me feel truly heard.",
                     name: "Ananya P.",
                     role: "Marketing Executive",
                     rating: 5,
-                    program: "Level 2 Program"
+                    program: "Level 2 Program",
                   },
                   {
-                    quote: "The Level 3 program saved our marriage. We learned communication tools that helped us resolve conflicts with compassion.",
+                    quote:
+                      "The Level 3 program saved our marriage. We learned communication tools that helped us resolve conflicts with compassion.",
                     name: "Vikram & Meera",
                     role: "Married Couple",
                     rating: 5,
-                    program: "Level 3 Program"
-                  }
+                    program: "Level 3 Program",
+                  },
                 ].map((testimonial, index) => (
-                  <motion.div key={index} className="col-md-4 col-sm-6" variants={itemVariants}>
-                    <motion.div 
+                  <motion.div
+                    key={index}
+                    className="col-md-4 col-sm-6"
+                    variants={itemVariants}
+                  >
+                    <motion.div
                       className="testimonial-card h-100 p-4 p-lg-5 rounded-4 bg-white shadow-sm"
                       whileHover="hover"
                       variants={cardHover}
                     >
-                      <span className="badge bg-success bg-opacity-10 text-light mb-2">{testimonial.program}</span>
+                      <span className="badge bg-success bg-opacity-10 text-light mb-2">
+                        {testimonial.program}
+                      </span>
                       <div className="d-flex mb-3">
                         {[...Array(testimonial.rating)].map((_, i) => (
-                          <i key={i} className="bi bi-star-fill text-warning me-1"></i>
+                          <i
+                            key={i}
+                            className="bi bi-star-fill text-warning me-1"
+                          ></i>
                         ))}
                       </div>
-                      <p className="lead fst-italic mb-4" style={{ fontFamily: "'Dancing Script', cursive", fontSize: '1.25rem' }}>
+                      <p
+                        className="lead fst-italic mb-4"
+                        style={{
+                          fontFamily: "'Dancing Script', cursive",
+                          fontSize: "1.25rem",
+                        }}
+                      >
                         "{testimonial.quote}"
                       </p>
                       <div className="d-flex align-items-center">
                         <div>
-                          <h4 className="h6 fw-bold mb-0" style={{ fontFamily: "'Dancing Script', cursive", fontSize: '1.1rem' }}>
+                          <h4
+                            className="h6 fw-bold mb-0"
+                            style={{
+                              fontFamily: "'Dancing Script', cursive",
+                              fontSize: "1.1rem",
+                            }}
+                          >
                             {testimonial.name}
                           </h4>
-                          <small className="text-muted">{testimonial.role}</small>
+                          <small className="text-muted">
+                            {testimonial.role}
+                          </small>
                         </div>
                       </div>
                     </motion.div>
@@ -759,51 +866,82 @@ const [showTerms, setShowTerms] = useState(false);
               </div>
 
               {/* Page 2 - Visible based on state */}
-              <div className="row" style={{ display: currentTestimonialPage === 2 ? 'flex' : 'none' }}>
+              <div
+                className="row"
+                style={{
+                  display: currentTestimonialPage === 2 ? "flex" : "none",
+                }}
+              >
                 {[
                   {
-                    quote: "As a student, Level 1 gave me tools to manage exam anxiety. The daily exercises were easy to implement between classes.",
+                    quote:
+                      "As a student, Level 1 gave me tools to manage exam anxiety. The daily exercises were easy to implement between classes.",
                     name: "Aditi S.",
                     role: "College Student",
                     rating: 5,
-                    program: "Level 1 Workshop"
+                    program: "Level 1 Workshop",
                   },
                   {
-                    quote: "Level 2 helped me rebuild self-worth after a toxic relationship. The trauma-informed techniques were life-changing.",
+                    quote:
+                      "Level 2 helped me rebuild self-worth after a toxic relationship. The trauma-informed techniques were life-changing.",
                     name: "Karan M.",
                     role: "Financial Analyst",
                     rating: 5,
-                    program: "Level 2 Program"
+                    program: "Level 2 Program",
                   },
                   {
-                    quote: "Our business partnership improved dramatically after Level 3. We now handle disagreements productively.",
+                    quote:
+                      "Our business partnership improved dramatically after Level 3. We now handle disagreements productively.",
                     name: "Neha & Raj",
                     role: "Co-founders",
                     rating: 5,
-                    program: "Level 3 Program"
-                  }
+                    program: "Level 3 Program",
+                  },
                 ].map((testimonial, index) => (
-                  <motion.div key={index} className="col-md-4 col-sm-6 mb-6" variants={itemVariants}>
-                    <motion.div 
+                  <motion.div
+                    key={index}
+                    className="col-md-4 col-sm-6 mb-6"
+                    variants={itemVariants}
+                  >
+                    <motion.div
                       className="testimonial-card h-100 p-4 p-lg-5 rounded-4 bg-white shadow-sm"
                       whileHover="hover"
                       variants={cardHover}
                     >
-                      <span className="badge bg-success bg-opacity-10 text-success mb-2">{testimonial.program}</span>
+                      <span className="badge bg-success bg-opacity-10 text-success mb-2">
+                        {testimonial.program}
+                      </span>
                       <div className="d-flex mb-3">
                         {[...Array(testimonial.rating)].map((_, i) => (
-                          <i key={i} className="bi bi-star-fill text-warning me-1"></i>
+                          <i
+                            key={i}
+                            className="bi bi-star-fill text-warning me-1"
+                          ></i>
                         ))}
                       </div>
-                      <p className="lead fst-italic mb-4" style={{ fontFamily: "'Dancing Script', cursive", fontSize: '1.25rem' }}>
+                      <p
+                        className="lead fst-italic mb-4"
+                        style={{
+                          fontFamily: "'Dancing Script', cursive",
+                          fontSize: "1.25rem",
+                        }}
+                      >
                         "{testimonial.quote}"
                       </p>
                       <div className="d-flex align-items-center">
                         <div>
-                          <h4 className="h6 fw-bold mb-0" style={{ fontFamily: "'Dancing Script', cursive", fontSize: '1.1rem' }}>
+                          <h4
+                            className="h6 fw-bold mb-0"
+                            style={{
+                              fontFamily: "'Dancing Script', cursive",
+                              fontSize: "1.1rem",
+                            }}
+                          >
                             {testimonial.name}
                           </h4>
-                          <small className="text-muted">{testimonial.role}</small>
+                          <small className="text-muted">
+                            {testimonial.role}
+                          </small>
                         </div>
                       </div>
                     </motion.div>
@@ -812,51 +950,82 @@ const [showTerms, setShowTerms] = useState(false);
               </div>
 
               {/* Page 3 - Visible based on state */}
-              <div className="row" style={{ display: currentTestimonialPage === 3 ? 'flex' : 'none' }}>
+              <div
+                className="row"
+                style={{
+                  display: currentTestimonialPage === 3 ? "flex" : "none",
+                }}
+              >
                 {[
                   {
-                    quote: "Level 1's daily exercises helped me stay centered during my job search. The emotional awareness techniques were invaluable.",
+                    quote:
+                      "Level 1's daily exercises helped me stay centered during my job search. The emotional awareness techniques were invaluable.",
                     name: "Arjun V.",
                     role: "Career Transition",
                     rating: 5,
-                    program: "Level 1 Workshop"
+                    program: "Level 1 Workshop",
                   },
                   {
-                    quote: "After Level 2, I set healthy boundaries with my family for the first time. The follow-up support ensured lasting change.",
+                    quote:
+                      "After Level 2, I set healthy boundaries with my family for the first time. The follow-up support ensured lasting change.",
                     name: "Divya R.",
                     role: "Graphic Designer",
                     rating: 5,
-                    program: "Level 2 Program"
+                    program: "Level 2 Program",
                   },
                   {
-                    quote: "Level 3 helped my sister and I heal childhood wounds. The dyadic exercises brought us closer than ever.",
+                    quote:
+                      "Level 3 helped my sister and I heal childhood wounds. The dyadic exercises brought us closer than ever.",
                     name: "Aisha & Zoya",
                     role: "Sisters",
                     rating: 5,
-                    program: "Level 3 Program"
-                  }
+                    program: "Level 3 Program",
+                  },
                 ].map((testimonial, index) => (
-                  <motion.div key={index} className="col-md-4 col-sm-6" variants={itemVariants}>
-                    <motion.div 
+                  <motion.div
+                    key={index}
+                    className="col-md-4 col-sm-6"
+                    variants={itemVariants}
+                  >
+                    <motion.div
                       className="testimonial-card h-100 p-4 p-lg-5 rounded-4 bg-white shadow-sm"
                       whileHover="hover"
                       variants={cardHover}
                     >
-                      <span className="badge bg-success bg-opacity-10 text-success mb-2">{testimonial.program}</span>
+                      <span className="badge bg-success bg-opacity-10 text-success mb-2">
+                        {testimonial.program}
+                      </span>
                       <div className="d-flex mb-3">
                         {[...Array(testimonial.rating)].map((_, i) => (
-                          <i key={i} className="bi bi-star-fill text-warning me-1"></i>
+                          <i
+                            key={i}
+                            className="bi bi-star-fill text-warning me-1"
+                          ></i>
                         ))}
                       </div>
-                      <p className="lead fst-italic mb-4" style={{ fontFamily: "'Dancing Script', cursive", fontSize: '1.25rem' }}>
+                      <p
+                        className="lead fst-italic mb-4"
+                        style={{
+                          fontFamily: "'Dancing Script', cursive",
+                          fontSize: "1.25rem",
+                        }}
+                      >
                         "{testimonial.quote}"
                       </p>
                       <div className="d-flex align-items-center">
                         <div>
-                          <h4 className="h6 fw-bold mb-0" style={{ fontFamily: "'Dancing Script', cursive", fontSize: '1.1rem' }}>
+                          <h4
+                            className="h6 fw-bold mb-0"
+                            style={{
+                              fontFamily: "'Dancing Script', cursive",
+                              fontSize: "1.1rem",
+                            }}
+                          >
                             {testimonial.name}
                           </h4>
-                          <small className="text-muted">{testimonial.role}</small>
+                          <small className="text-muted">
+                            {testimonial.role}
+                          </small>
                         </div>
                       </div>
                     </motion.div>
@@ -868,25 +1037,49 @@ const [showTerms, setShowTerms] = useState(false);
             {/* Pagination */}
             <nav aria-label="Testimonial pagination" className="mt-5">
               <ul className="pagination justify-content-center">
-                <li className={`page-item ${currentTestimonialPage === 1 ? 'active' : ''}`}>
-                  <button 
-                    className={`page-link ${currentTestimonialPage === 1 ? 'bg-success border-success text-white' : 'text-success'}`}
+                <li
+                  className={`page-item ${
+                    currentTestimonialPage === 1 ? "active" : ""
+                  }`}
+                >
+                  <button
+                    className={`page-link ${
+                      currentTestimonialPage === 1
+                        ? "bg-success border-success text-white"
+                        : "text-success"
+                    }`}
                     onClick={() => handleTestimonialPageChange(1)}
                   >
                     1
                   </button>
                 </li>
-                <li className={`page-item ${currentTestimonialPage === 2 ? 'active' : ''}`}>
-                  <button 
-                    className={`page-link ${currentTestimonialPage === 2 ? 'bg-success border-success text-white' : 'text-success'}`}
+                <li
+                  className={`page-item ${
+                    currentTestimonialPage === 2 ? "active" : ""
+                  }`}
+                >
+                  <button
+                    className={`page-link ${
+                      currentTestimonialPage === 2
+                        ? "bg-success border-success text-white"
+                        : "text-success"
+                    }`}
                     onClick={() => handleTestimonialPageChange(2)}
                   >
                     2
                   </button>
                 </li>
-                <li className={`page-item ${currentTestimonialPage === 3 ? 'active' : ''}`}>
-                  <button 
-                    className={`page-link ${currentTestimonialPage === 3 ? 'bg-success border-success text-white' : 'text-success'}`}
+                <li
+                  className={`page-item ${
+                    currentTestimonialPage === 3 ? "active" : ""
+                  }`}
+                >
+                  <button
+                    className={`page-link ${
+                      currentTestimonialPage === 3
+                        ? "bg-success border-success text-white"
+                        : "text-success"
+                    }`}
                     onClick={() => handleTestimonialPageChange(3)}
                   >
                     3
@@ -898,8 +1091,11 @@ const [showTerms, setShowTerms] = useState(false);
         </div>
       </section>
 
-            {/* Final CTA Section */}
-            <section className="final-cta py-5 py-lg-7 text-center  bg-opacity-5" style={{backgroundColor: "#f0fdf4"}}>
+      {/* Final CTA Section */}
+      <section
+        className="final-cta py-5 py-lg-7 text-center  bg-opacity-5"
+        style={{ backgroundColor: "#f0fdf4" }}
+      >
         <div className="container px-4">
           <motion.div
             initial="hidden"
@@ -907,27 +1103,45 @@ const [showTerms, setShowTerms] = useState(false);
             viewport={{ once: true, margin: "-100px" }}
             variants={containerVariants}
           >
-            <motion.h2 className="display-3 fw-bold mb-3" variants={itemVariants}>
+            <motion.h2
+              className="display-3 fw-bold mb-3"
+              variants={itemVariants}
+            >
               Ready to Transform Your Emotional Wellbeing?
             </motion.h2>
-            <motion.p className="lead mb-4 mx-auto" style={{maxWidth: "600px"}} variants={itemVariants}>
-              Begin your journey to emotional balance and personal growth with a{' '}
-              <span className="text-decoration-underline fw-bold">free, no-obligation</span>{' '}
+            <motion.p
+              className="lead mb-4 mx-auto"
+              style={{ maxWidth: "600px" }}
+              variants={itemVariants}
+            >
+              Begin your journey to emotional balance and personal growth with a{" "}
+              <span className="text-decoration-underline fw-bold">
+                free, no-obligation
+              </span>{" "}
               first session.
             </motion.p>
-            <motion.div className="d-flex justify-content-center gap-3 flex-wrap" variants={itemVariants}>
-              <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                <a 
+            <motion.div
+              className="d-flex justify-content-center gap-3 flex-wrap"
+              variants={itemVariants}
+            >
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <a
                   href="https://forms.gle/YbcSchKPpTkaxu1ZA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-success btn-lg px-4 py-3 fw-medium"
                 >
-                  Book My Free First Session <i className="bi bi-arrow-right ms-2"></i>
+                  Book My Free First Session{" "}
+                  <i className="bi bi-arrow-right ms-2"></i>
                 </a>
               </motion.div>
-              <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              ></motion.div>
             </motion.div>
             <motion.p className="small mt-3 text-muted" variants={itemVariants}>
               No credit card required • 100% confidential
@@ -943,70 +1157,78 @@ const [showTerms, setShowTerms] = useState(false);
             <div className="col-lg-4">
               <h3 className="h4 fw-bold text-success mb-3">EmotionEase</h3>
               <p className="small">
-                Empowering emotional wellness through personalized care and community support.
+                Empowering emotional wellness through personalized care and
+                community support.
               </p>
 
               <div className="social-links mt-4">
-  {[
-    // { name: 'facebook', url: 'https://www.facebook.com/emotionease' },
-    // { name: 'twitter-x', url: 'https://x.com/emotionease' },
-    { name: 'instagram', url: 'https://www.instagram.com/emotionease' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/company/emotionease/' },
-    // { name: 'youtube', url: 'https://www.youtube.com/@emotionease' }
-  ].map((social, index) => (
-    <motion.a 
-      key={index} 
-      href={social.url} 
-      className="text-white me-3"
-      whileHover={{ y: -3, color: '#28a745' }}
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
-      <i className={`bi bi-${social.name} fs-5`}></i>
-    </motion.a>
-  ))}
-</div>
-
-
-
+                {[
+                  // { name: 'facebook', url: 'https://www.facebook.com/emotionease' },
+                  // { name: 'twitter-x', url: 'https://x.com/emotionease' },
+                  {
+                    name: "instagram",
+                    url: "https://www.instagram.com/emotionease",
+                  },
+                  {
+                    name: "linkedin",
+                    url: "https://www.linkedin.com/company/emotionease/",
+                  },
+                  // { name: 'youtube', url: 'https://www.youtube.com/@emotionease' }
+                ].map((social, index) => (
+                  <motion.a
+                    key={index}
+                    href={social.url}
+                    className="text-white me-3"
+                    whileHover={{ y: -3, color: "#28a745" }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className={`bi bi-${social.name} fs-5`}></i>
+                  </motion.a>
+                ))}
+              </div>
             </div>
-            
+
             <div className="col-lg-2 col-md-4">
               <h4 className="h5 fw-bold mb-3">Quick Links</h4>
               <ul className="list-unstyled">
-                {['Home', 'About', 'Programs', 'Contact'].map((link, index) => (
-                  <motion.li 
-                    key={index} 
-                    className="mb-2"
-                    whileHover={{ x: 5 }}
-                  >
-                    <Link 
-                      to={`/${link.toLowerCase()}`} 
+                {["Home", "About", "Programs", "Contact"].map((link, index) => (
+                  <motion.li key={index} className="mb-2" whileHover={{ x: 5 }}>
+                    <HashLink
+                      to={`/${link.toLowerCase()}#top`}
                       className="text-white text-decoration-none"
+                      scroll={(el) => {
+                        // Smooth scroll to top
+                        el.scrollIntoView({ behavior: "smooth" });
+                        // Scroll a bit more to account for fixed headers if needed
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
                     >
                       {link}
-                    </Link>
+                    </HashLink>
                   </motion.li>
                 ))}
               </ul>
             </div>
-            
+
             <div className="col-lg-3 col-md-4">
               <h4 className="h5 fw-bold mb-3">Programs</h4>
               <ul className="list-unstyled">
                 {[
-                  { name: "Foundation Workshop", link: "#foundation" },
-                  { name: "Personal Transformation", link: "#transformation" },
-                  { name: "Relationship Mastery", link: "#relationship" }
+                  { name: "Foundation Workshop" },
+                  { name: "Personal Transformation" },
+                  { name: "Relationship Mastery" },
                 ].map((program, index) => (
-                  <motion.li 
-                    key={index} 
-                    className="mb-2"
-                    whileHover={{ x: 5 }}
-                  >
-                    <Link 
-                      to={`/programs${program.link}`} 
+                  <motion.li key={index} className="mb-2" whileHover={{ x: 5 }}>
+                    <Link
+                      to="/programs"
                       className="text-white text-decoration-none"
+                      onClick={() => {
+                        // Scroll to top after navigation completes
+                        setTimeout(() => {
+                          window.scrollTo({ top: 0, behavior: "smooth" });
+                        }, 0);
+                      }}
                     >
                       {program.name}
                     </Link>
@@ -1014,25 +1236,25 @@ const [showTerms, setShowTerms] = useState(false);
                 ))}
               </ul>
             </div>
-            
+
             <div className="col-lg-3 col-md-4">
               <h4 className="h5 fw-bold mb-3">Contact</h4>
               <ul className="list-unstyled small">
-                <motion.li 
+                <motion.li
                   className="mb-2 d-flex align-items-center"
                   whileHover={{ x: 5 }}
                 >
                   <i className="bi bi-geo-alt-fill text-success me-2"></i>
                   <span>Chennai</span>
                 </motion.li>
-                <motion.li 
+                <motion.li
                   className="mb-2 d-flex align-items-center"
                   whileHover={{ x: 5 }}
                 >
                   <i className="bi bi-telephone-fill text-success me-2"></i>
                   <span>+91-9345330187</span>
                 </motion.li>
-                <motion.li 
+                <motion.li
                   className="d-flex align-items-center"
                   whileHover={{ x: 5 }}
                 >
@@ -1042,15 +1264,14 @@ const [showTerms, setShowTerms] = useState(false);
               </ul>
             </div>
           </div>
-          
+
           <div className="footer-bottom mt-5 pt-4 border-top border-secondary text-center">
-            <p className="small mb-0" >
+            <p className="small mb-0">
               © {new Date().getFullYear()} EmotionEase. All Rights Reserved
             </p>
           </div>
         </div>
       </footer>
-      
     </div>
   );
 };
