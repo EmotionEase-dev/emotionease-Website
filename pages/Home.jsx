@@ -731,279 +731,343 @@ const Home = () => {
               </p>
             </motion.div>
 
-            <motion.div 
-  whileHover={{ scale: 1.02 }} 
-  whileTap={{ scale: 0.98 }}
-  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
->
-  <Link
-    to="/programs"
-    className="btn btn-success btn-lg px-5 py-3 fw-medium"
-  >
-    Explore All Program Details{" "}
-    <i className="bi bi-arrow-right ms-2"></i>
-  </Link>
-</motion.div>
-
-
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              <Link
+                to="/programs"
+                className="btn btn-success btn-lg px-5 py-3 fw-medium"
+              >
+                Explore All Program Details{" "}
+                <i className="bi bi-arrow-right ms-2"></i>
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* Review Section */}
-<section id="review-section" className="review-section py-5 py-lg-7 bg-light">
-  <div className="container">
-    {/* Section Header */}
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-100px" }}
-      variants={containerVariants}
-      className="text-center mb-5 mb-lg-7"
-    >
-      <motion.h2 className="display-4 fw-bold mb-3" variants={itemVariants}>
-        What Our <span className="text-gradient-success">Clients Say</span>
-      </motion.h2>
-      <motion.p 
-        className="lead text-muted mx-auto" 
-        style={{ maxWidth: "700px" }}
-        variants={itemVariants}
+      <section
+        id="review-section"
+        className="review-section py-5 py-lg-7 bg-light"
       >
-        Real stories from people who transformed their emotional wellbeing
-      </motion.p>
-    </motion.div>
+        <div className="container">
+          {/* Section Header */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={containerVariants}
+            className="text-center mb-5 mb-lg-7"
+          >
+            <motion.h2
+              className="display-4 fw-bold mb-3"
+              variants={itemVariants}
+            >
+              What Our{" "}
+              <span className="text-gradient-success">Clients Say</span>
+            </motion.h2>
+            <motion.p
+              className="lead text-muted mx-auto"
+              style={{ maxWidth: "700px" }}
+              variants={itemVariants}
+            >
+              Real stories from people who transformed their emotional wellbeing
+            </motion.p>
+          </motion.div>
 
-    {/* Add Review Button */}
-    <div className="text-center mb-5">
-      <a
-        href="https://forms.gle/tRgauc3KoAPxG3wn6"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn btn-outline-success btn-lg px-4"
-      >
-        <i className="bi bi-plus-circle me-2"></i> Add Your Review
-      </a>
-    </div>
-
-    {/* Testimonials Carousel */}
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-100px" }}
-      variants={containerVariants}
-    >
-      {/* Carousel */}
-      <div id="testimonialCarousel" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-inner">
-          {/* Page 1 */}
-          <div className={`carousel-item ${currentTestimonialPage === 1 ? 'active' : ''}`}>
-            <div className="row g-4">
-              {[
-                {
-                  quote: "The Level 1 workshop transformed how I handle work stress. The mindset techniques helped me stay calm during high-pressure situations.",
-                  name: "Rahul K.",
-                  role: "Startup Founder",
-                  rating: 5,
-                  program: "Level 1 Workshop"
-                },
-                {
-                  quote: "After Level 2, I finally processed childhood trauma that was affecting my relationships. The personalized approach made me feel truly heard.",
-                  name: "Ananya P.",
-                  role: "Marketing Executive",
-                  rating: 5,
-                  program: "Level 2 Program"
-                },
-                {
-                  quote: "The Level 3 program saved our marriage. We learned communication tools that helped us resolve conflicts with compassion.",
-                  name: "Vikram & Meera",
-                  role: "Married Couple",
-                  rating: 5,
-                  program: "Level 3 Program"
-                }
-              ].map((testimonial, index) => (
-                <motion.div 
-                  key={index} 
-                  className="col-md-4"
-                  variants={itemVariants}
-                >
-                  <motion.div 
-                    className="card h-100 border-0 shadow-sm"
-                    whileHover={{ y: -5 }}
-                  >
-                    <div className="card-body p-4">
-                      <span className="badge bg-success bg-opacity-10 text-light mb-3">
-                        {testimonial.program}
-                      </span>
-                      <div className="mb-3">
-                        {[...Array(testimonial.rating)].map((_, i) => (
-                          <i key={i} className="bi bi-star-fill text-warning me-1"></i>
-                        ))}
-                      </div>
-                      <blockquote className="blockquote mb-4">
-                        <p className="font-italic">"{testimonial.quote}"</p>
-                      </blockquote>
-                      <div className="d-flex align-items-center">
-                        <div>
-                          <h5 className="mb-1">{testimonial.name}</h5>
-                          <small className="text-muted">{testimonial.role}</small>
-                        </div>
-                      </div>
-                    </div>
-                  </motion.div>
-                </motion.div>
-              ))}
-            </div>
+          {/* Add Review Button */}
+          <div className="text-center mb-5">
+            <a
+              href="https://forms.gle/tRgauc3KoAPxG3wn6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-success btn-lg px-4"
+            >
+              <i className="bi bi-plus-circle me-2"></i> Add Your Review
+            </a>
           </div>
 
-          {/* Page 2 */}
-          <div className={`carousel-item ${currentTestimonialPage === 2 ? 'active' : ''}`}>
-            <div className="row g-4">
-              {[
-                {
-                  quote: "As a student, Level 1 gave me tools to manage exam anxiety. The daily exercises were easy to implement between classes.",
-                  name: "Aditi S.",
-                  role: "College Student",
-                  rating: 5,
-                  program: "Level 1 Workshop"
-                },
-                {
-                  quote: "Level 2 helped me rebuild self-worth after a toxic relationship. The trauma-informed techniques were life-changing.",
-                  name: "Karan M.",
-                  role: "Financial Analyst",
-                  rating: 5,
-                  program: "Level 2 Program"
-                },
-                {
-                  quote: "Our business partnership improved dramatically after Level 3. We now handle disagreements productively.",
-                  name: "Neha & Raj",
-                  role: "Co-founders",
-                  rating: 5,
-                  program: "Level 3 Program"
-                }
-              ].map((testimonial, index) => (
-                <motion.div 
-                  key={index} 
-                  className="col-md-4"
-                  variants={itemVariants}
+          {/* Testimonials Carousel */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={containerVariants}
+          >
+            {/* Carousel */}
+            <div
+              id="testimonialCarousel"
+              className="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div className="carousel-inner">
+                {/* Page 1 */}
+                <div
+                  className={`carousel-item ${
+                    currentTestimonialPage === 1 ? "active" : ""
+                  }`}
                 >
-                  <motion.div 
-                    className="card h-100 border-0 shadow-sm"
-                    whileHover={{ y: -5 }}
-                  >
-                    <div className="card-body p-4">
-                      <span className="badge bg-success bg-opacity-10 text-text mb-3">
-                        {testimonial.program}
-                      </span>
-                      <div className="mb-3">
-                        {[...Array(testimonial.rating)].map((_, i) => (
-                          <i key={i} className="bi bi-star-fill text-warning me-1"></i>
-                        ))}
-                      </div>
-                      <blockquote className="blockquote mb-4">
-                        <p className="font-italic">"{testimonial.quote}"</p>
-                      </blockquote>
-                      <div className="d-flex align-items-center">
-                        <div>
-                          <h5 className="mb-1">{testimonial.name}</h5>
-                          <small className="text-muted">{testimonial.role}</small>
-                        </div>
-                      </div>
-                    </div>
-                  </motion.div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
+                  <div className="row g-4">
+                    {[
+                      {
+                        quote:
+                          "The Level 1 workshop transformed how I handle work stress. The mindset techniques helped me stay calm during high-pressure situations.",
+                        name: "Rahul K.",
+                        role: "Startup Founder",
+                        rating: 5,
+                        program: "Level 1 Workshop",
+                      },
+                      {
+                        quote:
+                          "After Level 2, I finally processed childhood trauma that was affecting my relationships. The personalized approach made me feel truly heard.",
+                        name: "Ananya P.",
+                        role: "Marketing Executive",
+                        rating: 5,
+                        program: "Level 2 Program",
+                      },
+                      {
+                        quote:
+                          "The Level 3 program saved our marriage. We learned communication tools that helped us resolve conflicts with compassion.",
+                        name: "Vikram & Meera",
+                        role: "Married Couple",
+                        rating: 5,
+                        program: "Level 3 Program",
+                      },
+                    ].map((testimonial, index) => (
+                      <motion.div
+                        key={index}
+                        className="col-md-4"
+                        variants={itemVariants}
+                      >
+                        <motion.div
+                          className="card h-100 border-0 shadow-sm"
+                          whileHover={{ y: -5 }}
+                        >
+                          <div className="card-body p-4">
+                            <span className="badge bg-success bg-opacity-10 text-light mb-3">
+                              {testimonial.program}
+                            </span>
+                            <div className="mb-3">
+                              {[...Array(testimonial.rating)].map((_, i) => (
+                                <i
+                                  key={i}
+                                  className="bi bi-star-fill text-warning me-1"
+                                ></i>
+                              ))}
+                            </div>
+                            <blockquote className="blockquote mb-4">
+                              <p className="font-italic">
+                                "{testimonial.quote}"
+                              </p>
+                            </blockquote>
+                            <div className="d-flex align-items-center">
+                              <div>
+                                <h5 className="mb-1">{testimonial.name}</h5>
+                                <small className="text-muted">
+                                  {testimonial.role}
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </motion.div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
 
-          {/* Page 3 */}
-          <div className={`carousel-item ${currentTestimonialPage === 3 ? 'active' : ''}`}>
-            <div className="row g-4">
-              {[
-                {
-                  quote: "Level 1's daily exercises helped me stay centered during my job search. The emotional awareness techniques were invaluable.",
-                  name: "Arjun V.",
-                  role: "Career Transition",
-                  rating: 5,
-                  program: "Level 1 Workshop"
-                },
-                {
-                  quote: "After Level 2, I set healthy boundaries with my family for the first time. The follow-up support ensured lasting change.",
-                  name: "Divya R.",
-                  role: "Graphic Designer",
-                  rating: 5,
-                  program: "Level 2 Program"
-                },
-                {
-                  quote: "Level 3 helped my sister and I heal childhood wounds. The dyadic exercises brought us closer than ever.",
-                  name: "Aisha & Zoya",
-                  role: "Sisters",
-                  rating: 5,
-                  program: "Level 3 Program"
-                }
-              ].map((testimonial, index) => (
-                <motion.div 
-                  key={index} 
-                  className="col-md-4"
-                  variants={itemVariants}
+                {/* Page 2 */}
+                <div
+                  className={`carousel-item ${
+                    currentTestimonialPage === 2 ? "active" : ""
+                  }`}
                 >
-                  <motion.div 
-                    className="card h-100 border-0 shadow-sm"
-                    whileHover={{ y: -5 }}
-                  >
-                    <div className="card-body p-4">
-                      <span className="badge bg-success bg-opacity-10 text-light mb-3">
-                        {testimonial.program}
-                      </span>
-                      <div className="mb-3">
-                        {[...Array(testimonial.rating)].map((_, i) => (
-                          <i key={i} className="bi bi-star-fill text-warning me-1"></i>
-                        ))}
-                      </div>
-                      <blockquote className="blockquote mb-4">
-                        <p className="font-italic">"{testimonial.quote}"</p>
-                      </blockquote>
-                      <div className="d-flex align-items-center">
-                        <div>
-                          <h5 className="mb-1">{testimonial.name}</h5>
-                          <small className="text-muted">{testimonial.role}</small>
-                        </div>
-                      </div>
-                    </div>
-                  </motion.div>
-                </motion.div>
-              ))}
+                  <div className="row g-4">
+                    {[
+                      {
+                        quote:
+                          "As a student, Level 1 gave me tools to manage exam anxiety. The daily exercises were easy to implement between classes.",
+                        name: "Aditi S.",
+                        role: "College Student",
+                        rating: 5,
+                        program: "Level 1 Workshop",
+                      },
+                      {
+                        quote:
+                          "Level 2 helped me rebuild self-worth after a toxic relationship. The trauma-informed techniques were life-changing.",
+                        name: "Karan M.",
+                        role: "Financial Analyst",
+                        rating: 5,
+                        program: "Level 2 Program",
+                      },
+                      {
+                        quote:
+                          "Our business partnership improved dramatically after Level 3. We now handle disagreements productively.",
+                        name: "Neha & Raj",
+                        role: "Co-founders",
+                        rating: 5,
+                        program: "Level 3 Program",
+                      },
+                    ].map((testimonial, index) => (
+                      <motion.div
+                        key={index}
+                        className="col-md-4"
+                        variants={itemVariants}
+                      >
+                        <motion.div
+                          className="card h-100 border-0 shadow-sm"
+                          whileHover={{ y: -5 }}
+                        >
+                          <div className="card-body p-4">
+                            <span className="badge bg-success bg-opacity-10 text-text mb-3">
+                              {testimonial.program}
+                            </span>
+                            <div className="mb-3">
+                              {[...Array(testimonial.rating)].map((_, i) => (
+                                <i
+                                  key={i}
+                                  className="bi bi-star-fill text-warning me-1"
+                                ></i>
+                              ))}
+                            </div>
+                            <blockquote className="blockquote mb-4">
+                              <p className="font-italic">
+                                "{testimonial.quote}"
+                              </p>
+                            </blockquote>
+                            <div className="d-flex align-items-center">
+                              <div>
+                                <h5 className="mb-1">{testimonial.name}</h5>
+                                <small className="text-muted">
+                                  {testimonial.role}
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </motion.div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Page 3 */}
+                <div
+                  className={`carousel-item ${
+                    currentTestimonialPage === 3 ? "active" : ""
+                  }`}
+                >
+                  <div className="row g-4">
+                    {[
+                      {
+                        quote:
+                          "Level 1's daily exercises helped me stay centered during my job search. The emotional awareness techniques were invaluable.",
+                        name: "Arjun V.",
+                        role: "Career Transition",
+                        rating: 5,
+                        program: "Level 1 Workshop",
+                      },
+                      {
+                        quote:
+                          "After Level 2, I set healthy boundaries with my family for the first time. The follow-up support ensured lasting change.",
+                        name: "Divya R.",
+                        role: "Graphic Designer",
+                        rating: 5,
+                        program: "Level 2 Program",
+                      },
+                      {
+                        quote:
+                          "Level 3 helped my sister and I heal childhood wounds. The dyadic exercises brought us closer than ever.",
+                        name: "Aisha & Zoya",
+                        role: "Sisters",
+                        rating: 5,
+                        program: "Level 3 Program",
+                      },
+                    ].map((testimonial, index) => (
+                      <motion.div
+                        key={index}
+                        className="col-md-4"
+                        variants={itemVariants}
+                      >
+                        <motion.div
+                          className="card h-100 border-0 shadow-sm"
+                          whileHover={{ y: -5 }}
+                        >
+                          <div className="card-body p-4">
+                            <span className="badge bg-success bg-opacity-10 text-light mb-3">
+                              {testimonial.program}
+                            </span>
+                            <div className="mb-3">
+                              {[...Array(testimonial.rating)].map((_, i) => (
+                                <i
+                                  key={i}
+                                  className="bi bi-star-fill text-warning me-1"
+                                ></i>
+                              ))}
+                            </div>
+                            <blockquote className="blockquote mb-4">
+                              <p className="font-italic">
+                                "{testimonial.quote}"
+                              </p>
+                            </blockquote>
+                            <div className="d-flex align-items-center">
+                              <div>
+                                <h5 className="mb-1">{testimonial.name}</h5>
+                                <small className="text-muted">
+                                  {testimonial.role}
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </motion.div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Carousel Controls */}
+
+              <div className="d-flex justify-content-center mt-4">
+                <button
+                  className={`btn btn-sm mx-1 ${
+                    currentTestimonialPage === 1
+                      ? "btn-success"
+                      : "btn-outline-success"
+                  }`}
+                  onClick={() => handleTestimonialPageChange(1)}
+                  disabled={currentTestimonialPage === 1}
+                >
+                  1
+                </button>
+                <button
+                  className={`btn btn-sm mx-1 ${
+                    currentTestimonialPage === 2
+                      ? "btn-success"
+                      : "btn-outline-success"
+                  }`}
+                  onClick={() => handleTestimonialPageChange(2)}
+                  disabled={currentTestimonialPage === 2}
+                >
+                  2
+                </button>
+                <button
+                  className={`btn btn-sm mx-1 ${
+                    currentTestimonialPage === 3
+                      ? "btn-success"
+                      : "btn-outline-success"
+                  }`}
+                  onClick={() => handleTestimonialPageChange(3)}
+                  disabled={currentTestimonialPage === 3}
+                >
+                  3
+                </button>
+              </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-
-        {/* Carousel Controls */}
-        <div className="d-flex justify-content-center mt-4">
-          <button 
-            className="btn btn-sm btn-success mx-1" 
-            onClick={() => handleTestimonialPageChange(1)}
-            disabled={currentTestimonialPage === 1}
-          >
-            1
-          </button>
-          <button 
-            className="btn btn-sm btn-outline-success mx-1" 
-            onClick={() => handleTestimonialPageChange(2)}
-            disabled={currentTestimonialPage === 2}
-          >
-            2
-          </button>
-          <button 
-            className="btn btn-sm btn-outline-success mx-1" 
-            onClick={() => handleTestimonialPageChange(3)}
-            disabled={currentTestimonialPage === 3}
-          >
-            3
-          </button>
-        </div>
-      </div>
-    </motion.div>
-  </div>
-</section>
+      </section>
 
       {/* Final CTA Section */}
       <section
@@ -1104,35 +1168,35 @@ const Home = () => {
             </div>
 
             <div className="col-lg-2 col-md-4">
-  <h4 className="h5 fw-bold mb-3">Quick Links</h4>
-  <ul className="list-unstyled">
-    {["Home", "About", "Programs", "Contact"].map((link, index) => (
-      <motion.li key={index} className="mb-2" whileHover={{ x: 5 }}>
-        <HashLink
-          to={`/${link.toLowerCase()}#top`}
-          className="text-white text-decoration-none"
-          scroll={(el) => {
-            el.scrollIntoView({ behavior: "smooth" });
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-        >
-          {link}
-        </HashLink>
-      </motion.li>
-    ))}
-    {/* Separate Feedback link that opens Google Form */}
-    <motion.li className="mb-2" whileHover={{ x: 5 }}>
-      <a 
-        href="https://forms.gle/tRgauc3KoAPxG3wn6" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="text-white text-decoration-none"
-      >
-        Feedback
-      </a>
-    </motion.li>
-  </ul>
-</div>
+              <h4 className="h5 fw-bold mb-3">Quick Links</h4>
+              <ul className="list-unstyled">
+                {["Home", "About", "Programs", "Contact"].map((link, index) => (
+                  <motion.li key={index} className="mb-2" whileHover={{ x: 5 }}>
+                    <HashLink
+                      to={`/${link.toLowerCase()}#top`}
+                      className="text-white text-decoration-none"
+                      scroll={(el) => {
+                        el.scrollIntoView({ behavior: "smooth" });
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
+                      {link}
+                    </HashLink>
+                  </motion.li>
+                ))}
+                {/* Separate Feedback link that opens Google Form */}
+                <motion.li className="mb-2" whileHover={{ x: 5 }}>
+                  <a
+                    href="https://forms.gle/tRgauc3KoAPxG3wn6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white text-decoration-none"
+                  >
+                    Feedback
+                  </a>
+                </motion.li>
+              </ul>
+            </div>
 
             <div className="col-lg-3 col-md-4">
               <h4 className="h5 fw-bold mb-3">Programs</h4>
