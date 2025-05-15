@@ -52,12 +52,13 @@ const TermsAndConditions = ({ onClose }) => {
         <section className="mb-3 p-1">
           <h5 className="fw-bold">5. Booking, Cancellations, and Refunds</h5>
           <ul className="small mb-2">
-            <li className="mb-1">You can schedule sessions through our booking page.</li>
-            <li className="mb-1">Please cancel or reschedule at least 24 hours in advance.</li>
-            <li className="mb-1">If you are not satisfied with a paid session and choose to end it before halfway through, you are eligible for a 50% money-back refund.</li>
-            <li className="mb-1">Refunds will not be provided after more than half of the session is completed.</li>
+            <li className="mb-1"style={{fontWeight:'bold'}}>You can schedule sessions through our booking page.</li>
+            <li className="mb-1"style={{fontWeight:'bold'}}>Please cancel or reschedule at least 24 hours in advance.</li>
+            <li className="mb-1"style={{fontWeight:'bold'}}>If you are not satisfied with a paid session and choose to end it before halfway through, you are eligible for a 50% money-back refund.</li>
+            <li className="mb-1"style={{fontWeight:'bold'}} >Refunds will not be provided after more than half of the session is completed.</li>
             <li className="mb-1" style={{fontWeight:'bold'}}>Free sessions do not require any bank account or payment details.</li>
-            <li className="mb-1">Refunds will be processed within 1-5 business days.</li>
+            <li className="mb-1"style={{fontWeight:'bold'}}>If you booked a free session and did not attend, you will not be eligible to book another free session in the future</li>
+            <li className="mb-1"style={{fontWeight:'bold'}}>Refunds will be processed within 1-5 business days.</li>
 
           </ul>
         </section>

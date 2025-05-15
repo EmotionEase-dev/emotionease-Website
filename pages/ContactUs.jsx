@@ -10,6 +10,7 @@ const ContactUs = () => {
     name: '',
     email: '',
     phone: '',
+    age: '',
     category: '',
     message: ''
   });
@@ -55,6 +56,11 @@ const ContactUs = () => {
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Email is invalid';
     }
+    if (!formData.age) {
+      newErrors.age = 'Age is required';
+    } else if (formData.age < 25 || formData.age > 50) {
+      newErrors.age = 'Age must be between 25-50';
+    }
     if (!formData.category) newErrors.category = 'Category is required';
     if (!formData.message.trim()) newErrors.message = 'Message is required';
 
@@ -78,6 +84,7 @@ const ContactUs = () => {
         name: '',
         email: '',
         phone: '',
+        age: '',
         category: '',
         message: ''
       });
@@ -148,11 +155,11 @@ const ContactUs = () => {
                   <div className={`icon-wrapper ${isHovering === 'phone' ? 'pulse' : ''}`}>
                     <i className="bi bi-telephone-fill fs-4 fs-md-3"></i>
                   </div>
-                  <h3 className="h5 mb-0 ms-2 ms-md-3">Phone</h3>
+                  <h3 className="h5 mb-0 ms-2 ms-md-3">Phone / Whatsapp</h3>
                 </div>
                 <div className="ps-4 ps-md-5">
                   <a href="tel:+919876543210" className="d-block text-decoration-none mb-1 mb-md-2 transition-all small-text">
-                    <i className="bi bi-phone me-2"></i> +91 98765 43210
+                    <i className="bi bi-phone me-2"></i> +91 93453 30187
                   </a>
                   <a href="tel:+911234567890" className="d-block text-decoration-none transition-all small-text">
                     <i className="bi bi-phone me-2"></i> +91 96771 98550
@@ -247,20 +254,44 @@ const ContactUs = () => {
                 </div>
               </div>
 
-              <div className="mb-4">
-                <label className="form-label fw-medium">Phone Number</label>
-                <div className="input-group">
-                  <span className="input-group-text">
-                    <i className="bi bi-phone"></i>
-                  </span>
-                  <PhoneInput
-                    international
-                    defaultCountry="IN"
-                    value={formData.phone}
-                    onChange={handlePhoneChange}
-                    placeholder="Enter phone number"
-                    className={`phone-input flex-grow-1 ${errors.phone ? 'is-invalid' : ''}`}
-                  />
+              <div className="row">
+                <div className="col-md-6 mb-4">
+                  <label className="form-label fw-medium">Phone Number</label>
+                  <div className="input-group">
+                    <span className="input-group-text">
+                      <i className="bi bi-phone"></i>
+                    </span>
+                    <PhoneInput
+                      international
+                      defaultCountry="IN"
+                      value={formData.phone}
+                      onChange={handlePhoneChange}
+                      placeholder="Enter phone number"
+                      className={`phone-input flex-grow-1 ${errors.phone ? 'is-invalid' : ''}`}
+                    />
+                  </div>
+                </div>
+
+                <div className="col-md-6 mb-4">
+                  <label htmlFor="age" className="form-label fw-medium">Age*</label>
+                  <div className="input-group">
+                    <span className="input-group-text">
+                      <i className="bi bi-calendar"></i>
+                    </span>
+                    <input
+                      type="number"
+                      id="age"
+                      name="age"
+                      min="25"
+                      max="50"
+                      value={formData.age}
+                      onChange={handleChange}
+                      placeholder="Enter your age (25-50)"
+                      className={`form-control ${errors.age ? 'is-invalid' : ''}`}
+                    />
+                  </div>
+                  {errors.age && <div className="invalid-feedback">{errors.age}</div>}
+                  <small className="text-muted">Note: Age should be between 25-50 years</small>
                 </div>
               </div>
 

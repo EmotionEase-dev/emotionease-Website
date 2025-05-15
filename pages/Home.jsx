@@ -736,7 +736,7 @@ const [showTerms, setShowTerms] = useState(false);
                       whileHover="hover"
                       variants={cardHover}
                     >
-                      <span className="badge bg-success bg-opacity-10 text-success mb-2">{testimonial.program}</span>
+                      <span className="badge bg-success bg-opacity-10 text-light mb-2">{testimonial.program}</span>
                       <div className="d-flex mb-3">
                         {[...Array(testimonial.rating)].map((_, i) => (
                           <i key={i} className="bi bi-star-fill text-warning me-1"></i>

@@ -24,6 +24,7 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", href: "/home" }, 
     { name: "About Us", href: "/about" },
+    { name: "Blogs", href: "/blogs" },
     { 
       name: "Our Uniqueness", 
       dropdown: [
