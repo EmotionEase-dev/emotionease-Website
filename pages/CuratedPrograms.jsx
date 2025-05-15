@@ -107,10 +107,10 @@ const CuratedPrograms = () => {
     transition: { type: "spring", stiffness: 400 }
   };
 
-  const pulse = {
-    scale: [1, 1.05, 1],
-    transition: { duration: 2, repeat: Infinity }
-  };
+  // const pulse = {
+  //   scale: [1, 1.05, 1],
+  //   transition: { duration: 2, repeat: Infinity }
+  // };
 
   return (
     <div className="programs-page">
@@ -160,112 +160,122 @@ Book First Free Session
       </motion.section>
 
       {/* Program Tiers */}
-      <section className="program-tiers py-5 bg-light">
-        <div className="container">
+<section className="program-tiers py-5 bg-light">
+  <div className="container">
+    <motion.div 
+      className="text-center mb-5"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+    >
+      <h2 className="section-title">Progressive Learning Pathways</h2>
+      <p className="lead text-muted">
+        Our tiered approach ensures solid foundation before advancing to deeper work
+      </p>
+    </motion.div>
+    
+    <motion.div 
+      className="row g-4"
+      variants={container}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
+      {programs.map((program, index) => (
+        <motion.div 
+          key={index} 
+          className="col-lg-4"
+          variants={item}
+        >
           <motion.div 
-            className="text-center mb-5"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            className={`program-card h-100 ${program.popular ? 'popular-card' : ''}`}
+            data-ribbon={program.popular ? program.ribbonText : ''}
+            whileHover={cardHover}
+            whileTap={{ scale: 0.98 }}
           >
-            <h2 className="section-title">Progressive Learning Pathways</h2>
-            <p className="lead text-muted">
-              Our tiered approach ensures solid foundation before advancing to deeper work
-            </p>
-          </motion.div>
-          
-          <motion.div 
-            className="row g-4"
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-          >
-            {programs.map((program, index) => (
-              <motion.div 
-                key={index} 
-                className="col-lg-4"
-                variants={item}
-              >
-                <motion.div 
-                  className={` program-card h-100 ${program.popular ? 'popular-card' : ''}`}
-                  data-ribbon={program.popular ? program.ribbonText : ''}
-                  whileHover={cardHover}
-                  whileTap={{ scale: 0.98 }}
+            <div className="card-header">
+              {program.popular && (
+                <div className="popular-tag">
+                  <i className="bi bi-star-fill"></i>Most Popular
+                </div>
+              )}
+              <span className="program-level">{program.level}</span>
+              <h3 className="program-title">{program.title}</h3>
+              <div className="price-tag">
+                <span className="price">{program.price}</span>
+                <span className="duration">{program.duration}</span>
+              </div>
+            </div>
+            
+            <div className="card-body">
+              <div className="program-for">
+                <i className="bi bi-people-fill"></i>
+                <span>{program.for}</span>
+              </div>
+              
+              <p className="program-description">{program.description}</p>
+              
+              <div className="program-features">
+                <h4>Key Features:</h4>
+                <ul>
+                  {program.features.map((feature, i) => (
+                    <motion.li 
+                      key={i}
+                      whileHover={{ x: 5 }}
+                      transition={{ type: "spring", stiffness: 300 }}
+                    >
+                      <i className="bi bi-check-circle-fill"style={{margin:"4px"}}></i>
+                      {feature}
+                    </motion.li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div className="program-outcomes">
+                <h4>Expected Outcomes:</h4>
+                <ul>
+                  {program.outcomes.map((outcome) => (
+                    <motion.li 
+                      key={outcome}
+                      whileHover={{ x: 5 }}
+                      transition={{ type: "spring", stiffness: 300 }}
+                    >
+                      <span className="d-inline-flex align-items-center gap-1">
+                        <i className="bi bi-arrow-right-circle-fill"></i>
+                        {outcome}
+                      </span>
+                    </motion.li>
+                  ))}
+                </ul>
+              </div>
+              
+              {program.requirement && (
+                <div className="program-requirement">
+                  <i className="bi bi-info-circle-fill"></i>
+                  {program.requirement}
+                </div>
+              )}
+            </div>
+            
+            <div className="card-footer">
+              <motion.div whileHover={buttonHover} whileTap={{ scale: 0.95 }}>
+                <a 
+                  href={program.formLink} 
+                  className="btn w-100" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                 >
-                  <div className="card-header ">
-                    {program.popular && (
-                      <div className="popular-tag ">
-                        <i className="bi bi-star-fill me-1"></i> Most Popular
-                      </div>
-                    )}
-                    <span className="program-level">{program.level}</span>
-                    <h3 className="program-title">{program.title}</h3>
-                    <div className="price-tag">
-                      <span className="price">{program.price}</span>
-                      <span className="duration">{program.duration}</span>
-                    </div>
-                  </div>
-                  <div className="card-body">
-                    <div className="program-for">
-                      <i className="bi bi-people-fill me-2"></i>
-                      <span>{program.for}</span>
-                    </div>
-                    <p className="program-description">{program.description}</p>
-                    
-                    <div className="program-features">
-                      <h4>Key Features:</h4>
-                      <ul>
-                        {program.features.map((feature, i) => (
-                          <motion.li 
-                            key={i}
-                            whileHover={{ x: 5 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                          >
-                            <i className="bi bi-check-circle-fill me-2"></i>
-                            {feature}
-                          </motion.li>
-                        ))}
-                      </ul>
-                    </div>
-                    
-                    <div className="program-outcomes">
-                      <h4>Expected Outcomes:</h4>
-                      <ul>
-                        {program.outcomes.map((outcome, i) => (
-                          <motion.li 
-                            key={i}
-                            whileHover={{ x: 5 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                          >
-                            <i className="bi bi-arrow-right-circle-fill me-2"></i>
-                            {outcome}
-                          </motion.li>
-                        ))}
-                      </ul>
-                    </div>
-                    
-                    {program.requirement && (
-                      <div className="program-requirement">
-                        <i className="bi bi-info-circle-fill me-2"></i>
-                        {program.requirement}
-                      </div>
-                    )}
-                  </div>
-                  <div className="card-footer">
-                    <motion.div whileHover={buttonHover} whileTap={{ scale: 0.95 }}>
-                      <a href={program.formLink} className="btn w-100" target="_blank" rel="noopener noreferrer">
-                        {program.cta} <i className="bi bi-arrow-right ms-2"></i>
-                      </a>
-                    </motion.div>
-                  </div>
-                </motion.div>
+                  {program.cta} <i className="bi bi-arrow-right"></i>
+                </a>
               </motion.div>
-            ))}
+            </div>
           </motion.div>
-        </div>
-      </section>
+        </motion.div>
+      ))}
+    </motion.div>
+  </div>
+</section>
 
       {/* Program Comparison */}
       <section className="program-comparison py-5">

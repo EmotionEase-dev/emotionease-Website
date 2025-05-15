@@ -9,6 +9,11 @@
 .programs-page {
   overflow-x: hidden;
 }
+.program-card li i {
+  font-size: 1.1em;
+  position: relative;
+  top: 1px;
+}
 
 .programs-hero {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
@@ -204,7 +209,7 @@
   position: relative;
 }
 
-.program-features h4::after,
+/* .program-features h4::after,
 .program-outcomes h4::after {
   content: '';
   position: absolute;
@@ -213,7 +218,7 @@
   width: 30px;
   height: 2px;
   background-color: var(--primary-color);
-}
+} */
 
 .program-features ul,
 .program-outcomes ul {
@@ -230,7 +235,7 @@
   transition: transform 0.2s ease;
 }
 
-.program-features li::before,
+/* .program-features li::before,
 .program-outcomes li::before {
   content: '';
   position: absolute;
@@ -241,11 +246,11 @@
   border-radius: 50%;
   background-color: var(--primary-bg);
   border: 2px solid var(--primary-color);
-}
+} */
 
 .program-features i,
 .program-outcomes i {
-  position: absolute;
+
   left: 2px;
   top: 0.5rem;
   font-size: 0.7rem;
