@@ -1,7 +1,17 @@
 import React from 'react';
-import { HashLink } from 'react-router-hash-link';
+import { HashLink, NavHashLink } from 'react-router-hash-link';
 
 const NavItem = ({ item }) => {
+  const handleNavClick = (e, href) => {
+    // Only scroll to top for non-hash links
+    if (!href.includes('#')) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const renderDropdown = (items, isUniqueness = false) => (
     <ul className={`dropdown-menu dropdown-menu-${isUniqueness ? 'uniqueness' : 'resources'} p-3`}>
       {items.map((subItem, idx) => (
@@ -40,10 +50,11 @@ const NavItem = ({ item }) => {
               </div>
             </a>
           ) : (
-            <HashLink 
+            <NavHashLink 
               className="dropdown-item d-flex align-items-center py-2 px-3 rounded-3"
               to={subItem.href}
-              smooth
+              scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              onClick={(e) => handleNavClick(e, subItem.href)}
             >
               <div className={`icon-wrapper me-3 bg-${isUniqueness ? 'success' : 'success'} bg-opacity-10 p-2 rounded-circle`}>
                 {isUniqueness ? (
@@ -70,7 +81,7 @@ const NavItem = ({ item }) => {
                   )}
                 </small>
               </div>
-            </HashLink>
+            </NavHashLink>
           )}
         </li>
       ))}
@@ -95,9 +106,20 @@ const NavItem = ({ item }) => {
           {renderDropdown(item.dropdown, item.name === "Our Uniqueness")}
         </>
       ) : (
-        <HashLink className="nav-link" to={item.href} smooth>
+        <NavHashLink 
+          className="nav-link" 
+          to={item.href}
+          scroll={el => {
+            if (item.href.includes('#')) {
+              el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }}
+          onClick={(e) => handleNavClick(e, item.href)}
+        >
           {item.name}
-        </HashLink>
+        </NavHashLink>
       )}
     </li>
   );

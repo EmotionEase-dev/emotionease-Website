@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashLink } from 'react-router-hash-link';
+import { HashLink, NavHashLink } from 'react-router-hash-link';
 import NavItem from './NavItem';
 import logo from '../public/logo.png';
 import './Navbar.css';
@@ -21,10 +21,17 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   const navItems = [
-    { name: "Home", href: "/home" }, 
-    { name: "About Us", href: "/about" },
-    { name: "Blogs", href: "/blogs" },
+    { name: "Home", href: "/home", onClick: scrollToTop }, 
+    { name: "About Us", href: "/about", onClick: scrollToTop },
+    { name: "Blogs", href: "/blogs", onClick: scrollToTop },
     { 
       name: "Our Uniqueness", 
       dropdown: [
@@ -32,40 +39,40 @@ const Navbar = () => {
         { name: "Reviews", href: "/home#review-section" },
       ] 
     },
-    { name: "Curated Programs", href: "/programs" },
+    { name: "Curated Programs", href: "/programs", onClick: scrollToTop },
     { 
       name: "Follow us",
       dropdown: [
-        { name: "Instagram", href: "https://www.instagram.com/emotionease/" },
-        { name: "LinkedIn", href: "https://www.linkedin.com/company/emotionease/" },
+        { name: "Instagram", href: "https://www.instagram.com/emotionease/", external: true },
+        { name: "LinkedIn", href: "https://www.linkedin.com/company/emotionease/", external: true },
       ],
     },
-    { name: "Contact Us", href: "/contact" },
+    { name: "Contact Us", href: "/contact", onClick: scrollToTop },
   ];
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container">
-      <HashLink 
-  className="navbar-brand d-flex align-items-center gap-2" 
-  to="/home#top"
-  id="logo-brand"
-  style={{ textDecoration: 'none' }}
->
-  <img 
-    src={logo} 
-    alt="Logo" 
-    style={{ height: '60px', width: 'auto' }} 
-    className="me-2"
-  />
-  <div className="d-flex flex-column">
-    <span className="fw-bold fs-4 text-success">Emotionease</span>
-    <small className="text-dark" style={{ fontSize: '0.9rem', marginTop: '-4px',fontWeight:'bold' }}>
-      Empowering Mental Health
-    </small>
-  </div>
-</HashLink>
-
+        <HashLink 
+          className="navbar-brand d-flex align-items-center gap-2" 
+          to="/home#top"
+          id="logo-brand"
+          style={{ textDecoration: 'none' }}
+          onClick={scrollToTop}
+        >
+          <img 
+            src={logo} 
+            alt="Logo" 
+            style={{ height: '60px', width: 'auto' }} 
+            className="me-2"
+          />
+          <div className="d-flex flex-column">
+            <span className="fw-bold fs-4 text-success">Emotionease</span>
+            <small className="text-dark" style={{ fontSize: '0.9rem', marginTop: '-4px', fontWeight: 'bold' }}>
+              Empowering Mental Health
+            </small>
+          </div>
+        </HashLink>
         
         <button 
           className="navbar-toggler" 

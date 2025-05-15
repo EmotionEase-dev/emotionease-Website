@@ -731,15 +731,21 @@ const Home = () => {
               </p>
             </motion.div>
 
-            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-              <Link
-                to="/programs"
-                className="btn btn-success btn-lg px-5 py-3 fw-medium"
-              >
-                Explore All Program Details{" "}
-                <i className="bi bi-arrow-right ms-2"></i>
-              </Link>
-            </motion.div>
+            <motion.div 
+  whileHover={{ scale: 1.02 }} 
+  whileTap={{ scale: 0.98 }}
+  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+>
+  <Link
+    to="/programs"
+    className="btn btn-success btn-lg px-5 py-3 fw-medium"
+  >
+    Explore All Program Details{" "}
+    <i className="bi bi-arrow-right ms-2"></i>
+  </Link>
+</motion.div>
+
+
           </motion.div>
         </div>
       </section>
