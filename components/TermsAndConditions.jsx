@@ -107,9 +107,6 @@ const TermsAndConditions = ({ onClose }) => {
             <li>When required by law or court order</li>
             <li>For quality assurance purposes (with identifying information removed)</li>
           </ul>
-          <p className="small mb-1">
-            Please review our full <a href="/privacy-policy" className="text-success">Privacy Policy</a> for more details.
-          </p>
         </section>
 
         {/* 6. Intellectual Property */}
