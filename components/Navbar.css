@@ -81,6 +81,15 @@
   padding: 0.75rem !important;
   border: 1px solid rgba(0, 0, 0, 0.03);
   margin-top: 8px !important;
+  /* Remove hover-related properties */
+  display: none; /* Let Bootstrap handle display */
+}
+
+.dropdown-menu.show {
+  display: block; /* Bootstrap will add this class when dropdown is open */
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .dropdown-item {
@@ -132,10 +141,6 @@
     box-shadow: none;
     border: 1px solid rgba(0, 0, 0, 0.03);
     animation: none;
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: none !important;
-    position: static !important;
   }
   
   .dropdown-item {
@@ -168,27 +173,7 @@
   transform: scale(1.1);
 }
 
-/* Hover dropdown functionality */
-.dropdown-hover:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}
-
 /* Smooth dropdown animation */
-.dropdown-menu {
-  transition: all 0.3s ease;
-  display: block;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-}
-
-.dropdown-hover:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -198,4 +183,35 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+
+/* Additional styles for the logo brand */
+#logo-brand .text-success {
+  color: #28a745 !important;
+}
+
+#logo-brand small {
+  transition: all 0.3s ease;
+}
+
+#logo-brand:hover small {
+  color: #4CAF50 !important;
+}
+
+/* Dropdown arrow transition */
+.dropdown-toggle::after {
+  transition: transform 0.2s ease-in-out;
+}
+
+.show.dropdown .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
+/* Icon wrapper styles */
+.icon-wrapper {
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover .icon-wrapper {
+  background-color: rgba(139, 195, 74, 0.2) !important;
 }

@@ -11,7 +11,7 @@ const NavItem = ({ item }) => {
               href={subItem.href} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="dropdown-item d-flex align-items-center py-2 px-3 rounded-3 b-10"
+              className="dropdown-item d-flex align-items-center py-2 px-3 rounded-3"
             >
               <div className={`icon-wrapper me-3 bg-${isUniqueness ? 'success' : 'success'} bg-opacity-10 p-2 rounded-circle`}>
                 {isUniqueness ? (
@@ -78,7 +78,7 @@ const NavItem = ({ item }) => {
   );
 
   return (
-    <li className="nav-item dropdown mx-1 dropdown-hover">
+    <li className="nav-item dropdown mx-1">
       {item.dropdown ? (
         <>
           <a 
@@ -86,6 +86,7 @@ const NavItem = ({ item }) => {
             href="#" 
             id={`${item.name.replace(/\s+/g, '-')}-dropdown`}
             role="button" 
+            data-bs-toggle="dropdown" 
             aria-expanded="false"
           >
             <span>{item.name}</span>
@@ -98,8 +99,6 @@ const NavItem = ({ item }) => {
           {item.name}
         </HashLink>
       )}
-
-      
     </li>
   );
 };

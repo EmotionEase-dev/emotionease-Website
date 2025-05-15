@@ -53,6 +53,7 @@ const TermsAndConditions = ({ onClose }) => {
           <h5 className="fw-bold">5. Booking, Cancellations, and Refunds</h5>
           <ul className="small mb-2">
             <li className="mb-1"style={{fontWeight:'bold'}}>You can schedule sessions through our booking page.</li>
+            <li className="mb-1"style={{fontWeight:'bold'}}>Candidates should be within the age limit of 25 to 50 years.</li>
             <li className="mb-1"style={{fontWeight:'bold'}}>Please cancel or reschedule at least 24 hours in advance.</li>
             <li className="mb-1"style={{fontWeight:'bold'}}>If you are not satisfied with a paid session and choose to end it before halfway through, you are eligible for a 50% money-back refund.</li>
             <li className="mb-1"style={{fontWeight:'bold'}} >Refunds will not be provided after more than half of the session is completed.</li>
