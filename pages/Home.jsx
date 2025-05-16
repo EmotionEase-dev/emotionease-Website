@@ -1167,36 +1167,52 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="col-lg-2 col-md-4">
-              <h4 className="h5 fw-bold mb-3">Quick Links</h4>
-              <ul className="list-unstyled">
-                {["Home", "About", "Programs", "Contact","Privacy & Policy"].map((link, index) => (
-                  <motion.li key={index} className="mb-2" whileHover={{ x: 5 }}>
-                    <HashLink
-                      to={`/${link.toLowerCase()}#top`}
-                      className="text-white text-decoration-none"
-                      scroll={(el) => {
-                        el.scrollIntoView({ behavior: "smooth" });
-                        window.scrollTo({ top: 0, behavior: "smooth" });
-                      }}
-                    >
-                      {link}
-                    </HashLink>
-                  </motion.li>
-                ))}
-                {/* Separate Feedback link that opens Google Form */}
-                <motion.li className="mb-2" whileHover={{ x: 5 }}>
-                  <a
-                    href="https://forms.gle/tRgauc3KoAPxG3wn6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white text-decoration-none"
-                  >
-                    Feedback
-                  </a>
-                </motion.li>
-              </ul>
-            </div>
+  <div className="col-lg-2 col-md-4">
+  <h4 className="h5 fw-bold mb-3">Quick Links</h4>
+  <ul className="list-unstyled">
+    {["Home", "About", "Programs", "Contact"].map((link, index) => (
+      <motion.li key={index} className="mb-2" whileHover={{ x: 5 }}>
+        <HashLink
+          to={`/${link.toLowerCase()}#top`}
+          className="text-white text-decoration-none"
+          scroll={(el) => {
+            el.scrollIntoView({ behavior: "smooth" });
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          {link}
+        </HashLink>
+      </motion.li>
+    ))}
+
+    {/* Privacy & Policy */}
+    <motion.li className="mb-2" whileHover={{ x: 5 }}>
+      <button
+        className="btn btn-link p-0 text-white text-decoration-none"
+        onClick={() => setShowTerms(true)}
+        style={{ border: 'none', background: 'none', cursor: 'pointer' }}
+      >
+        Privacy & Policy
+      </button>
+      <TermsModal
+        show={showTerms}
+        onHide={() => setShowTerms(false)}
+      />
+    </motion.li>
+
+    {/* Separate Feedback link that opens Google Form */}
+    <motion.li className="mb-2" whileHover={{ x: 5 }}>
+      <a
+        href="https://forms.gle/tRgauc3KoAPxG3wn6"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white text-decoration-none"
+      >
+        Feedback
+      </a>
+    </motion.li>
+  </ul>
+</div>
 
             <div className="col-lg-3 col-md-4">
               <h4 className="h5 fw-bold mb-3">Programs</h4>
