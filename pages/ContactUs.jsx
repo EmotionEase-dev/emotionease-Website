@@ -309,7 +309,7 @@ const ContactUs = () => {
                     className={`form-select ${errors.category ? 'is-invalid' : ''}`}
                   >
                     <option value="">Select a category</option>
-                    <option value="general">General Inquiry</option>
+                    <option value="General Inquiry">General Inquiry</option>
                     <option value="consultation">Consultation</option>
                     <option value="partnership">Partnership</option>
                     <option value="collaboration">Collaboration</option>
