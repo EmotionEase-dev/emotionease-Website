@@ -21,7 +21,7 @@ const NavItem = ({ item }) => {
               href={subItem.href} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="dropdown-item d-flex align-items-center py-2 px-3 rounded-3"
+              className="dropdown-item bg-light text-dark d-flex align-items-center py-2 px-3 rounded-3"
             >
               <div className={`icon-wrapper me-3 bg-${isUniqueness ? 'success' : 'success'} bg-opacity-10 p-2 rounded-circle`}>
                 {isUniqueness ? (
@@ -30,6 +30,9 @@ const NavItem = ({ item }) => {
                   ) : (
                     <i className="bi bi-chat-square-quote text-success"></i>
                   )
+                ) : item.name === "Follow Us" ? (
+                  // Special styling for Follow Us icons
+                  <i className={`bi bi-${subItem.icon} text-success`}></i>
                 ) : (
                   idx === 0 ? (
                     <i className="bi bi-file-earmark-post text-success"></i>
@@ -43,6 +46,8 @@ const NavItem = ({ item }) => {
                 <small className="text-muted">
                   {isUniqueness ? (
                     idx === 0 ? "Discover what sets us apart" : "See what others say about us"
+                  ) : item.name === "Follow Us" ? (
+                    `Connect with us on ${subItem.name}`
                   ) : (
                     idx === 0 ? "Latest articles and updates" : "In-depth stories and guides"
                   )}
@@ -51,7 +56,7 @@ const NavItem = ({ item }) => {
             </a>
           ) : (
             <NavHashLink 
-              className="dropdown-item d-flex align-items-center py-2 px-3 rounded-3"
+              className="dropdown-item bg-light text-dark d-flex align-items-center py-2 px-3 rounded-3"
               to={subItem.href}
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
               onClick={(e) => handleNavClick(e, subItem.href)}
@@ -63,6 +68,9 @@ const NavItem = ({ item }) => {
                   ) : (
                     <i className="bi bi-chat-square-quote text-success"></i>
                   )
+                ) : item.name === "Follow Us" ? (
+                  // Special styling for Follow Us icons
+                  <i className={`bi bi-${subItem.icon} text-success`}></i>
                 ) : (
                   idx === 0 ? (
                     <i className="bi bi-file-earmark-post text-success"></i>
@@ -76,6 +84,8 @@ const NavItem = ({ item }) => {
                 <small className="text-muted">
                   {isUniqueness ? (
                     idx === 0 ? "Discover what sets us apart" : "See what others say about us"
+                  ) : item.name === "Follow Us" ? (
+                    `Connect with us on ${subItem.name}`
                   ) : (
                     idx === 0 ? "Latest articles and updates" : "In-depth stories and guides"
                   )}
