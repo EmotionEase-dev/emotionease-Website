@@ -1185,6 +1185,21 @@ const Home = () => {
       </motion.li>
     ))}
 
+    {/* Privacy & Policy */}
+    <motion.li className="mb-2" whileHover={{ x: 5 }}>
+      <button
+        className="btn btn-link p-0 text-white text-decoration-none"
+        onClick={() => setShowTerms(true)}
+        style={{ border: 'none', background: 'none', cursor: 'pointer' }}
+      >
+        Privacy Policy
+      </button>
+      <TermsModal
+        show={showTerms}
+        onHide={() => setShowTerms(false)}
+      />
+    </motion.li>
+
     {/* Separate Feedback link that opens Google Form */}
     <motion.li className="mb-2" whileHover={{ x: 5 }}>
       <a
