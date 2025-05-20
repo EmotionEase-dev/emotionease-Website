@@ -71,277 +71,261 @@ const Home = () => {
     <div className="home-page">
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="container py-5 py-lg-5">
-          <div className="row align-items-center g-3">
-            <div
-              className="col-lg-6 order-lg-1 order-2 d-flex flex-column"
-              style={{ height: "100%" }}
+  <div className="container py-5 py-lg-5">
+    <div className="row align-items-center g-3">
+      <div className="col-lg-6 order-lg-1 order-2 d-flex flex-column" style={{ height: "100%" }}>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+          className="d-flex flex-column h-100"
+        >
+          <div className="flex-grow-1 d-flex flex-column justify-content-center">
+            <motion.h1 className="hero-title display-3 fw-bold mb-4 text-success">
+              Seek Help for Emotional{" "}
+              <span className="text-gradient-success">
+                Turbulence at EmotionEase!
+              </span>
+            </motion.h1>
+
+            <motion.p className="lead mb-4">
+              EmotionEase is a safe space for emotional healing, self-regulation, and personal growth. We offer support for emotional overwhelm, anxiety, and stress, helping you build emotional resilience and healthier relationships. Our sessions are held online and can be attended from the comfort of your home or any location that feels right for you. Founded and led by Elango Annamalai, a Certified Counselling Practitioner and specialist in Emotion Regulation; EmotionEase is grounded in deep, real-world understanding of human emotions and mental well-being.
+            </motion.p>
+
+            <motion.div
+              className="hero-questions bg-white p-4 p-lg-5 rounded-4 shadow-sm mb-4"
+              variants={itemVariants}
+              whileHover={{
+                boxShadow: "0 10px 25px rgba(0, 0, 0, 0.08)",
+              }}
+              transition={{ duration: 0.3 }}
             >
-              <motion.div
-                initial="hidden"
-                animate="visible"
-                variants={containerVariants}
-                className="d-flex flex-column h-100"
-              >
-                <div className="flex-grow-1 d-flex flex-column justify-content-center">
-                  <motion.h1 className="hero-title display-3 fw-bold mb-4">
-                    Life Situations Causing{" "}
-                    <span className="text-gradient-success">
-                      Emotional Turbulence!
-                    </span>
-                  </motion.h1>
-
-                  <motion.div
-                    className="hero-questions bg-white p-4 p-lg-5 rounded-4 shadow-sm mb-4"
+              <p className="lead fw-medium">Dear People,</p>
+              <ul className="list-unstyled" style={{ fontSize: "1.2rem" }}>
+                {[
+                  "Do you feel insecure & stressed frequently?",
+                  "Do you want to succeed in your career confidently even after a setback?",
+                  "Do your past events or circumstances haunt you even now?",
+                  "Are you feeling Hurt or irritated often?",
+                  "Are your dear ones Not listening & not respecting you?",
+                  "Are you facing a strained unhappy relationship?",
+                  "Are your thoughts making you feel anxious?",
+                ].map((question, index) => (
+                  <motion.li
+                    key={index}
+                    className="mb-2"
                     variants={itemVariants}
-                    whileHover={{
-                      boxShadow: "0 10px 25px rgba(0, 0, 0, 0.08)",
-                    }}
-                    transition={{ duration: 0.3 }}
+                    initial="hidden"
+                    animate="visible"
                   >
-                    <p className="lead fw-medium">Dear People,</p>
-                    <div style={{ paddingLeft: 0, fontSize: "1.2rem" }}>
-                      {[
-                        "Do you feel insecure & stressed frequently?",
-                        "Do you want to succeed in your career confidently even after a setback?",
-                        "Do your past events or circumstances haunt you even now?",
-                        "Are you feeling Hurt or irritated often?",
-                        "Are your dear ones Not listening & not respecting you?",
-                        "Are you facing a strained unhappy relationship?",
-                        "Are your thoughts making you feel anxious?",
-                      ].map((question, index) => (
-                        <motion.div
-                          key={index}
-                          className="d-flex mb-2"
-                          variants={itemVariants}
-                          initial="hidden"
-                          animate="visible"
-                        >
-                          <i className="bi bi-check-circle-fill text-success me-2 mt-1"></i>
-                          <span>{question}</span>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </motion.div>
-                </div>
+                    <i className="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+                    <span>{question}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
 
+          <motion.div
+            className="hero-cta bg-success bg-opacity-10 p-4 p-lg-5 rounded-4"
+            variants={itemVariants}
+            whileHover={{
+              boxShadow: "0 10px 25px rgba(40, 167, 69, 0.15)",
+            }}
+            transition={{ duration: 0.3 }}
+          >
+            <h2 className="text-success fw-bold mb-3">We Support!</h2>
+            <p className="mb-4">
+              Our unique, structured programs are designed to empower you
+              to take control of your emotional wellbeing and live a more
+              fulfilled life—both personally and professionally.
+            </p>
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Link
+                to="/contact"
+                className="btn btn-success btn-lg px-4 py-3 fw-medium"
+                aria-label="Reach out to EmotionEase for support"
+              >
+                Reach Out to Us <i className="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+              </Link>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+      </div>
+
+      <div className="col-lg-6 order-lg-2 order-1">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut",
+          }}
+          className="position-relative h-100"
+        >
+          <div
+            id="heroCarousel"
+            className="carousel slide carousel-fade rounded-4 shadow-lg overflow-hidden h-100"
+            data-bs-ride="carousel"
+            data-bs-interval="3000"
+          >
+            <div className="carousel-inner h-100">
+              {/* Slide 1 */}
+              <div className="carousel-item active h-100">
                 <motion.div
-                  className="hero-cta bg-success bg-opacity-10 p-4 p-lg-5 rounded-4"
-                  variants={itemVariants}
-                  whileHover={{
-                    boxShadow: "0 10px 25px rgba(40, 167, 69, 0.15)",
+                  className="position-relative h-100"
+                  animate={{
+                    y: [0, -10, 0],
                   }}
-                  transition={{ duration: 0.3 }}
+                  transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
                 >
-                  <h3 className="text-success fw-bold mb-3">We Support!</h3>
-                  <p className="mb-4">
-                    Our unique, structured programs are designed to empower you
-                    to take control of your emotional wellbeing and live a more
-                    fulfilled life—both personally and professionally.
-                  </p>
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    <Link
-                      to="/contact"
-                      className="btn btn-success btn-lg px-4 py-3 fw-medium"
-                    >
-                      Reach Out to Us <i className="bi bi-arrow-right ms-2"></i>
-                    </Link>
-                  </motion.div>
+                  <img
+                    src={PeacefulMeditation}
+                    alt="Woman meditating peacefully in nature"
+                    className="d-block w-100 h-100 img-fluid object-cover"
+                    loading="lazy"
+                  />
+                  <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+                    <h3 className="h5 fw-bold">Inner Peace</h3>
+                    <p>Find your center through mindful meditation</p>
+                  </div>
                 </motion.div>
-              </motion.div>
+              </div>
+
+              {/* Slide 2 */}
+              <div className="carousel-item h-100">
+                <motion.div
+                  className="position-relative h-100"
+                  animate={{
+                    y: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <img
+                    src={Human}
+                    alt="Two people connecting emotionally"
+                    className="d-block w-100 h-100 img-fluid object-cover"
+                    loading="lazy"
+                  />
+                  <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+                    <h3 className="h5 fw-bold">Human Connection</h3>
+                    <p>Building meaningful relationships</p>
+                  </div>
+                </motion.div>
+              </div>
+
+              {/* Slide 3 */}
+              <div className="carousel-item h-100">
+                <motion.div
+                  className="position-relative h-100"
+                  animate={{
+                    y: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <img
+                    src={Cage}
+                    alt="Person breaking free from constraints"
+                    className="d-block w-100 h-100 img-fluid object-cover"
+                    loading="lazy"
+                  />
+                  <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+                    <h3 className="h5 fw-bold">Break Barriers</h3>
+                    <p>Overcome limitations and grow</p>
+                  </div>
+                </motion.div>
+              </div>
+
+              {/* Slide 4 */}
+              <div className="carousel-item h-100">
+                <motion.div
+                  className="position-relative h-100"
+                  animate={{
+                    y: [0, -10, 0],
+                  }}
+                  transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <img
+                    src={Freedom}
+                    alt="Person experiencing emotional freedom"
+                    className="d-block w-100 h-100 img-fluid object-cover"
+                    loading="lazy"
+                  />
+                  <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+                    <h3 className="h5 fw-bold">True Freedom</h3>
+                    <p>Discover the liberty within yourself</p>
+                  </div>
+                </motion.div>
+              </div>
             </div>
 
-            <div className="col-lg-6 order-lg-2 order-1">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.8,
-                  ease: "easeOut",
-                }}
-                className="position-relative h-100"
-              >
-                <div
-                  id="heroCarousel"
-                  className="carousel slide carousel-fade rounded-4 shadow-lg overflow-hidden h-100"
-                  data-bs-ride="carousel"
-                  data-bs-interval="3000"
-                >
-                  <div className="carousel-inner h-100">
-                    {/* Slide 1 */}
-                    <div className="carousel-item active h-100">
-                      <motion.div
-                        className="position-relative h-100"
-                        animate={{
-                          y: [0, -10, 0],
-                        }}
-                        transition={{
-                          duration: 8,
-                          repeat: Infinity,
-                          ease: "easeInOut",
-                        }}
-                      >
-                        <img
-                          src={PeacefulMeditation}
-                          alt="Peaceful meditation"
-                          className="d-block w-100 h-100 img-fluid object-cover"
-                        />
-                        <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
-                          <h5 className="display-6 fw-bold">Inner Peace</h5>
-                          <p>Find your center through mindful meditation</p>
-                        </div>
-                      </motion.div>
-                    </div>
+            {/* Carousel Controls */}
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide="prev"
+              aria-label="Previous slide"
+            >
+              <span
+                className="carousel-control-prev-icon bg-dark bg-opacity-50 rounded-circle p-3"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide="next"
+              aria-label="Next slide"
+            >
+              <span
+                className="carousel-control-next-icon bg-dark bg-opacity-50 rounded-circle p-3"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
 
-                    {/* Slide 2 */}
-                    <div className="carousel-item h-100">
-                      <motion.div
-                        className="position-relative h-100"
-                        animate={{
-                          y: [0, -10, 0],
-                        }}
-                        transition={{
-                          duration: 8,
-                          repeat: Infinity,
-                          ease: "easeInOut",
-                        }}
-                      >
-                        <img
-                          src={Human}
-                          alt="Human connection"
-                          className="d-block w-100 h-100 img-fluid object-cover"
-                        />
-                        <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
-                          <h5 className="display-6 fw-bold">
-                            Human Connection
-                          </h5>
-                          <p>Building meaningful relationships</p>
-                        </div>
-                      </motion.div>
-                    </div>
-
-                    {/* Slide 3 */}
-                    <div className="carousel-item h-100">
-                      <motion.div
-                        className="position-relative h-100"
-                        animate={{
-                          y: [0, -10, 0],
-                        }}
-                        transition={{
-                          duration: 8,
-                          repeat: Infinity,
-                          ease: "easeInOut",
-                        }}
-                      >
-                        <img
-                          src={Cage}
-                          alt="Breaking free"
-                          className="d-block w-100 h-100 img-fluid object-cover"
-                        />
-                        <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
-                          <h5 className="display-6 fw-bold">Break Barriers</h5>
-                          <p>Overcome limitations and grow</p>
-                        </div>
-                      </motion.div>
-                    </div>
-
-                    {/* Slide 4 */}
-                    <div className="carousel-item h-100">
-                      <motion.div
-                        className="position-relative h-100"
-                        animate={{
-                          y: [0, -10, 0],
-                        }}
-                        transition={{
-                          duration: 8,
-                          repeat: Infinity,
-                          ease: "easeInOut",
-                        }}
-                      >
-                        <img
-                          src={Freedom}
-                          alt="Freedom"
-                          className="d-block w-100 h-100 img-fluid object-cover"
-                        />
-                        <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
-                          <h5 className="display-6 fw-bold">True Freedom</h5>
-                          <p>Discover the liberty within yourself</p>
-                        </div>
-                      </motion.div>
-                    </div>
-                  </div>
-
-                  {/* Carousel Controls */}
-                  <button
-                    className="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#heroCarousel"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      className="carousel-control-prev-icon bg-dark bg-opacity-50 rounded-circle p-3"
-                      aria-hidden="true"
-                    ></span>
-                    <span className="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    className="carousel-control-next"
-                    type="button"
-                    data-bs-target="#heroCarousel"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      className="carousel-control-next-icon bg-dark bg-opacity-50 rounded-circle p-3"
-                      aria-hidden="true"
-                    ></span>
-                    <span className="visually-hidden">Next</span>
-                  </button>
-
-                  {/* Carousel Indicators */}
-                  <div className="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#heroCarousel"
-                      data-bs-slide-to="0"
-                      className="active rounded-circle"
-                      style={{ width: "10px", height: "10px" }}
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#heroCarousel"
-                      data-bs-slide-to="1"
-                      className="rounded-circle"
-                      style={{ width: "10px", height: "10px" }}
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#heroCarousel"
-                      data-bs-slide-to="2"
-                      className="rounded-circle"
-                      style={{ width: "10px", height: "10px" }}
-                      aria-label="Slide 3"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#heroCarousel"
-                      data-bs-slide-to="3"
-                      className="rounded-circle"
-                      style={{ width: "10px", height: "10px" }}
-                      aria-label="Slide 4"
-                    ></button>
-                  </div>
-                </div>
-              </motion.div>
+            {/* Carousel Indicators */}
+            <div className="carousel-indicators">
+              {[0, 1, 2, 3].map((index) => (
+                <button
+                  key={index}
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide-to={index}
+                  className={index === 0 ? "active rounded-circle" : "rounded-circle"}
+                  style={{ width: "10px", height: "10px" }}
+                  aria-label={`Slide ${index + 1}`}
+                ></button>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </motion.div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* What You Get Section */}
       <section className="benefits-section py-5 py-lg-7 bg-light">

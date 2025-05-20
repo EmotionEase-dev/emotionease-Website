@@ -62,12 +62,12 @@ const Navbar = () => {
         >
           <img 
             src={logo} 
-            alt="Logo" 
+            alt="EmotionEase" 
             style={{ height: '60px', width: 'auto' }} 
             className="me-2"
           />
           <div className="d-flex flex-column">
-            <span className="fw-bold fs-4 text-success">Emotionease</span>
+            <span className="fw-bold fs-4 text-success">EmotionEase</span>
             <small className="text-dark" style={{ fontSize: '0.9rem', marginTop: '-4px', fontWeight: 'bold' }}>
               Empowering Mental Health
             </small>
