@@ -137,8 +137,8 @@ const ContactUs = () => {
                   <a href="mailto:emotionease@gmail.com" className="d-block text-decoration-none mb-1 mb-md-2 transition-all small-text">
                     <i className="bi bi-envelope me-2"></i> emotionease@gmail.com
                   </a>
-                  <a href="mailto:info@emotionease.in" className="d-block text-decoration-none transition-all small-text">
-                    <i className="bi bi-envelope me-2"></i> info@emotionease.in
+                  <a href="mailto:admin@emotionease.in" className="d-block text-decoration-none transition-all small-text">
+                    <i className="bi bi-envelope me-2"></i> admin@emotionease.in  
                   </a>
                 </div>
               </div>

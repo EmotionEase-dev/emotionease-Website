@@ -1169,22 +1169,19 @@ const Home = () => {
       </motion.li>
     ))}
 
-    {/* Privacy & Policy */}
+    {/* Privacy & Policy - styled like other links */}
     <motion.li className="mb-2" whileHover={{ x: 5 }}>
-      <button
-        className="btn btn-link p-0 text-white text-decoration-none"
+      <span
         onClick={() => setShowTerms(true)}
-        style={{ border: 'none', background: 'none', cursor: 'pointer' }}
+        style={{ cursor: 'pointer' }}
+        className="text-white text-decoration-none d-inline-block"
       >
         Privacy Policy
-      </button>
-      <TermsModal
-        show={showTerms}
-        onHide={() => setShowTerms(false)}
-      />
+      </span>
+      <TermsModal show={showTerms} onHide={() => setShowTerms(false)} />
     </motion.li>
 
-    {/* Separate Feedback link that opens Google Form */}
+    {/* Feedback - styled like other links */}
     <motion.li className="mb-2" whileHover={{ x: 5 }}>
       <a
         href="https://forms.gle/tRgauc3KoAPxG3wn6"
@@ -1197,6 +1194,7 @@ const Home = () => {
     </motion.li>
   </ul>
 </div>
+
 
             <div className="col-lg-3 col-md-4">
               <h4 className="h5 fw-bold mb-3">Programs</h4>

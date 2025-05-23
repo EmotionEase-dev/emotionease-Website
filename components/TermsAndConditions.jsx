@@ -166,8 +166,8 @@ const TermsAndConditions = ({ onClose }) => {
           <ul className="small mb-1 ps-3">
   <li>
     📧 Email: 
-    <a href="mailto:info@emotionease.in" className="text-decoration-none ms-1">
-      info@emotionease.in
+    <a href="mailto:admin@emotionease.in" className="text-decoration-none ms-1">
+      admin@emotionease.in
     </a>, 
     <a href="mailto:emotionease@gmail.com" className="text-decoration-none ms-1">
       emotionease@gmail.com

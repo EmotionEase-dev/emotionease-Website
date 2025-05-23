@@ -31,7 +31,7 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", href: "/home", onClick: scrollToTop }, 
     { name: "About Us", href: "/about", onClick: scrollToTop },
-    { name: "Blogs", href: "/blogs", onClick: scrollToTop },
+    // { name: "Blogs", href: "/blogs", onClick: scrollToTop },
     { 
       name: "Our Uniqueness", 
       dropdown: [
