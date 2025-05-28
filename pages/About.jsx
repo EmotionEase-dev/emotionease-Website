@@ -29,14 +29,29 @@ const About = () => {
                 challenges with confidence and resilience.
               </p>
               <div className="mission-values">
-                <h3>Our Core Values:</h3>
-                <ul>
-                  <li><i className="bi bi-heart-fill"></i> <strong>Empathy:</strong> We listen with compassion</li>
-                  <li><i className="bi bi-shield-fill"></i> <strong>Integrity:</strong> We maintain the highest ethical standards</li>
-                  <li><i className="bi bi-lightbulb-fill"></i> <strong>Innovation:</strong> We use evidence-based, cutting-edge techniques</li>
-                  <li><i className="bi bi-people-fill"></i> <strong>Inclusivity:</strong> We serve all individuals regardless of background</li>
-                </ul>
-              </div>
+  <h3>Our Core Values:</h3>
+  <ul style={{ listStyleType: 'none', padding: 0 }}>
+    <li style={{ display: 'grid', gridTemplateColumns: '24px auto', alignItems: 'start' }}>
+      <span><i className="bi bi-heart-fill" style={{ fontSize: '1.2rem' }}></i></span>
+      <span><strong>Empathy:</strong> We listen with compassion</span>
+    </li>
+    <li style={{ display: 'grid', gridTemplateColumns: '24px auto', alignItems: 'start'}}>
+      <span><i className="bi bi-shield-fill" style={{ fontSize: '1.2rem' }}></i></span>
+      <span><strong>Integrity:</strong> We maintain the highest ethical standards</span>
+    </li>
+    <li style={{ display: 'grid', gridTemplateColumns: '24px auto', alignItems: 'start'}}>
+      <span><i className="bi bi-lightbulb-fill" style={{ fontSize: '1.2rem' }}></i></span>
+      <span><strong>Innovation:</strong> We use evidence-based, cutting-edge techniques</span>
+    </li>
+    <li style={{ display: 'grid', gridTemplateColumns: '24px auto', alignItems: 'start'}}>
+      <span><i className="bi bi-people-fill" style={{ fontSize: '1.2rem' }}></i></span>
+      <span><strong>Inclusivity:</strong> We serve all individuals regardless of background</span>
+    </li>
+  </ul>
+</div>
+
+
+              
             </div>
             <div className="col-lg-6">
               <img 
