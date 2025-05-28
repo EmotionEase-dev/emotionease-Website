@@ -232,6 +232,17 @@
     opacity: 0;
     animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
   }
+
+  /* Nuclear option */
+ul, ol, li {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+ul li::before, 
+ul li::after {
+  content: none !important;
+}
   
   .card::before {
     content: '';

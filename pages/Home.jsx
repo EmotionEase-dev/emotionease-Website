@@ -81,12 +81,16 @@ const Home = () => {
           className="d-flex flex-column h-100"
         >
           <div className="flex-grow-1 d-flex flex-column justify-content-center">
+
             <motion.h1 className="hero-title display-3 fw-bold mb-4 text-success">
-              Seek Help for Emotional{" "}
+              Emotional Healing & {" "}
               <span className="text-gradient-success">
-                Turbulence at EmotionEase!
+               Anxiety Relief Online EmotionEase!
               </span>
             </motion.h1>
+            <motion.p className="mission-text text-gradient-success">
+              Seek Help for Emotional Turbulence from Experts.
+            </motion.p>
 
             <motion.p className="mission-text">
               EmotionEase is a safe space for emotional healing, self-regulation, and personal growth. We offer support for emotional overwhelm, anxiety, and stress, helping you build emotional resilience and healthier relationships. Our sessions are held online and can be attended from the comfort of your home or any location that feels right for you. Founded and led by Elango Annamalai, a Certified Counselling Practitioner and specialist in Emotion Regulation; EmotionEase is grounded in deep, real-world understanding of human emotions and mental well-being.
@@ -101,28 +105,50 @@ const Home = () => {
               transition={{ duration: 0.3 }}
             >
               <p className="lead fw-medium">Dear People,</p>
-              <ul className="list-unstyled" style={{ fontSize: "1.2rem" }}>
-                {[
-                  "Do you feel insecure & stressed frequently?",
-                  "Do you want to succeed in your career confidently even after a setback?",
-                  "Do your past events or circumstances haunt you even now?",
-                  "Are you feeling Hurt or irritated often?",
-                  "Are your dear ones Not listening & not respecting you?",
-                  "Are you facing a strained unhappy relationship?",
-                  "Are your thoughts making you feel anxious?",
-                ].map((question, index) => (
-                  <motion.li
-                    key={index}
-                    className="mb-2"
-                    variants={itemVariants}
-                    initial="hidden"
-                    animate="visible"
-                  >
-                    <i className="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-                    <span>{question}</span>
-                  </motion.li>
-                ))}
-              </ul>
+              <ul style={{
+  fontSize: "1.2rem",
+  listStyle: "none",
+  paddingLeft: 0,
+  marginLeft: 0,
+  marginBottom: 0,
+}}>
+  {[
+    "Do you feel insecure & stressed frequently?",
+    "Do you want to succeed in your career confidently even after a setback?",
+    "Do your past events or circumstances haunt you even now?",
+    "Are you feeling emotionally hurt by near and dear ones?",
+    "Are you feeling disrespected at work and unheard at home?",
+    "Do you need help with navigating toxic relationships?",
+    "Are your thoughts making you feel anxious?",
+  ].map((question, index) => (
+    <motion.li
+      key={index}
+      variants={itemVariants}
+      initial="hidden"
+      animate="visible"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        listStyle: "none",
+        paddingLeft: 0,
+        marginLeft: 0,
+        marginBottom: "0.5rem",
+        position: "relative",
+      }}
+    >
+      {/* Double protection checkmark */}
+      <span style={{
+        display: "inline-flex",
+        marginRight: "0.5rem",
+        color: "#28a745", /* Bootstrap's text-success color */
+      }}>
+        <i className="bi bi-check-circle-fill" aria-hidden="true" />
+      </span>
+      <span>{question}</span>
+    </motion.li>
+  ))}
+</ul>
+
             </motion.div>
           </div>
 
@@ -188,7 +214,7 @@ const Home = () => {
                 >
                   <img
                     src={PeacefulMeditation}
-                    alt="Woman meditating peacefully in nature"
+                    alt="Online Emotion Healing and Counselling by EmotionEase"
                     className="d-block w-100 h-100 img-fluid object-cover"
                     loading="lazy"
                   />
@@ -214,7 +240,7 @@ const Home = () => {
                 >
                   <img
                     src={Human}
-                    alt="Two people connecting emotionally"
+                    alt="Online Emotion Healing and Counselling by EmotionEase"
                     className="d-block w-100 h-100 img-fluid object-cover"
                     loading="lazy"
                   />
@@ -240,7 +266,7 @@ const Home = () => {
                 >
                   <img
                     src={Cage}
-                    alt="Person breaking free from constraints"
+                    alt="Online Emotion Healing and Counselling by EmotionEase"
                     className="d-block w-100 h-100 img-fluid object-cover"
                     loading="lazy"
                   />
@@ -266,7 +292,7 @@ const Home = () => {
                 >
                   <img
                     src={Freedom}
-                    alt="Person experiencing emotional freedom"
+                    alt="Online Emotion Healing and Counselling by EmotionEase"
                     className="d-block w-100 h-100 img-fluid object-cover"
                     loading="lazy"
                   />
@@ -341,7 +367,7 @@ const Home = () => {
               className="section-title display-3 fw-bold mb-3"
               variants={itemVariants}
             >
-              What Will You <span className="text-gradient-success">Get?</span>
+              What You Will Gain from Our <span className="text-gradient-success"> Emotional Wellness Programs?</span>
             </motion.h2>
             <motion.p
               className="lead text-muted mx-auto"
@@ -431,8 +457,8 @@ const Home = () => {
               className="section-title display-3 fw-bold mb-3"
               variants={itemVariants}
             >
-              Few Words on{" "}
-              <span className="text-gradient-success">Emotions…</span>
+              Understanding Emotions {" "}
+              <span className="text-gradient-success">The Foundation of  Emotion and Mental Health</span>
             </motion.h2>
           </motion.div>
 
@@ -534,7 +560,7 @@ const Home = () => {
               className="section-title display-3 fw-bold mb-3"
               variants={itemVariants}
             >
-              Our <span className="text-gradient-success">6 Uniqueness</span>
+              Reasons Why You Should <span className="text-gradient-success"> Reach Out to EmotionEase</span>
             </motion.h2>
             <motion.p
               className="lead text-muted fst-italic"
@@ -1096,7 +1122,7 @@ const Home = () => {
                   rel="noopener noreferrer"
                   className="btn btn-success btn-lg px-4 py-3 fw-medium"
                 >
-                  Book My Free First Session{" "}
+                   Book Your 1st Free Counselling with EmotionEase{" "}
                   <i className="bi bi-arrow-right ms-2"></i>
                 </a>
               </motion.div>
