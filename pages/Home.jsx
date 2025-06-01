@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
@@ -7,8 +7,10 @@ import PeacefulMeditation from "../public/PeacefulMeditation.png";
 import Human from "../public/Human.png";
 import Cage from "../public/cage.png";
 import Freedom from "../public/Freedom.png";
-import { useState } from "react";
 import TermsModal from "../components/TermsModal";
+import SignupForm from "../components/SingUp";
+
+
 
 // Animation variants
 const containerVariants = {
@@ -62,6 +64,54 @@ const cardHover = {
 const Home = () => {
   const [currentTestimonialPage, setCurrentTestimonialPage] = React.useState(1);
   const [showTerms, setShowTerms] = useState(false);
+const [showSignupForm, setShowSignupForm] = useState(false);
+
+
+ // In your Home component
+useEffect(() => {
+  // Check if form was previously closed
+  const isClosed = localStorage.getItem('signupFormClosed') === 'true';
+  if (!isClosed) {
+    // Show form after a slight delay for better UX
+    const timer = setTimeout(() => {
+      setShowSignupForm(true);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }
+}, []);
+
+const handleCloseForm = () => {
+  setShowSignupForm(false);
+  localStorage.setItem('signupFormClosed', 'true');
+};
+
+// In your return statement (make sure this is near the top of your component)
+{showSignupForm && (
+  <div className="modal-backdrop" style={{
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    zIndex: 1050,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }}>
+    <div className="modal-content" style={{
+      backgroundColor: 'white',
+      padding: '2rem',
+      borderRadius: '0.5rem',
+      maxWidth: '500px',
+      width: '90%'
+    }}>
+      <SignupForm onClose={handleCloseForm} />
+    </div>
+  </div>
+)}
+
+
 
   const handleTestimonialPageChange = (pageNumber) => {
     setCurrentTestimonialPage(pageNumber);
@@ -69,6 +119,9 @@ const Home = () => {
 
   return (
     <div className="home-page">
+     {/* Signup Form Modal */}
+      <SignupForm show={showSignupForm} onClose={handleCloseForm} />
+
       {/* Hero Section */}
       <section className="hero-section">
   <div className="container py-5 py-lg-5">
