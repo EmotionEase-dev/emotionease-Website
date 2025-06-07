@@ -8,7 +8,7 @@ import Human from "../public/Human.png";
 import Cage from "../public/cage.png";
 import Freedom from "../public/Freedom.png";
 import TermsModal from "../components/TermsModal";
-import SignupForm from "../components/SignUp.jsx";
+import SignupForm from "../components/SignupForm"; // Import the SignupForm component
 
 // Animation variants
 const containerVariants = {
@@ -96,8 +96,7 @@ const Home = () => {
       />
 
       {/* Floating Signup Button */}
-
-      {/* <motion.button
+      <motion.button
         onClick={handleManualSignupTrigger}
         className="btn btn-success fixed-bottom m-3 ms-auto"
         style={{ 
@@ -111,7 +110,7 @@ const Home = () => {
         whileTap={{ scale: 0.95 }}
       >
         <i className="bi bi-envelope-plus me-2"></i> Get Updates
-      </motion.button> */}
+      </motion.button>
 
       {/* Hero Section */}
       <section className="hero-section">

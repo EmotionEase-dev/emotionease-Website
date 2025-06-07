@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Modal } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 
-function SignupForm({ show, onClose }) {
+function SignupForm({ show, onClose }) {  // Added show prop here
   const [formData, setFormData] = useState({
     name: '',
     email: '',
