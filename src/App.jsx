@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Home from '../pages/Home';
@@ -8,8 +9,6 @@ import Blog from '../pages/Blogs';
 import TermsAndConditions from '../components/TermsAndConditions';
 import { useEffect } from 'react';
 import './App.css';
-import '../components/SingUp.jsx'
-import SignupForm from '../components/SingUp.jsx';
 
 function App() {
   useEffect(() => {
@@ -43,9 +42,7 @@ function App() {
 
     const handleKeyDown = (e) => {
       const blockedShortcuts = [
-        { keys: ['c', 'x', 'u', 's', 'p'], ctrl: true }, // Ctrl+C, Ctrl+X, etc.
         { keys: ['I', 'J'], ctrl: true, shift: true }, // Dev tools
-        { keys: ['S'], ctrl: true, shift: true }, // Screenshot
         { keys: ['F12'] } // Dev tools
       ];
 
@@ -61,13 +58,6 @@ function App() {
           (e.ctrlKey ? 'Ctrl+' : '') + 
           (e.shiftKey ? 'Shift+' : '') + 
           e.key.toUpperCase());
-      }
-    };
-
-    const handleKeyUp = (e) => {
-      if (e.key === 'PrintScreen') {
-        navigator.clipboard.writeText('').catch(() => {});
-        showAlertWatermark('Print Screen disabled');
       }
     };
 
@@ -88,23 +78,14 @@ function App() {
     permanentWatermark.addEventListener('mouseenter', handleMouseEnter);
     permanentWatermark.addEventListener('mouseleave', handleMouseLeave);
 
-    // Apply text selection prevention
-    document.body.style.userSelect = 'none';
-    document.body.style.webkitUserSelect = 'none';
-
     // Add event listeners
     document.addEventListener('contextmenu', handleRightClick);
     document.addEventListener('keydown', handleKeyDown);
-    document.addEventListener('keyup', handleKeyUp);
 
     // Cleanup function
     return () => {
       document.removeEventListener('contextmenu', handleRightClick);
       document.removeEventListener('keydown', handleKeyDown);
-      document.removeEventListener('keyup', handleKeyUp);
-      
-      document.body.style.userSelect = '';
-      document.body.style.webkitUserSelect = '';
       
       permanentWatermark.removeEventListener('mouseenter', handleMouseEnter);
       permanentWatermark.removeEventListener('mouseleave', handleMouseLeave);
@@ -136,33 +117,3 @@ function App() {
 }
 
 export default App;
-
-// Copy and select Allow
-
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Navbar from '../components/Navbar';
-// import Home from '../pages/Home';
-// import About from '../pages/About';
-// import ContactUs from '../pages/ContactUs';
-// import CuratedPrograms from '../pages/CuratedPrograms';
-// import Blog from '../pages/Blogs';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <Router>
-//       <Navbar />
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/home" element={<Home />} />
-//         <Route path="/about" element={<About />} />
-//         <Route path="/programs" element={<CuratedPrograms />} />
-//         <Route path="/blogs" element={<Blog />} />
-//         <Route path="/contact" element={<ContactUs />} />
-//         <Route path="*" element={<div>404 Not Found</div>} />
-//       </Routes>
-//     </Router>
-//   );
-// }
-
-// export default App;

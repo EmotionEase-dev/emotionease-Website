@@ -8,7 +8,7 @@ import Human from "../public/Human.png";
 import Cage from "../public/cage.png";
 import Freedom from "../public/Freedom.png";
 import TermsModal from "../components/TermsModal";
-import SignupForm from "../components/SingUp";
+import SignupForm from '../components/SignUp';
 
 
 
@@ -141,9 +141,9 @@ const handleCloseForm = () => {
                Anxiety Relief Online EmotionEase!
               </span>
             </motion.h1>
-            <motion.p className="mission-text text-gradient-success">
+            {/* <motion.p className="mission-text text-gradient-success">
               Seek Help for Emotional Turbulence from Experts.
-            </motion.p>
+            </motion.p> */}
 
             <motion.p className="mission-text">
               EmotionEase is a safe space for emotional healing, self-regulation, and personal growth. We offer support for emotional overwhelm, anxiety, and stress, helping you build emotional resilience and healthier relationships. Our sessions are held online and can be attended from the comfort of your home or any location that feels right for you. Founded and led by Elango Annamalai, a Certified Counselling Practitioner and specialist in Emotion Regulation; EmotionEase is grounded in deep, real-world understanding of human emotions and mental well-being.
