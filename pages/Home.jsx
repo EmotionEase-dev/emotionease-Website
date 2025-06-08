@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { Carousel } from 'react-bootstrap';
 import { motion } from "framer-motion";
 import "./Home.css";
 import PeacefulMeditation from "../public/PeacefulMeditation.png";
@@ -114,285 +115,235 @@ const Home = () => {
       </motion.button> */}
 
       {/* Hero Section */}
-      <section className="hero-section">
-        <div className="container py-5 py-lg-5">
-            <div className="row align-items-center g-3">
-              <div className="col-lg-6 order-lg-1 order-2 d-flex flex-column" style={{ height: "100%" }}>
-                <motion.div
-                  initial="hidden"
-                  animate="visible"
-                  variants={containerVariants}
-                  className="d-flex flex-column h-100"
-                >
-                  <div className="flex-grow-1 d-flex flex-column justify-content-center">
-        
-                    <motion.h1 className="hero-title display-3 fw-bold mb-4 text-success">
-                      Emotional Healing & {" "}
-                      <span className="text-gradient-success">
-                       Anxiety Relief Online EmotionEase!
-                      </span>
-                    </motion.h1>
-        
-                    <motion.p className="mission-text">
-                      EmotionEase is a safe & Non Judgemental space for emotional healing, self-regulation, and personal growth. We offer support for emotional overwhelm, anxiety, and stress, helping you build emotional resilience and healthier relationships. Our sessions are held online and can be attended from the comfort of your home or any location that feels right for you. Founded and led by Elango Annamalai, a Certified Counselling Practitioner and specialist in Emotion Regulation; EmotionEase is grounded in deep, real-world understanding of human emotions and mental well-being.
-                    </motion.p>
-        
-                    <motion.div
-                      className="hero-questions bg-white p-4 p-lg-5 rounded-4 shadow-sm mb-4"
-                      variants={itemVariants}
-                      whileHover={{
-                        boxShadow: "0 10px 25px rgba(0, 0, 0, 0.08)",
-                      }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <p className="lead fw-medium">Dear People,</p>
-                      <ul style={{
-          fontSize: "1.2rem",
-          listStyle: "none",
-          paddingLeft: 0,
-          marginLeft: 0,
-          marginBottom: 0,
-        }}>
-          {[
-            "Do you feel insecure & stressed frequently?",
-            "Do you want to succeed in your career confidently even after a setback?",
-            "Do your past events or circumstances haunt you even now?",
-            "Are you feeling emotionally hurt by near and dear ones?",
-            "Are you feeling disrespected at work and unheard at home?",
-            "Do you need help with navigating toxic relationships?",
-            "Are your thoughts making you feel anxious?",
-          ].map((question, index) => (
-            <motion.li
-              key={index}
-              variants={itemVariants}
+          <section className="hero-section">
+      <div className="container py-5 py-lg-5">
+        <div className="row align-items-center g-3">
+          <div className="col-lg-6 order-lg-1 order-2 d-flex flex-column" style={{ height: "100%" }}>
+            <motion.div
               initial="hidden"
               animate="visible"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                listStyle: "none",
-                paddingLeft: 0,
-                marginLeft: 0,
-                marginBottom: "0.5rem",
-                position: "relative",
-              }}
+              variants={containerVariants}
+              className="d-flex flex-column h-100"
             >
-              {/* Double protection checkmark */}
-              <span style={{
-                display: "inline-flex",
-                marginRight: "0.5rem",
-                color: "#28a745", /* Bootstrap's text-success color */
-              }}>
-                <i className="bi bi-check-circle-fill" aria-hidden="true" />
-              </span>
-              <span>{question}</span>
-            </motion.li>
-          ))}
-        </ul>
-        
-                    </motion.div>
-                  </div>
-        
-                  <motion.div
-                    className="hero-cta bg-success bg-opacity-10 p-4 p-lg-5 rounded-4"
-                    variants={itemVariants}
-                    whileHover={{
-                      boxShadow: "0 10px 25px rgba(40, 167, 69, 0.15)",
-                    }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <h2 className="text-success fw-bold mb-3">We Support!</h2>
-                    <p className="mb-4">
-                      Our unique, structured programs are designed to empower you
-                      to take control of your emotional wellbeing and live a more
-                      fulfilled life—both personally and professionally.
-                    </p>
-                    <motion.div
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      <Link
-                        to="/contact"
-                        className="btn btn-success btn-lg px-4 py-3 fw-medium"
-                        aria-label="Reach out to EmotionEase for support"
-                      >
-                        Reach Out to Us <i className="bi bi-arrow-right ms-2" aria-hidden="true"></i>
-                      </Link>
-                    </motion.div>
-                  </motion.div>
-                </motion.div>
-              </div>
-        
-              <div className="col-lg-6 order-lg-2 order-1">
+              <div className="flex-grow-1 d-flex flex-column justify-content-center">
+                <motion.h1 className="hero-title display-3 fw-bold mb-4 text-success">
+                  Emotional Healing & {" "}
+                  <span className="text-gradient-success">
+                    Anxiety Relief Online EmotionEase!
+                  </span>
+                </motion.h1>
+
+                <motion.p className="mission-text">
+                  EmotionEase is a safe & Non Judgemental space for emotional healing, self-regulation, and personal growth. We offer support for emotional overwhelm, anxiety, and stress, helping you build emotional resilience and healthier relationships. Our sessions are held online and can be attended from the comfort of your home or any location that feels right for you. Founded and led by Elango Annamalai, a Certified Counselling Practitioner and specialist in Emotion Regulation; EmotionEase is grounded in deep, real-world understanding of human emotions and mental well-being.
+                </motion.p>
+
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.8,
-                    ease: "easeOut",
+                  className="hero-questions bg-white p-4 p-lg-5 rounded-4 shadow-sm mb-4"
+                  variants={itemVariants}
+                  whileHover={{
+                    boxShadow: "0 10px 25px rgba(0, 0, 0, 0.08)",
                   }}
-                  className="position-relative h-100"
+                  transition={{ duration: 0.3 }}
                 >
-                  <div
-                    id="heroCarousel"
-                    className="carousel slide carousel-fade rounded-4 shadow-lg overflow-hidden h-100"
-                    data-bs-ride="carousel"
-                    data-bs-interval="3000"
-                  >
-                    <div className="carousel-inner h-100">
-                      {/* Slide 1 */}
-                      <div className="carousel-item active h-100">
-                        <motion.div
-                          className="position-relative h-100"
-                          animate={{
-                            y: [0, -10, 0],
-                          }}
-                          transition={{
-                            duration: 8,
-                            repeat: Infinity,
-                            ease: "easeInOut",
-                          }}
-                        >
-                          <img
-                            src={PeacefulMeditation}
-                            alt="Online Emotion Healing and Counselling by EmotionEase"
-                            className="d-block w-100 h-100 img-fluid object-cover"
-                            loading="lazy"
-                          />
-                          <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
-                            <h3 className="h5 fw-bold">Inner Peace</h3>
-                            <p>Find your center through mindful meditation</p>
-                          </div>
-                        </motion.div>
-                      </div>
-        
-                      {/* Slide 2 */}
-                      <div className="carousel-item h-100">
-                        <motion.div
-                          className="position-relative h-100"
-                          animate={{
-                            y: [0, -10, 0],
-                          }}
-                          transition={{
-                            duration: 8,
-                            repeat: Infinity,
-                            ease: "easeInOut",
-                          }}
-                        >
-                          <img
-                            src={Human}
-                            alt="Online Emotion Healing and Counselling by EmotionEase"
-                            className="d-block w-100 h-100 img-fluid object-cover"
-                            loading="lazy"
-                          />
-                          <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
-                            <h3 className="h5 fw-bold">Human Connection</h3>
-                            <p>Building meaningful relationships</p>
-                          </div>
-                        </motion.div>
-                      </div>
-        
-                      {/* Slide 3 */}
-                      <div className="carousel-item h-100">
-                        <motion.div
-                          className="position-relative h-100"
-                          animate={{
-                            y: [0, -10, 0],
-                          }}
-                          transition={{
-                            duration: 8,
-                            repeat: Infinity,
-                            ease: "easeInOut",
-                          }}
-                        >
-                          <img
-                            src={Cage}
-                            alt="Online Emotion Healing and Counselling by EmotionEase"
-                            className="d-block w-100 h-100 img-fluid object-cover"
-                            loading="lazy"
-                          />
-                          <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
-                            <h3 className="h5 fw-bold">Break Barriers</h3>
-                            <p>Overcome limitations and grow</p>
-                          </div>
-                        </motion.div>
-                      </div>
-        
-                      {/* Slide 4 */}
-                      <div className="carousel-item h-100">
-                        <motion.div
-                          className="position-relative h-100"
-                          animate={{
-                            y: [0, -10, 0],
-                          }}
-                          transition={{
-                            duration: 8,
-                            repeat: Infinity,
-                            ease: "easeInOut",
-                          }}
-                        >
-                          <img
-                            src={Freedom}
-                            alt="Online Emotion Healing and Counselling by EmotionEase"
-                            className="d-block w-100 h-100 img-fluid object-cover"
-                            loading="lazy"
-                          />
-                          <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
-                            <h3 className="h5 fw-bold">True Freedom</h3>
-                            <p>Discover the liberty within yourself</p>
-                          </div>
-                        </motion.div>
-                      </div>
-                    </div>
-        
-                    {/* Carousel Controls */}
-                    <button
-                      className="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#heroCarousel"
-                      data-bs-slide="prev"
-                      aria-label="Previous slide"
-                    >
-                      <span
-                        className="carousel-control-prev-icon bg-dark bg-opacity-50 rounded-circle p-3"
-                        aria-hidden="true"
-                      ></span>
-                      <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      className="carousel-control-next"
-                      type="button"
-                      data-bs-target="#heroCarousel"
-                      data-bs-slide="next"
-                      aria-label="Next slide"
-                    >
-                      <span
-                        className="carousel-control-next-icon bg-dark bg-opacity-50 rounded-circle p-3"
-                        aria-hidden="true"
-                      ></span>
-                      <span className="visually-hidden">Next</span>
-                    </button>
-        
-                    {/* Carousel Indicators */}
-                    <div className="carousel-indicators">
-                      {[0, 1, 2, 3].map((index) => (
-                        <button
-                          key={index}
-                          type="button"
-                          data-bs-target="#heroCarousel"
-                          data-bs-slide-to={index}
-                          className={index === 0 ? "active rounded-circle" : "rounded-circle"}
-                          style={{ width: "10px", height: "10px" }}
-                          aria-label={`Slide ${index + 1}`}
-                        ></button>
-                      ))}
-                    </div>
-                  </div>
+                  <p className="lead fw-medium">Dear People,</p>
+                  <ul style={{
+                    fontSize: "1.2rem",
+                    listStyle: "none",
+                    paddingLeft: 0,
+                    marginLeft: 0,
+                    marginBottom: 0,
+                  }}>
+                    {[
+                      "Do you feel insecure & stressed frequently?",
+                      "Do you want to succeed in your career confidently even after a setback?",
+                      "Do your past events or circumstances haunt you even now?",
+                      "Are you feeling emotionally hurt by near and dear ones?",
+                      "Are you feeling disrespected at work and unheard at home?",
+                      "Do you need help with navigating toxic relationships?",
+                      "Are your thoughts making you feel anxious?",
+                    ].map((question, index) => (
+                      <motion.li
+                        key={index}
+                        variants={itemVariants}
+                        initial="hidden"
+                        animate="visible"
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          listStyle: "none",
+                          paddingLeft: 0,
+                          marginLeft: 0,
+                          marginBottom: "0.5rem",
+                          position: "relative",
+                        }}
+                      >
+                        <span style={{
+                          display: "inline-flex",
+                          marginRight: "0.5rem",
+                          color: "#28a745",
+                        }}>
+                          <i className="bi bi-check-circle-fill" aria-hidden="true" />
+                        </span>
+                        <span>{question}</span>
+                      </motion.li>
+                    ))}
+                  </ul>
                 </motion.div>
               </div>
-            </div>
+
+              <motion.div
+                className="hero-cta bg-success bg-opacity-10 p-4 p-lg-5 rounded-4"
+                variants={itemVariants}
+                whileHover={{
+                  boxShadow: "0 10px 25px rgba(40, 167, 69, 0.15)",
+                }}
+                transition={{ duration: 0.3 }}
+              >
+                <h2 className="text-success fw-bold mb-3">We Support!</h2>
+                <p className="mb-4">
+                  Our unique, structured programs are designed to empower you
+                  to take control of your emotional wellbeing and live a more
+                  fulfilled life—both personally and professionally.
+                </p>
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <Link
+                    to="/contact"
+                    className="btn btn-success btn-lg px-4 py-3 fw-medium"
+                    aria-label="Reach out to EmotionEase for support"
+                  >
+                    Reach Out to Us <i className="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                  </Link>
+                </motion.div>
+              </motion.div>
+            </motion.div>
           </div>
-      </section>
+
+          <div className="col-lg-6 order-lg-2 order-1">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+              }}
+              className="position-relative h-100"
+            >
+              <Carousel 
+                fade 
+                interval={3000} 
+                controls={true} 
+                indicators={true}
+                className="rounded-4 shadow-lg overflow-hidden h-100"
+              >
+                <Carousel.Item className="h-100">
+                  <motion.div
+                    className="position-relative h-100"
+                    animate={{
+                      y: [0, -10, 0],
+                    }}
+                    transition={{
+                      duration: 8,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  >
+                    <img
+                      src={PeacefulMeditation}
+                      alt="Online Emotion Healing and Counselling by EmotionEase"
+                      className="d-block w-100 h-100 img-fluid object-cover"
+                      loading="lazy"
+                    />
+                    <Carousel.Caption className="d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+                      <h3 className="h5 fw-bold">Inner Peace</h3>
+                      <p>Find your center through mindful meditation</p>
+                    </Carousel.Caption>
+                  </motion.div>
+                </Carousel.Item>
+
+                <Carousel.Item className="h-100">
+                  <motion.div
+                    className="position-relative h-100"
+                    animate={{
+                      y: [0, -10, 0],
+                    }}
+                    transition={{
+                      duration: 8,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  >
+                    <img
+                      src={Human}
+                      alt="Online Emotion Healing and Counselling by EmotionEase"
+                      className="d-block w-100 h-100 img-fluid object-cover"
+                      loading="lazy"
+                    />
+                    <Carousel.Caption className="d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+                      <h3 className="h5 fw-bold">Human Connection</h3>
+                      <p>Building meaningful relationships</p>
+                    </Carousel.Caption>
+                  </motion.div>
+                </Carousel.Item>
+
+                <Carousel.Item className="h-100">
+                  <motion.div
+                    className="position-relative h-100"
+                    animate={{
+                      y: [0, -10, 0],
+                    }}
+                    transition={{
+                      duration: 8,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  >
+                    <img
+                      src={Cage}
+                      alt="Online Emotion Healing and Counselling by EmotionEase"
+                      className="d-block w-100 h-100 img-fluid object-cover"
+                      loading="lazy"
+                    />
+                    <Carousel.Caption className="d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+                      <h3 className="h5 fw-bold">Break Barriers</h3>
+                      <p>Overcome limitations and grow</p>
+                    </Carousel.Caption>
+                  </motion.div>
+                </Carousel.Item>
+
+                <Carousel.Item className="h-100">
+                  <motion.div
+                    className="position-relative h-100"
+                    animate={{
+                      y: [0, -10, 0],
+                    }}
+                    transition={{
+                      duration: 8,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  >
+                    <img
+                      src={Freedom}
+                      alt="Online Emotion Healing and Counselling by EmotionEase"
+                      className="d-block w-100 h-100 img-fluid object-cover"
+                      loading="lazy"
+                    />
+                    <Carousel.Caption className="d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-4">
+                      <h3 className="h5 fw-bold">True Freedom</h3>
+                      <p>Discover the liberty within yourself</p>
+                    </Carousel.Caption>
+                  </motion.div>
+                </Carousel.Item>
+              </Carousel>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
       {/* What You Get Section */}
       <section className="benefits-section py-5 py-lg-7 bg-light">
