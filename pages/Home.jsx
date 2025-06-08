@@ -374,39 +374,39 @@ const Home = () => {
                 <div className="row g-4">
                   {[
                     {
-                      title: "Transform Your Thinking",
+                      title: "Solution-Oriented Thinking",
                       icon: "bi-arrow-repeat",
-                      desc: "Shift from negative to positive thought patterns",
+                      desc: "You'll replace negative patterns with practical, positive strategies that move you forward.",
                     },
                     {
-                      title: "Heal Emotionally",
+                      title: "Emotional Healing",
                       icon: "bi-heart",
-                      desc: "Process and release past emotional wounds",
+                      desc: "You’ll process unresolved feelings, overcome emotional wounds, and move forward with clarity.",
                     },
                     {
-                      title: "Develop Healthy Emotions",
+                      title: "Develop Healthy Emotional Habits",
                       icon: "bi-emoji-smile",
-                      desc: "Cultivate emotional resilience and balance",
+                      desc: "You’ll build emotional resilience and adopt a balanced mindset to handle life’s challenges.",
                     },
                     {
                       title: "Build Harmonious Relationships",
                       icon: "bi-people",
-                      desc: "Create deeper connections with others",
+                      desc: "You’ll develop the skills to form meaningful and emotionally safe connections with others.",
                     },
                     {
-                      title: "Communicate Skillfully",
+                      title: "Improve Communication Skills",
                       icon: "bi-chat-square-text",
-                      desc: "Express yourself clearly and effectively",
+                      desc: "You’ll overcome hesitation and communicate with confidence and clarity in all situations.",
                     },
                     {
                       title: "Achieve Personal & Professional Goals",
                       icon: "bi-trophy",
-                      desc: "Overcome emotional barriers to success",
+                      desc: "You’ll break through emotional blocks and focus better on what truly matters.",
                     },
                     {
-                      title: "Develop Fearlessness",
+                      title: "Develop Confidence & Fearlessness ",
                       icon: "bi-shield-check",
-                      desc: "Face challenges with confidence",
+                      desc: "You’ll learn to face personal and professional challenges with self-assurance and courage.",
                     },
                     {
                       title: "Find Inner Peace",
@@ -474,13 +474,9 @@ const Home = () => {
                           <div className="bg-success bg-opacity-10 rounded-circle p-2 me-3">
                             <i className="bi bi-lightning-charge-fill fs-4"></i>
                           </div>
-                          <h3 className="h5 fw-bold mb-0">Emotion is Energy</h3>
+                          <h3 className="h5 fw-bold mb-0">Emotions are Energies in Motion</h3>
                         </div>
-                        <p className="mb-0">
-                          Emotion is our energy to move so respect it. By managing and
-                          expressing our emotions effortlessly and in a healthy
-                          fashion by our choice gives us organic happiness, health and
-                          efficiency.
+                        <p className="mb-0">Consciously managing and expressing our emotions leads to natural happiness, better mental health, and renewed energy to nurture emotional health.
                         </p>
                       </motion.div>
                     </motion.div>
@@ -497,13 +493,10 @@ const Home = () => {
                           <div className="bg-success bg-opacity-10 text-success rounded-circle p-2 me-3">
                             <i className="bi bi-heart-fill fs-4"></i>
                           </div>
-                          <h3 className="h5 fw-bold mb-0">Every Emotion Matters</h3>
+                          <h3 className="h5 fw-bold mb-0">Every Emotion Has a Purpose</h3>
                         </div>
                         <p className="mb-0">
-                          Every emotion is valuable, even anger is a healthy emotion
-                          if it's used to establish boundaries with our love's ones.
-                          We could reduce the intensity of our emotions by breathing
-                          slowly & deeply.
+                           Even emotions like anger can be healthy when they help set boundaries. Mindful breathing can reduce their intensity and support the management of complex emotions such as anxiety, workplace stress, and relationship stress.
                         </p>
                       </motion.div>
                     </motion.div>
@@ -520,13 +513,10 @@ const Home = () => {
                           <div className="bg-success bg-opacity-10 text-success rounded-circle p-2 me-3">
                             <i className="bi bi-shield-fill-check fs-4"></i>
                           </div>
-                          <h3 className="h5 fw-bold mb-0">Meeting Emotional Needs</h3>
+                          <h3 className="h5 fw-bold mb-0">Meet Your Emotional Needs Mindfully</h3>
                         </div>
                         <p className="mb-0">
-                          If our emotional needs are unmet then it would lead to
-                          emotional stagnation so work towards meeting your needs in a
-                          healthier fashion. Resist the temptation to take decisions
-                          when emotions are low.
+                          Unmet emotional needs can lead to stagnation. Learning to recognize and meet them in healthy ways is essential. Avoid making decisions when you're experiencing negative or pessimistic emotions. Being mindful of your state of mind is a conscious step toward reducing mental stress, both at office and at home.
                         </p>
                       </motion.div>
                     </motion.div>
@@ -571,12 +561,12 @@ const Home = () => {
                   className="row g-4"
                 >
                   {[
-                    "We will make you feel better from Day 1 by sharing you the reasons and right solutions.",
-                    "Our sessions have No time restrictions as we really care for you.",
-                    "We provide Unlimited sessions until you feel fully empowered with confidence (for Level 2 & 3 participants).",
-                    "We follow up with you for 3-months post enablement as we never let you down.",
-                    "We give 50% refund of your money if in case you are unhappy with the results anytime as your satisfaction is our primary goal.",
-                    "We give a 'Free First session' so that people get a better chance to understand our work.",
+                    "From the very first session, we help you understand your feelings and guide you toward the right solutions",
+                    "Our online sessions have no time limits. We listen closely, understand your concerns, and offer simple yet effective psychological and practical solutions; so you start feeling better from the very first session.",
+                    "For Level 2 and 3 participants, our online sessions are unlimited. We’re here to support you until you feel confident, empowered, and comfortable applying the approaches that strengthen your mental and emotional health.",
+                    "We follow up with everyone three months after their program because we genuinely care about how they’re doing and want to ensure they’re thriving in life.",
+                    "We offer a 50% refund if you don’t feel helped or empowered after attending the sessions.",
+                    "Our first session is free; we want you to understand our approach and feel confident trusting us with your concerns.",
                   ].map((item, index) => (
                     <motion.div
                       key={index}
@@ -600,7 +590,7 @@ const Home = () => {
             </section>
 
       {/* How Programs Work Section */}
-      <section className="programs-work-section py-5 py-lg-7">
+      {/* <section className="programs-work-section py-5 py-lg-7">
         <div className="container">
           <motion.div
             initial="hidden"
@@ -613,8 +603,8 @@ const Home = () => {
               className="section-title display-3 fw-bold mb-3"
               variants={itemVariants}
             >
-              How Our{" "}
-              <span className="text-gradient-success">Programs Work</span>
+              How can{" "}
+              <span className="text-gradient-success">You Begin our Journey with Us?</span>
             </motion.h2>
             <motion.p
               className="lead text-muted mx-auto"
@@ -748,7 +738,198 @@ const Home = () => {
             </motion.div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
+
+<section className="programs-work-section py-5 py-lg-7">
+  <div className="container">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.6, ease: "easeOut" }
+        }
+      }}
+      className="text-center mb-5 mb-lg-7"
+    >
+      <motion.h2
+        className="section-title display-3 fw-bold mb-3"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.02 }
+          }
+        }}
+      >
+        {"How can ".split("").map((char, i) => (
+          <motion.span
+            key={i}
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 }
+            }}
+          >
+            {char}
+          </motion.span>
+        ))}
+        <span className="text-gradient-success">
+          {"You Begin Your Journey With Us?".split("").map((char, i) => (
+            <motion.span
+              key={i + 20}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { delay: 0.4 + i * 0.02 }
+                }
+              }}
+            >
+              {char}
+            </motion.span>
+          ))}
+        </span>
+      </motion.h2>
+      <motion.p
+        className="lead text-muted mx-auto"
+        style={{ maxWidth: "700px", fontWeight: "bold" }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ 
+          opacity: 1, 
+          y: 0,
+          transition: { delay: 0.8, duration: 0.5 } 
+        }}
+      >
+        Simple steps to better emotional health
+      </motion.p>
+    </motion.div>
+
+    <motion.div 
+      className="row justify-content-center g-4"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-50px" }}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.15,
+            delayChildren: 0.2
+          }
+        }
+      }}
+    >
+      {[
+        { number: '1', title: "Book a Free First Session", icon: "bi-calendar" },
+        { number: '2', title: "Understand Your Emotional Patterns", icon: "bi-graph-up" },
+        { number: '3', title: "Start Customized Sessions", icon: "bi-person" },
+        { number: '4', title: "Gain Confidence, Empower your Mental & Emotional Health", icon: "bi-heart" },
+        { number: '5', title: "Give us feedback and let us know if you want more from us during our 3-Month Follow-Up call", icon: "bi-chat" },
+      ].map((step, i) => (
+        <motion.div 
+          key={i} 
+          className="col-md-4"
+          variants={{
+            hidden: { opacity: 0, y: 30, scale: 0.8 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: {
+                type: "spring",
+                stiffness: 100,
+                damping: 10
+              }
+            }
+          }}
+          whileHover={{
+            y: -8,
+            scale: 1.03,
+            transition: { duration: 0.2 }
+          }}
+        >
+          <div className="p-3 text-center h-100">
+            <motion.div 
+              className="bg-success bg-opacity-10 rounded-circle mx-auto mb-3"
+              style={{width: '60px', height: '60px'}}
+              initial={{ scale: 0 }}
+              animate={{ 
+                scale: 1,
+                transition: { 
+                  type: "spring", 
+                  stiffness: 150,
+                  delay: i * 0.15 + 0.3
+                }
+              }}
+              whileHover={{
+                scale: 1.1,
+                backgroundColor: "rgba(25, 135, 84, 0.2)"
+              }}
+            >
+              <motion.span 
+                className="d-block h3 mb-0 pt-3 text-success"
+                initial={{ opacity: 0 }}
+                animate={{ 
+                  opacity: 1,
+                  transition: { delay: i * 0.15 + 0.5 } 
+                }}
+              >
+                {step.number}
+              </motion.span>
+            </motion.div>
+            
+            <motion.h5 
+              className="fw-bold mb-3"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ 
+                opacity: 1, 
+                y: 0,
+                transition: { delay: i * 0.15 + 0.4 } 
+              }}
+              whileHover={{ color: "#198754" }}
+            >
+              {step.title}
+            </motion.h5>
+            
+            <motion.div 
+              className="mt-2 position-relative"
+              initial={{ opacity: 0 }}
+              animate={{ 
+                opacity: 1,
+                transition: { delay: i * 0.15 + 0.6 } 
+              }}
+            >
+              <motion.div
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                viewport={{ once: true }}
+                transition={{ 
+                  delay: i * 0.15 + 0.4,
+                  duration: 0.6,
+                  ease: [0.16, 1, 0.3, 1]
+                }}
+                style={{
+                  height: "3px",
+                  width: "100%",
+                  background: "linear-gradient(90deg, #198754, #20c997)",
+                  transformOrigin: "left center",
+                  position: "absolute",
+                  bottom: 0
+                }}
+              />
+            </motion.div>
+          </div>
+        </motion.div>
+      ))}
+    </motion.div>
+  </div>
+</section>
 
       {/* Review Section */}
       <section
@@ -1083,22 +1264,18 @@ const Home = () => {
                   viewport={{ once: true, margin: "-100px" }}
                   variants={containerVariants}
                 >
-                  <motion.h2
-                    className="display-3 fw-bold mb-3"
+                  <motion.h5
+                    className="display-3 mb-3"
                     variants={itemVariants}
                   >
-                    Ready to Transform Your Emotional Wellbeing?
-                  </motion.h2>
+                    Take Charge of Your Emotional Health
+                  </motion.h5>
                   <motion.p
                     className="lead mb-4 mx-auto"
                     style={{ maxWidth: "600px" }}
                     variants={itemVariants}
                   >
-                    Begin your journey to emotional balance and personal growth with a{" "}
-                    <span className="text-decoration-underline fw-bold">
-                      free, no-obligation
-                    </span>{" "}
-                    first session.
+                    Your first session is free, and there’s zero pressure to continue
                   </motion.p>
                   <motion.div
                     className="d-flex justify-content-center gap-3 flex-wrap"
