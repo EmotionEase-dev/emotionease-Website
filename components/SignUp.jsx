@@ -113,9 +113,11 @@ function SignupForm({ show, onClose }) {  // Added show prop here
           >
             <div className="d-flex align-items-center">
               <i className="bi bi-info-circle-fill me-2"></i>
-              <div>
-                <strong>Welcome!</strong> Sign up to learn more about our emotional wellness programs.
-              </div>
+              <div class="text-center">
+  <strong>Welcome!</strong> Sign up to learn more about our emotional wellness programs.<br/>
+  <small>If you’ve already signed in, please ignore this.</small>
+</div>
+
               <button 
                 type="button" 
                 className="btn-close" 
