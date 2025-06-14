@@ -1,4 +1,4 @@
-import React from 'react';
+import {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
 import mission from '../public/mission-image.png';
@@ -7,11 +7,17 @@ import SuchetaImage from '../public/SuchetaImage.jpg';
 import ThilagaMC from '../public/ThilagaMC.jpg';
 
 const About = () => {
+
+
+    useEffect(() => {
+    document.title = "EmotionEase | Online Counselling & Emotional Wellbeing";
+  }, []);
+
   // Scroll to top function
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'instant' // Immediate scroll without animation
+      behavior: 'instant'
     });
   };
 
@@ -54,12 +60,15 @@ const About = () => {
               
             </div>
             <div className="col-lg-6">
-              <img 
-                src={mission}
-                alt="Team working together" 
-                className="img-fluid rounded shadow"
-              />
-            </div>
+  <video 
+    controls 
+    className="img-fluid rounded shadow"
+    style={{width: '100%'}}
+  >
+    <source src="/A-MessageVideo.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
           </div>
         </div>
       </section>

@@ -10,6 +10,8 @@ import Cage from "../public/cage.png";
 import Freedom from "../public/Freedom.png";
 import TermsModal from "../components/TermsModal";
 import SignupForm from "../components/SignUp.jsx";
+import { Helmet } from "react-helmet";
+
 
 // Animation variants
 const containerVariants = {
@@ -66,9 +68,11 @@ const Home = () => {
   const [showSignup, setShowSignup] = useState(false);
 
   useEffect(() => {
+
+    document.title = "EmotionEase: Online Counselling for Emotional & Mental Health";
     // Check if user has already closed the form
     const formClosed = localStorage.getItem('signupFormClosed');
-    
+
     // Show form automatically after 5 seconds if not previously closed
     if (!formClosed) {
       const timer = setTimeout(() => {
@@ -95,24 +99,6 @@ const Home = () => {
         show={showSignup} 
         onClose={() => setShowSignup(false)}
       />
-
-      {/* Floating Signup Button */}
-
-      {/* <motion.button
-        onClick={handleManualSignupTrigger}
-        className="btn btn-success fixed-bottom m-3 ms-auto"
-        style={{ 
-          width: 'fit-content', 
-          zIndex: 1000,
-          borderRadius: '50px',
-          padding: '10px 20px',
-          boxShadow: '0 4px 15px rgba(40, 167, 69, 0.3)'
-        }}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <i className="bi bi-envelope-plus me-2"></i> Get Updates
-      </motion.button> */}
 
       {/* Hero Section */}
           <section className="hero-section">
@@ -505,7 +491,7 @@ const Home = () => {
                       <motion.div
                         className="h-100 p-3 p-lg-4 rounded-3 border border-2 border-transparent"
                         whileHover={{
-                          borderColor: "#198754", // Bootstrap success color
+                          borderColor: "#198754",
                           transition: { duration: 0.3 },
                         }}
                       >
@@ -927,6 +913,23 @@ const Home = () => {
           </div>
         </motion.div>
       ))}
+
+<div className="d-flex justify-content-center">
+  <motion.div
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              <Link
+                to="/programs"
+                className="btn btn-success btn-lg px-5 py-3 fw-medium"
+              >
+                Explore All Program Details{" "}
+                <i className="bi bi-arrow-right ms-2"></i>
+              </Link>
+            </motion.div>
+</div>
+       
     </motion.div>
   </div>
 </section>
@@ -1300,9 +1303,9 @@ const Home = () => {
                       whileTap={{ scale: 0.98 }}
                     ></motion.div>
                   </motion.div>
-                  <motion.p className="small mt-3 text-muted" variants={itemVariants}>
+                  {/* <motion.p className="small mt-3 text-muted" variants={itemVariants}>
                     No credit card required • 100% confidential
-                  </motion.p>
+                  </motion.p> */}
                 </motion.div>
               </div>
             </section>
