@@ -59,15 +59,128 @@ const About = () => {
 
               
             </div>
-            <div className="col-lg-6">
-  <video 
-    controls 
-    className="img-fluid rounded shadow"
-    style={{width: '100%'}}
-  >
+<div className="col-lg-6">
+  <video controls className="img-fluid rounded shadow" style={{ width: '100%' }}>
     <source src="/A-MessageVideo.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
+
+  <div className="mt-3 d-flex flex-wrap gap-3 align-items-center">
+  {/* 1. Copy Drive Link Button - Enhanced */}
+  <button
+    className="btn btn-primary position-relative overflow-hidden"
+    onClick={(e) => {
+      const driveUrl = "https://drive.google.com/file/d/1exwAszrVP2WI3s-Nxj8zS7V9WxK_SX-0/view?usp=sharing";
+      navigator.clipboard.writeText(driveUrl);
+      
+      // Create and show toast
+      const toast = document.createElement('div');
+      toast.className = 'position-fixed top-0 start-50 translate-middle-x p-3 toast-animation';
+      toast.style.zIndex = '9999';
+      toast.innerHTML = `
+        <div class="toast show bg-white" role="alert">
+          <div class="toast-body d-flex align-items-center shadow-sm">
+            <i class="bi bi-check-circle-fill text-success me-2 fs-5"></i>
+            <span class="fw-medium">Google Drive link copied to clipboard!</span>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(toast);
+      
+      // Button click effect
+      const button = e.currentTarget;
+      button.classList.add('active');
+      setTimeout(() => button.classList.remove('active'), 300);
+      
+      // Remove toast after delay
+      setTimeout(() => {
+        toast.classList.add('fade-out');
+        setTimeout(() => toast.remove(), 300);
+      }, 2500);
+    }}
+    style={{
+      transition: 'all 0.3s ease',
+      minWidth: '140px'
+    }}
+  >
+    <i className="bi bi-google-drive me-2"></i>
+    <span>Copy Drive Link</span>
+    <span className="position-absolute top-0 start-0 w-100 h-100 bg-white opacity-0 hover-effect"></span>
+  </button>
+
+  {/* 2. Download Button - Enhanced */}
+  <a
+    href="https://drive.google.com/uc?export=download&id=1exwAszrVP2WI3s-Nxj8zS7V9WxK_SX-0"
+    className="btn btn-dark position-relative overflow-hidden"
+    style={{
+      transition: 'all 0.3s ease',
+      minWidth: '140px'
+    }}
+    download
+  >
+    <i className="bi bi-download me-2"></i>
+    <span>Download</span>
+    <span className="position-absolute top-0 start-0 w-100 h-100 bg-white opacity-0 hover-effect"></span>
+  </a>
+</div>
+
+<style jsx>{`
+  /* Button hover effect */
+  .hover-effect {
+    transition: opacity 0.3s ease;
+  }
+  
+  .btn:hover .hover-effect {
+    opacity: 0.1 !important;
+  }
+  
+  .btn.active {
+    transform: scale(0.95);
+  }
+  
+  /* Toast animations */
+  .toast-animation {
+    animation: slideIn 0.3s forwards;
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.3s forwards;
+  }
+  
+  @keyframes slideIn {
+    from { 
+      opacity: 0;
+      transform: translate(-50%, -20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translate(-50%, 20px);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from { 
+      opacity: 1;
+      transform: translate(-50%, 20px);
+    }
+    to { 
+      opacity: 0;
+      transform: translate(-50%, -20px);
+    }
+  }
+  
+  /* Toast styling */
+  .toast {
+    border-radius: 12px !important;
+    border: none !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+  }
+  
+  .toast-body {
+    padding: 12px 16px;
+    border-radius: 12px;
+  }
+`}</style>
 </div>
           </div>
         </div>
