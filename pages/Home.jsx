@@ -94,26 +94,6 @@ const Home = () => {
 
   return (
     <div className="home-page">
-            {/* Add Helmet here - this is the best place for it */}
-      <Helmet>
-        <title>EmotionEase: Online Counselling for Emotional & Mental Health</title>
-        <meta name="description" content="EmotionEase offers professional online counselling for emotional healing, anxiety relief, and mental wellbeing. Get personalized support from certified practitioners." />
-        <link rel="canonical" href="https://emotionease.in/" />
-        
-        {/* Open Graph / Facebook meta tags */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://emotionease.in/" />
-        <meta property="og:title" content="EmotionEase: Online Counselling for Emotional & Mental Health" />
-        <meta property="og:description" content="Professional online counselling for emotional healing, anxiety relief, and mental wellbeing." />
-        <meta property="og:image" content="https://emotionease.in/public/PeacefulMeditation.png" />
-        
-        {/* Twitter meta tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://emotionease.in/" />
-        <meta name="twitter:title" content="EmotionEase: Online Counselling for Emotional & Mental Health" />
-        <meta name="twitter:description" content="Professional online counselling for emotional healing, anxiety relief, and mental wellbeing." />
-        <meta name="twitter:image" content="https://emotionease.in/public/PeacefulMeditation.png" />
-      </Helmet>
       
       {/* Signup Form Modal */}
       <SignupForm 
