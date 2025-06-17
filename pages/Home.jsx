@@ -113,32 +113,8 @@ const Home = () => {
         <meta name="twitter:title" content="EmotionEase: Online Counselling for Emotional & Mental Health" />
         <meta name="twitter:description" content="Professional online counselling for emotional healing, anxiety relief, and mental wellbeing." />
         <meta name="twitter:image" content="https://emotionease.in/public/PeacefulMeditation.png" />
-
-
-         <style>
-    {`
-      /* Minimal critical CSS for above-the-fold content */
-      .hero-section, .hero-title { opacity: 0; }
-      [data-loaded="true"] .hero-section, 
-      [data-loaded="true"] .hero-title { 
-        opacity: 1;
-        transition: opacity 0.3s ease-out;
-      }
-    `}
-  </style>
-  {/* Load full CSS asynchronously */}
-  <link 
-    rel="stylesheet" 
-    href="/styles/main.css" 
-    media="print" 
-    onLoad={() => {
-      document.body.setAttribute('data-loaded', 'true');
-      this.media = 'all';
-    }} 
-  />
-  
       </Helmet>
-
+      
       {/* Signup Form Modal */}
       <SignupForm 
         show={showSignup} 
