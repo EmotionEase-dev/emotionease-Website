@@ -116,7 +116,7 @@ const Home = () => {
                 <motion.h1 className="hero-title display-3 fw-bold mb-4 text-success">
                   Emotional Healing & {" "}
                   <span className="text-gradient-success">
-                    Anxiety Relief Online EmotionEase!
+                    Anxiety Relief Online | EmotionEase!
                   </span>
                 </motion.h1>
 

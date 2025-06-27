@@ -31,7 +31,18 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", href: "/home", onClick: scrollToTop }, 
     { name: "About Us", href: "/about", onClick: scrollToTop },
-    // { name: "Blogs", href: "/blogs", onClick: scrollToTop },
+        { 
+      name: "Service", 
+      dropdown: [
+        { name: "Stress Management", href: "/StressManagement", onClick: scrollToTop },
+        { name: "Work Stress", href: "/WorkStress",onClick: scrollToTop },
+        { name: "Parent Coaching", href: "/ParentCoaching", onClick: scrollToTop },
+        { name: "Premarital Counselling", href: "/PremaritalCounselling", onClick: scrollToTop },
+        { name: "Burnout Therapy", href: "/BurnoutTherapy", onClick: scrollToTop },
+
+      ] 
+    },
+    // { name: "Blogs", href: "/StressManagement", onClick: scrollToTop },
     { 
       name: "Our Uniqueness", 
       dropdown: [
