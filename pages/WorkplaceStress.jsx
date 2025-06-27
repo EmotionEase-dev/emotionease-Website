@@ -98,10 +98,11 @@ const WorkplaceStressManagementPage = () => {
               </Card>
 
               <Button 
-                href="/contact" 
+                href="https://forms.gle/YbcSchKPpTkaxu1ZA" 
+                target="_blank"
                 className="btn btn-success btn-lg px-4 py-3 fw-medium"
               >
-                Book Free Consultation
+                Book First Free Consultation
               </Button>
             </Col>
           </Row>

@@ -1,8 +1,139 @@
 import React, { useEffect } from 'react';
 import { HashLink, NavHashLink } from 'react-router-hash-link';
-import NavItem from './NavItem';
 import logo from '../public/logo.png';
 import './Navbar.css';
+
+const NavItem = ({ item }) => {
+  const handleNavClick = (e, href) => {
+    if (!href.includes('#')) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const getServiceIcon = (index, name) => {
+    const serviceIcons = [
+      'bi-heart-pulse',         // Stress Management
+      'bi-briefcase',           // Work Stress
+      'bi-people',              // Parent Coaching
+      'bi-heart-fill',          // Premarital Counselling
+      'bi-fire',                // Burnout Therapy
+    ];
+    return serviceIcons[index] || 'bi-file-earmark-text';
+  };
+
+  const getSocialIcon = (name) => {
+    const socialIcons = {
+      'instagram': 'bi-instagram',
+      'facebook': 'bi-facebook',
+      'linkedin': 'bi-linkedin',
+      'twitter': 'bi-twitter',
+      'youtube': 'bi-youtube',
+      'whatsapp': 'bi-whatsapp'
+    };
+    return socialIcons[name.toLowerCase()] || 'bi-share';
+  };
+
+  const renderDropdown = (items, isUniqueness = false) => (
+    <ul className={`dropdown-menu dropdown-menu-${isUniqueness ? 'uniqueness' : 'resources'} p-3`}>
+      {items.map((subItem, idx) => (
+        <li key={idx}>
+          {subItem.href.startsWith('http') || subItem.external ? (
+            <a 
+              href={subItem.href} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="dropdown-item bg-light text-dark d-flex align-items-center py-2 px-3 rounded-3"
+            >
+              <div className={`icon-wrapper me-3 bg-${isUniqueness ? 'success' : 'success'} bg-opacity-10 p-2 rounded-circle`}>
+                {item.name === "Follow Us" ? (
+                  <i className={`bi ${getSocialIcon(subItem.name)} text-success`}></i>
+                ) : (
+                  <i className={`bi ${getServiceIcon(idx, subItem.name)} text-success`}></i>
+                )}
+              </div>
+              <div>
+                <h6 className="mb-0 fw-semibold">{subItem.name}</h6>
+                <small className="text-muted">
+                  {subItem.description || ""}
+                </small>
+              </div>
+            </a>
+          ) : (
+            <NavHashLink 
+              className="dropdown-item bg-light text-dark d-flex align-items-center py-2 px-3 rounded-3"
+              to={subItem.href}
+              scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              onClick={(e) => handleNavClick(e, subItem.href)}
+            >
+              <div className={`icon-wrapper me-3 bg-${isUniqueness ? 'success' : 'success'} bg-opacity-10 p-2 rounded-circle`}>
+                {isUniqueness ? (
+                  idx === 0 ? (
+                    <i className="bi bi-award text-success"></i>  // Benefits
+                  ) : (
+                    <i className="bi bi-chat-square-quote text-success"></i>  // Reviews
+                  )
+                ) : item.name === "Services" ? (
+                  <i className={`bi ${getServiceIcon(idx, subItem.name)} text-success`}></i>
+                ) : item.name === "Follow Us" ? (
+                  <i className={`bi ${getSocialIcon(subItem.name)} text-success`}></i>
+                ) : (
+                  <i className="bi bi-file-earmark-text text-success"></i>
+                )}
+              </div>
+              <div>
+                <h6 className="mb-0 fw-semibold">{subItem.name}</h6>
+                <small className="text-muted">
+                  {subItem.description || ""}
+                </small>
+              </div>
+            </NavHashLink>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+
+  return (
+    <li className="nav-item dropdown mx-1">
+      {item.dropdown ? (
+        <>
+          <a 
+            className="nav-link dropdown-toggle d-flex align-items-center" 
+            href="#" 
+            id={`${item.name.replace(/\s+/g, '-')}-dropdown`}
+            role="button" 
+            data-bs-toggle="dropdown" 
+            aria-expanded="false"
+          >
+            {item.icon && <i className={`bi ${item.icon} me-1`}></i>}
+            <span>{item.name}</span>
+            <i className="bi bi-chevron-down ms-2"></i>
+          </a>
+          {renderDropdown(item.dropdown, item.name === "Our Uniqueness")}
+        </>
+      ) : (
+        <NavHashLink 
+          className="nav-link" 
+          to={item.href}
+          scroll={el => {
+            if (item.href.includes('#')) {
+              el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }}
+          onClick={(e) => handleNavClick(e, item.href)}
+        >
+          {item.icon && <i className={`bi ${item.icon} me-1`}></i>}
+          {item.name}
+        </NavHashLink>
+      )}
+    </li>
+  );
+};
 
 const Navbar = () => {
   useEffect(() => {
@@ -29,36 +160,115 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { name: "Home", href: "/home", onClick: scrollToTop }, 
-    { name: "About Us", href: "/about", onClick: scrollToTop },
-        { 
-      name: "Service", 
+    { name: "Home", href: "/home" },
+    { name: "About Us", href: "/about" },
+    { 
+      name: "Services", 
       dropdown: [
-        { name: "Stress Management", href: "/StressManagement", onClick: scrollToTop },
-        { name: "Work Stress", href: "/WorkStress",onClick: scrollToTop },
-        { name: "Parent Coaching", href: "/ParentCoaching", onClick: scrollToTop },
-        { name: "Premarital Counselling", href: "/PremaritalCounselling", onClick: scrollToTop },
-        { name: "Burnout Therapy", href: "/BurnoutTherapy", onClick: scrollToTop },
-
+        { 
+          name: "Stress Management", 
+          href: "/StressManagement",
+          description: "Learn to manage stress effectively",
+          icon: "bi-heart-pulse"
+        },
+        { 
+          name: "Work Stress", 
+          href: "/WorkStress",
+          description: "Deal with workplace stress and anxiety",
+          icon: "bi-briefcase"
+        },
+        { 
+          name: "Parent Coaching", 
+          href: "/ParentCoaching",
+          description: "Guidance for modern parenting challenges",
+          icon: "bi-people"
+        },
+        { 
+          name: "Premarital Counselling", 
+          href: "/PremaritalCounselling",
+          description: "Prepare for a strong marriage foundation",
+          icon: "bi-people-fill"
+        },
+        { 
+          name: "Burnout Therapy", 
+          href: "/BurnoutTherapy",
+          description: "Recover from professional burnout",
+          icon: "bi-fire"
+        },
       ] 
     },
-    // { name: "Blogs", href: "/StressManagement", onClick: scrollToTop },
     { 
       name: "Our Uniqueness", 
       dropdown: [
-        { name: "Benefits", href: "/home#uniqueness-section" },
-        { name: "Reviews", href: "/home#review-section" },
+        { 
+          name: "Benefits", 
+          description: "Why choose EmotionEase?",
+          href: "/home#uniqueness-section",
+          icon: "bi-award"
+        },
+        { 
+          name: "Reviews", 
+          description: "What our clients say",
+          href: "/home#review-section",
+          icon: "bi-chat-square-quote"
+        },
       ] 
     },
-    { name: "Curated Programs", href: "/programs", onClick: scrollToTop },
     { 
-      name: "Follow us",
+      name: "Curated Programs", 
+      href: "/programs",
+    },
+    { 
+      name: "Follow Us",
       dropdown: [
-        { name: "Instagram", href: "https://www.instagram.com/emotionease/", external: true },
-        { name: "LinkedIn", href: "https://www.linkedin.com/company/emotionease/", external: true },
+        { 
+          name: "Instagram", 
+          href: "https://www.instagram.com/emotionease/", 
+          external: true,
+          icon: "bi-instagram",
+          description: "See our daily updates and tips"
+        },
+        // { 
+        //   name: "Facebook", 
+        //   href: "https://facebook.com/emotionease", 
+        //   external: true,
+        //   icon: "bi-facebook",
+        //   description: "Connect with our community"
+        // },
+        { 
+          name: "LinkedIn", 
+          href: "https://www.linkedin.com/company/emotionease/", 
+          external: true,
+          icon: "bi-linkedin",
+          description: "Professional network and articles"
+        },
+        // { 
+        //   name: "Twitter", 
+        //   href: "https://twitter.com/emotionease", 
+        //   external: true,
+        //   icon: "bi-twitter",
+        //   description: "Quick mental health insights"
+        // },
+        // { 
+        //   name: "YouTube", 
+        //   href: "https://youtube.com/emotionease", 
+        //   external: true,
+        //   icon: "bi-youtube",
+        //   description: "Watch our therapy sessions"
+        // },
+        // { 
+        //   name: "WhatsApp", 
+        //   href: "https://wa.me/yournumber", 
+        //   external: true,
+        //   icon: "bi-whatsapp",
+        //   description: "Chat with us directly"
+        // }
       ],
     },
-    { name: "Contact Us", href: "/contact", onClick: scrollToTop },
+    { 
+      name: "Contact Us", 
+      href: "/contact",
+    },
   ];
 
   return (

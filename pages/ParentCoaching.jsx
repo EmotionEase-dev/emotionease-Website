@@ -103,10 +103,12 @@ const ParentCoachingPage = () => {
               </p>
 
               <Button 
-                href="/programs" 
+                href="https://forms.gle/YbcSchKPpTkaxu1ZA" 
+                target='_blank'
+                variant="success"
                 className="btn btn-success btn-lg px-4 py-3 fw-medium"
               >
-                Book Free Discovery Session
+                Book First Free Discovery Session
               </Button>
             </Col>
           </Row>
@@ -309,12 +311,13 @@ const ParentCoachingPage = () => {
             
           </Row> */}
           <Button 
-                  href="/contact" 
+                  href="https://forms.gle/YbcSchKPpTkaxu1ZA" 
+                 target='_blank'
                   variant="success" 
                   size="lg" 
                   className="rounded-pill px-4 py-3 hover-lift-success fw-medium"
                 >
-                  Book Free Discovery Session
+                  Book First Free Discovery Session
                 </Button>
         </Container>
       </section>

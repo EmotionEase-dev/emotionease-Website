@@ -98,7 +98,7 @@ const PremaritalCounselingPage = () => {
               </Card>
 
               <Button 
-                href="/contact" 
+                href="/programs" 
                 className="btn btn-pink btn-lg px-4 py-3 fw-medium"
               >
                 Start Your Journey

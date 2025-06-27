@@ -263,7 +263,7 @@ const About = () => {
                     <span className="badge bg-success bg-opacity-10 text-success">Trauma-Informed Care</span>
                   </div>
                   
-                  <p className="text-muted mb-0">
+                  <p className="mb-0">
                     With 5+ years of experience in emotional wellbeing, Elango has developed 
                     unique methodologies combining NLP, cognitive behavioral techniques, and 
                     mindfulness practices.
@@ -291,7 +291,7 @@ const About = () => {
                     <span className="badge bg-success bg-opacity-10 text-success">Content Strategy</span>
                   </div>
                   
-                  <p className="text-muted mb-0">
+                  <p className="mb-0">
                     Sucheta brings 4 years of digital marketing experience with a passion for 
                     mental health advocacy. She ensures EmotionEase's message reaches those who 
                     need it most.
@@ -319,7 +319,7 @@ const About = () => {
                     <span className="badge bg-success bg-opacity-10 text-success">IAM Specialist</span>
                   </div>
                   
-                  <p className="text-muted mb-0">
+                  <p className="mb-0">
                     A security Engineer with around 2 years of IAM experience, now focused on becoming 
                     a skilled Full Stack Developer blending security and seamless user experience.
                   </p>

@@ -971,7 +971,7 @@ const Home = () => {
                     href="https://forms.gle/tRgauc3KoAPxG3wn6"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline-success btn-lg px-4"
+                    className="btn btn-outline-success btn-lg px-4 "
                   >
                     <i className="bi bi-plus-circle me-2"></i> Add Your Review
                   </a>
@@ -1034,7 +1034,7 @@ const Home = () => {
                                 whileHover={{ y: -5 }}
                               >
                                 <div className="card-body p-4">
-                                  <span className="badge bg-success bg-opacity-10 text-light mb-3">
+                                  <span className="badge bg-success bg-opacity-10 mb-3 text-success">
                                     {testimonial.program}
                                   </span>
                                   <div className="mb-3">

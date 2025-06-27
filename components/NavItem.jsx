@@ -3,7 +3,6 @@ import { HashLink, NavHashLink } from 'react-router-hash-link';
 
 const NavItem = ({ item }) => {
   const handleNavClick = (e, href) => {
-    // Only scroll to top for non-hash links
     if (!href.includes('#')) {
       window.scrollTo({
         top: 0,
@@ -12,11 +11,34 @@ const NavItem = ({ item }) => {
     }
   };
 
+  const getServiceIcon = (index, name) => {
+    const serviceIcons = [
+      'bi-heart-pulse',         // Stress Management
+      'bi-briefcase',           // Work Stress
+      'bi-people',              // Parent Coaching
+      'bi-heart-fill',          // Premarital Counselling
+      'bi-fire',                // Burnout Therapy
+    ];
+    return serviceIcons[index] || 'bi-file-earmark-text';
+  };
+
+  const getSocialIcon = (name) => {
+    const socialIcons = {
+      'instagram': 'bi-instagram',
+      'facebook': 'bi-facebook',
+      'linkedin': 'bi-linkedin',
+      'twitter': 'bi-twitter',
+      'youtube': 'bi-youtube',
+      'whatsapp': 'bi-whatsapp'
+    };
+    return socialIcons[name.toLowerCase()] || 'bi-share';
+  };
+
   const renderDropdown = (items, isUniqueness = false) => (
     <ul className={`dropdown-menu dropdown-menu-${isUniqueness ? 'uniqueness' : 'resources'} p-3`}>
       {items.map((subItem, idx) => (
         <li key={idx}>
-          {subItem.href.startsWith('http') ? (
+          {subItem.href.startsWith('http') || subItem.external ? (
             <a 
               href={subItem.href} 
               target="_blank" 
@@ -24,33 +46,16 @@ const NavItem = ({ item }) => {
               className="dropdown-item bg-light text-dark d-flex align-items-center py-2 px-3 rounded-3"
             >
               <div className={`icon-wrapper me-3 bg-${isUniqueness ? 'success' : 'success'} bg-opacity-10 p-2 rounded-circle`}>
-                {isUniqueness ? (
-                  idx === 0 ? (
-                    <i className="bi bi-stars text-success"></i>
-                  ) : (
-                    <i className="bi bi-chat-square-quote text-success"></i>
-                  )
-                ) : item.name === "Follow Us" ? (
-                  // Special styling for Follow Us icons
-                  <i className={`bi bi-${subItem.icon} text-success`}></i>
+                {item.name === "Follow Us" ? (
+                  <i className={`bi ${getSocialIcon(subItem.name)} text-success`}></i>
                 ) : (
-                  idx === 0 ? (
-                    <i className="bi bi-file-earmark-post text-success"></i>
-                  ) : (
-                    <i className="bi bi-journal-text text-success"></i>
-                  )
+                  <i className={`bi ${getServiceIcon(idx, subItem.name)} text-success`}></i>
                 )}
               </div>
               <div>
                 <h6 className="mb-0 fw-semibold">{subItem.name}</h6>
                 <small className="text-muted">
-                  {isUniqueness ? (
-                    idx === 0 ? "Discover what sets us apart" : "See what others say about us"
-                  ) : item.name === "Follow Us" ? (
-                    `Connect with us on ${subItem.name}`
-                  ) : (
-                    idx === 0 ? "Latest articles and updates" : "In-depth stories and guides"
-                  )}
+                  {subItem.description || ""}
                 </small>
               </div>
             </a>
@@ -64,31 +69,22 @@ const NavItem = ({ item }) => {
               <div className={`icon-wrapper me-3 bg-${isUniqueness ? 'success' : 'success'} bg-opacity-10 p-2 rounded-circle`}>
                 {isUniqueness ? (
                   idx === 0 ? (
-                    <i className="bi bi-stars text-success"></i>
+                    <i className="bi bi-award text-success"></i>  // Benefits
                   ) : (
-                    <i className="bi bi-chat-square-quote text-success"></i>
+                    <i className="bi bi-chat-square-quote text-success"></i>  // Reviews
                   )
+                ) : item.name === "Services" ? (
+                  <i className={`bi ${getServiceIcon(idx, subItem.name)} text-success`}></i>
                 ) : item.name === "Follow Us" ? (
-                  // Special styling for Follow Us icons
-                  <i className={`bi bi-${subItem.icon} text-success`}></i>
+                  <i className={`bi ${getSocialIcon(subItem.name)} text-success`}></i>
                 ) : (
-                  idx === 0 ? (
-                    <i className="bi bi-file-earmark-post text-success"></i>
-                  ) : (
-                    <i className="bi bi-journal-text text-success"></i>
-                  )
+                  <i className="bi bi-file-earmark-text text-success"></i>
                 )}
               </div>
               <div>
                 <h6 className="mb-0 fw-semibold">{subItem.name}</h6>
                 <small className="text-muted">
-                  {isUniqueness ? (
-                    idx === 0 ? "Discover what sets us apart" : "See what others say about us"
-                  ) : item.name === "Follow Us" ? (
-                    `Connect with us on ${subItem.name}`
-                  ) : (
-                    idx === 0 ? "Latest articles and updates" : "In-depth stories and guides"
-                  )}
+                  {subItem.description || ""}
                 </small>
               </div>
             </NavHashLink>
@@ -128,6 +124,7 @@ const NavItem = ({ item }) => {
           }}
           onClick={(e) => handleNavClick(e, item.href)}
         >
+          <i className={`bi ${item.icon || 'bi-link'} me-1`}></i>
           {item.name}
         </NavHashLink>
       )}
