@@ -217,56 +217,6 @@ const PremaritalCounselingPage = () => {
           </Row>
         </Container>
       </section>
-
-      {/* Specialist Section */}
-      {/* <section className="py-6 bg-light-pink">
-        <Container>
-          <Row className="justify-content-center">
-            <Col lg={8} className="animate-on-scroll fade-in-up">
-              <div className="specialist-card p-4 p-lg-5 rounded-4 bg-pink bg-opacity-10 text-center hover-glow-pink">
-                <div className="mb-4">
-                  <img 
-                    src="/ElangoPhoto.jpg" 
-                    alt="Elango Annamalai" 
-                    className="rounded-circle mx-auto" 
-                    width="120" 
-                    height="120" 
-                  />
-                </div>
-                
-                <h3 className="fw-bold mb-3">
-                  <Card className="text-decoration-none hover-underline-pink">
-                    Elango Annamalai
-                  </Card>
-                </h3>
-                <p className="text-muted mb-4">Emotion Regulation Consultant (20+ years experience)</p>
-                
-                <div className="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                  {['Relationship Counseling', 'Premarital Guidance', 'Communication Skills', 'Conflict Resolution'].map((skill, i) => (
-                    <Badge pill bg="pink" key={i} className="px-3 py-2 badge rounded-pill bg-success">
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-                
-                <p className="mb-4">
-                  With decades of experience guiding couples, Elango provides compassionate, practical premarital counseling to help you build a strong foundation for your marriage.
-                </p>
-                
-                <Button 
-                  href="/contact" 
-                  variant="pink" 
-                  size="lg" 
-                  className="rounded-pill px-4 py-3 hover-lift-pink fw-medium"
-                >
-                  Book Your Session
-                </Button>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
-
     </div>
 
           {/* Final CTA */}

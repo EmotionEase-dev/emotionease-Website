@@ -68,7 +68,7 @@ const BurnoutTherapyPage = () => {
           <Row className="g-5 align-items-center">
             <Col lg={6} className="animate-on-scroll slide-in-left">
               <img 
-                src="/burnout-exhaustion.png" 
+                src="/Burnout.png" 
                 alt="Burnout exhaustion" 
                 className="img-fluid rounded-4 shadow hover-zoom w-100" 
               />
@@ -196,7 +196,7 @@ const BurnoutTherapyPage = () => {
           <Row className="g-5 align-items-center">
             <Col lg={6} className="animate-on-scroll slide-in-left">
               <img 
-                src="/burnout-recovery.png" 
+                src="/BurnoutRecovery.png"  
                 alt="Burnout recovery" 
                 className="img-fluid rounded-4 shadow hover-zoom w-100" 
               />
