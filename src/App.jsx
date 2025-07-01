@@ -12,6 +12,7 @@ import StressManagementPage from '../pages/StressManagement';
 import ParentCoachingPage from '../pages/ParentCoaching';
 import PremaritalCounsellingPage from '../pages/PremaritalCounselling';
 import BurnoutTherapyPage from '../pages/BurnoutTherapy';
+import CouplesTherapyPage from '../pages/CouplesTherapy';
 
 import { useEffect } from 'react';
 import './App.css';
@@ -121,7 +122,10 @@ function App() {
         <Route path="/PremaritalCounselling" element={<PremaritalCounsellingPage/>} />
         <Route path="/BurnoutTherapy" element={<BurnoutTherapyPage />} />
         <Route path="/StressManagement" element={<StressManagementPage />} />
+        <Route path="/CoupleTherapy" element={<CouplesTherapyPage />} />
 
+        {/* Catch-all route for 404 Not Found */}
+        <Route path="/404" element={<div className="not-found">404 Not Found</div>} />
         <Route path="*" element={<div className="not-found">404 Not Found</div>} />
       </Routes>
     </Router>

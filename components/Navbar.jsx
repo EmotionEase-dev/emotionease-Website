@@ -195,6 +195,12 @@ const Navbar = () => {
           description: "Recover from professional burnout",
           icon: "bi-fire"
         },
+        { 
+          name: " Couple Therapy", 
+          href: "/CoupleTherapy",
+          description: "Rebuild connection and resolve conflicts",
+          icon: "bi-heart-arrow"
+        },
       ] 
     },
     { 
