@@ -166,7 +166,7 @@ const Navbar = () => {
       name: "Services", 
       dropdown: [
         { 
-          name: "Stress Management", 
+          name: "Depression & Anxiety", 
           href: "/StressManagement",
           description: "Learn to manage stress effectively",
           icon: "bi-heart-pulse"
