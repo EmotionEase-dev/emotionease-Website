@@ -5,7 +5,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import ContactUs from '../pages/ContactUs';
 import CuratedPrograms from '../pages/CuratedPrograms';
-import TermsAndConditions from '../components/TermsAndConditions';
+import PrivacyPolicy from '../components/PrivacyPolicy';
 
 import WorkplaceStressManagementPage from '../pages/WorkplaceStress';
 import StressManagementPage from '../pages/StressManagement';
@@ -114,9 +114,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/programs" element={<CuratedPrograms />} />
-        <Route path="/privacy & policy" element={<TermsAndConditions/>} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
         <Route path="/contact" element={<ContactUs />} />
-
         <Route path="/WorkStress" element={<WorkplaceStressManagementPage />} />
         <Route path="/ParentCoaching" element={<ParentCoachingPage />} />
         <Route path="/PremaritalCounselling" element={<PremaritalCounsellingPage/>} />
