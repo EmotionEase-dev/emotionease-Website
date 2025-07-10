@@ -199,7 +199,7 @@ const Navbar = () => {
           name: " Couple Therapy", 
           href: "/CoupleTherapy",
           description: "Rebuild connection and resolve conflicts",
-          icon: "bi-heart-arrow"
+          icon: "bi-people"
         },
       ] 
     },

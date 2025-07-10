@@ -18,8 +18,9 @@ const NavItem = ({ item }) => {
       'bi-people',              // Parent Coaching
       'bi-heart-fill',          // Premarital Counselling
       'bi-fire',                // Burnout Therapy
+      'bi-people',    // Couples Therapy
     ];
-    return serviceIcons[index] || 'bi-file-earmark-text';
+    return serviceIcons[index] || 'bi-people';
   };
 
   const getSocialIcon = (name) => {
