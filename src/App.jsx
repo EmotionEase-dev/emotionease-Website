@@ -124,7 +124,7 @@ function App() {
         <Route path="/StressManagement" element={<StressManagementPage />} />
         <Route path="/CoupleTherapy" element={<CouplesTherapyPage />} />
         {/* Sitemap route */}
-        <Route path="/sitemap.xml" element={<div dangerouslySetInnerHTML={{ __html: sitemap }} />} />
+        <Route path="/home/sitemap.xml" element={<div dangerouslySetInnerHTML={{ __html: sitemap }} />} />
 
         {/* Catch-all route for 404 Not Found */}
         <Route path="/404" element={<div className="not-found">404 Not Found</div>} />
