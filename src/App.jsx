@@ -6,6 +6,7 @@ import About from '../pages/About';
 import ContactUs from '../pages/ContactUs';
 import CuratedPrograms from '../pages/CuratedPrograms';
 import PrivacyPolicy from '../components/PrivacyPolicy';
+import sitemap from '../sitemap.xml';
 
 import WorkplaceStressManagementPage from '../pages/WorkplaceStress';
 import StressManagementPage from '../pages/StressManagement';
@@ -122,6 +123,8 @@ function App() {
         <Route path="/BurnoutTherapy" element={<BurnoutTherapyPage />} />
         <Route path="/StressManagement" element={<StressManagementPage />} />
         <Route path="/CoupleTherapy" element={<CouplesTherapyPage />} />
+        {/* Sitemap route */}
+        <Route path="/sitemap.xml" element={<div dangerouslySetInnerHTML={{ __html: sitemap }} />} />
 
         {/* Catch-all route for 404 Not Found */}
         <Route path="/404" element={<div className="not-found">404 Not Found</div>} />
