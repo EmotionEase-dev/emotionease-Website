@@ -4,6 +4,7 @@ import { Container, Row, Col, Card, Button, ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import BlogImage from '../public/Blog1.png'; // Ensure this path is correct
 import { 
   faArrowLeft, 
   faUsers, 
@@ -132,7 +133,7 @@ const BlogPost = () => {
                 border: '2px solid rgba(255,255,255,0.3)'
               }}>
                 <img
-                    src="../public/Blog1.png"
+                    src={BlogImage}
                     alt="Blog Hero"
                     className="img-fluid rounded-3 shadow-sm"
                   style={{ 
