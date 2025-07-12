@@ -34,12 +34,6 @@ const BurnoutTherapyPage = () => {
     <meta name="keywords" content="burnout therapy, online counselling, emotional wellness, stress management, mental health support, burnout recovery" />
     <meta name="author" content="EmotionEase" />
 
-            <h1 className="hero-title display-3 fw-bold text-success text-center">
-                             Burnout Therapy and Counselling Online  {" "}
-                            <span className="text-gradient-success">
-                              | EmotionEase!
-                            </span>
-            </h1>
     <div className="burnout-therapy-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
       <div className="stats-bar bg-white shadow-sm py-4">
         <Container>
@@ -63,7 +57,7 @@ const BurnoutTherapyPage = () => {
       </div>
 
       {/* Burnout Therapy Section */}
-      <section className="py-6">
+      <section style={{paddingTop: '10px'}}>
         <Container>
           <Row className="g-5 align-items-center">
             <Col lg={6} className="animate-on-scroll slide-in-left">

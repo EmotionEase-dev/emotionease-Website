@@ -179,32 +179,39 @@ const Home = () => {
               </div>
 
               <motion.div
-                className="hero-cta bg-success bg-opacity-10 p-4 p-lg-5 rounded-4"
-                variants={itemVariants}
-                whileHover={{
-                  boxShadow: "0 10px 25px rgba(40, 167, 69, 0.15)",
-                }}
-                transition={{ duration: 0.3 }}
-              >
-                <h2 className="text-success fw-bold mb-3">We Support!</h2>
-                <p className="mb-4">
-                  Our unique, structured programs are designed to empower you
-                  to take control of your emotional wellbeing and live a more
-                  fulfilled life—both personally and professionally.
-                </p>
-                <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <Link
-                    to="/contact"
-                    className="btn btn-success btn-lg px-4 py-3 fw-medium"
-                    aria-label="Reach out to EmotionEase for support"
-                  >
-                    Reach Out to Us <i className="bi bi-arrow-right ms-2" aria-hidden="true"></i>
-                  </Link>
-                </motion.div>
-              </motion.div>
+  className="hero-cta bg-success bg-opacity-10 p-4 p-lg-5 rounded-4"
+  variants={itemVariants}
+  whileHover={{
+    boxShadow: "0 10px 25px rgba(40, 167, 69, 0.15)",
+  }}
+  transition={{ duration: 0.3 }}
+>
+  <h2 className="text-success fw-bold mb-3">BOOK NOW FOR FREE!!</h2>
+  <p className="mb-4">
+    Our unique, structured programs are designed to empower you
+    to take control of your emotional wellbeing and live a more
+    fulfilled life—both personally and professionally.
+  </p>
+  <motion.div
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.98 }}
+  >
+    <a
+      href="https://wa.me/9345330187" // Replace with your WhatsApp number
+      className="btn btn-success btn-lg px-4 py-3 fw-medium"
+      aria-label="Message us on WhatsApp"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i className="bi bi-whatsapp me-2" aria-hidden="true"></i> 
+      Reach Us on WhatsApp
+    </a>
+  </motion.div>
+  <p className="mt-2 small text-muted">
+    Click above icon to message us on WhatsApp directly
+  </p>
+</motion.div>
+
             </motion.div>
           </div>
 

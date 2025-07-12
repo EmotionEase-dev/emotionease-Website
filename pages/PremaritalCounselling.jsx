@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
 import './StressManagement.css';
 
-const PremaritalCounselingPage = () => {
+const PremaritalcounsellingPage = () => {
   useEffect(() => {
     // Initialize tooltips
     const tooltips = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -28,19 +28,13 @@ const PremaritalCounselingPage = () => {
   return (
     <>
     <title>
-        Premarital Counseling | EmotionEase
+        Premarital counselling | EmotionEase
     </title>
     <meta name="description" content="  Marriage is a long-term commitment. EmotionEase’s online premarital counselling helps you build a happy, healthy foundation together." />
-    <meta name="keywords" content="premarital counseling, online counseling, marriage preparation, relationship counseling, conflict resolution, communication skills" />
+    <meta name="keywords" content="premarital counselling, online counselling, marriage preparation, relationship counselling, conflict resolution, communication skills" />
     <meta name="author" content="EmotionEase" />
 
-            <h1 className="hero-title display-3 fw-bold text-success text-center">
-                             Online Premarital Counseling {" "}
-                            <span className="text-gradient-success">
-                              | EmotionEase!
-                            </span>
-            </h1>
-    <div className="premarital-counseling-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
+    <div className="premarital-counselling-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
       <div className="stats-bar bg-white shadow-sm py-4">
         <Container>
           <Row className="g-3 text-center">
@@ -62,8 +56,8 @@ const PremaritalCounselingPage = () => {
         </Container>
       </div>
 
-      {/* Premarital Counseling Section */}
-      <section className="py-6">
+      {/* Premarital counselling Section */}
+      <section style={{paddingTop: '10px'}}>
         <Container>
           <Row className="g-5 align-items-center">
             <Col lg={6} className="animate-on-scroll slide-in-left">
@@ -78,7 +72,7 @@ const PremaritalCounselingPage = () => {
                 <div className="icon-wrapper bg-pink bg-opacity-10 text-pink rounded-circle p-3 me-3">
                   <i className="bi bi-hearts fs-2"></i>
                 </div>
-                <h1 className="fw-bold mb-0">What is Premarital Counseling?</h1>
+                <h1 className="fw-bold mb-0">What is Premarital counselling?</h1>
               </div>
               
               <p className="lead text-pink">
@@ -156,7 +150,7 @@ const PremaritalCounselingPage = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-6">
+      <section style={{paddingTop: '10px'}}>
         <Container>
           <Row className="g-5">
             <Col lg={12} className="animate-on-scroll fade-in-up">
@@ -165,7 +159,7 @@ const PremaritalCounselingPage = () => {
                 <div className="icon-wrapper bg-purple bg-opacity-10 text-purple rounded-circle p-3 me-3">
                     <i className="bi bi-stars fs-2"></i>
                 </div>
-                <h2 className="fw-bold mb-0">Benefits of Premarital Counseling</h2>
+                <h2 className="fw-bold mb-0">Benefits of Premarital counselling</h2>
               </div>
               <Row className="g-4 mt-4">
                 {[
@@ -246,4 +240,4 @@ const PremaritalCounselingPage = () => {
   );
 };
 
-export default PremaritalCounselingPage;
+export default PremaritalcounsellingPage;

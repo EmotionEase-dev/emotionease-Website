@@ -34,17 +34,8 @@ const StressManagementPage = () => {
       <meta name="author" content="EmotionEase" />
     </title>
 
-      <div className="stress-management-header text-center py-3">
-
-        <h1 className="hero-title display-3 fw-bold text-success">
-                             Stress, Depression & Anxiety Management Online {" "}
-                            <span className="text-gradient-success">
-                              | EmotionEase!
-                            </span>
-            </h1>
-      </div>
     <div className="stress-management-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
-      <div className="stats-bar bg-white shadow-sm py-4">
+      <div className="stats-bar bg-white shadow-sm">
         <Container>
           <Row className="g-3 text-center">
             {[
@@ -66,7 +57,7 @@ const StressManagementPage = () => {
       </div>
 
       {/* Stress Management Section */}
-      <section className="py-6">
+      <section style={{paddingTop: '10px'}}>
         <Container>
           <Row className="g-5 align-items-center">
             <Col lg={6} className="animate-on-scroll slide-in-left">

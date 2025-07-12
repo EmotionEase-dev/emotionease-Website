@@ -112,7 +112,7 @@ const NavItem = ({ item }) => {
             <span>{item.name}</span>
             <i className="bi bi-chevron-down ms-2"></i>
           </a>
-          {renderDropdown(item.dropdown, item.name === "Our Uniqueness")}
+          {renderDropdown(item.dropdown, item.name === "Uniqueness")}
         </>
       ) : (
         <NavHashLink 
@@ -161,7 +161,8 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", href: "/home" },
-    { name: "About Us", href: "/about" },
+    { name: "Blogs", href: "/blog" },
+    { name: "About", href: "/about" },
     { 
       name: "Services", 
       dropdown: [
@@ -204,7 +205,7 @@ const Navbar = () => {
       ] 
     },
     { 
-      name: "Our Uniqueness", 
+      name: "Uniqueness", 
       dropdown: [
         { 
           name: "Benefits", 
@@ -221,7 +222,7 @@ const Navbar = () => {
       ] 
     },
     { 
-      name: "Curated Programs", 
+      name: "Programs", 
       href: "/programs",
     },
     { 
@@ -272,7 +273,7 @@ const Navbar = () => {
       ],
     },
     { 
-      name: "Contact Us", 
+      name: "Contact", 
       href: "/contact",
     },
   ];
