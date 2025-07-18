@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, Button, ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import BlogImage from '../public/Blog1.png'; // Ensure this path is correct
+import BlogImage from '../public/Blog1.png';
 import { 
   faArrowLeft, 
   faUsers, 
@@ -17,19 +17,18 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
-
 const BlogPost = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const handleProgramsClick = () => {
-  navigate('/programs');
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-};
-
   
+  const handleProgramsClick = () => {
+    navigate('/programs');
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   const blog = {
     id: 1,
     title: "Breaking the 'Hiya' Culture",
@@ -133,9 +132,9 @@ const BlogPost = () => {
                 border: '2px solid rgba(255,255,255,0.3)'
               }}>
                 <img
-                    src={BlogImage}
-                    alt="Blog Hero"
-                    className="img-fluid rounded-3 shadow-sm"
+                  src={BlogImage}
+                  alt="Blog Hero"
+                  className="img-fluid rounded-3 shadow-sm"
                   style={{ 
                     color: 'rgba(255,255,255,0.8)', 
                     fontSize: '5rem' 
@@ -294,22 +293,21 @@ const BlogPost = () => {
                   EmotionEase provides unlimited therapy tailored to Filipino experiences.
                 </p>
                 <Button 
-  variant="light"
-  onClick={handleProgramsClick}
-  size="lg"
-  className="rounded-pill px-4 fw-bold shadow-sm"
-  style={{ 
-    backgroundColor: 'white',
-    color: '#218838',
-    border: 'none',
-    transition: 'all 0.3s ease',
-    minWidth: '250px'
-  }}
->
-  <FontAwesomeIcon icon={faHandsHelping} className="me-2" />
-  Start Your Recovery
-</Button>
-
+                  variant="light"
+                  onClick={handleProgramsClick}
+                  size="lg"
+                  className="rounded-pill px-4 fw-bold shadow-sm"
+                  style={{ 
+                    backgroundColor: 'white',
+                    color: '#218838',
+                    border: 'none',
+                    transition: 'all 0.3s ease',
+                    minWidth: '250px'
+                  }}
+                >
+                  <FontAwesomeIcon icon={faHandsHelping} className="me-2" />
+                  Start Your Recovery
+                </Button>
               </div>
             </div>
           </Col>

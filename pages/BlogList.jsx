@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faClock, faBookOpen } from '@fortawesome/free-solid-svg-icons';
-import blogImage from '../public/Blog1Logo.png' // Make sure this path is correct
+import blogImage from '../public/Blog1Logo.png';
 
 const BlogList = () => {
   const blogs = [
@@ -16,7 +16,14 @@ const BlogList = () => {
       date: 'June 15, 2023',
       readTime: '5 min read'
     },
-    // Add more blogs here as needed
+    {
+      id: 2,
+      title: "Healing Your Emotional Wounds",
+      excerpt: "A Step-by-Step Guide to Lasting Well-Being",
+      image: blogImage,
+      date: 'July 22, 2023',
+      readTime: '7 min read'
+    }
   ];
 
   return (

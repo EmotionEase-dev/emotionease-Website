@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import BlogPost from '../pages/Blog1';
+import BlogPostEmotionalHealing from '../pages/Blog2';
 import BlogList from '../pages/BlogList';
 import ContactUs from '../pages/ContactUs';
 import CuratedPrograms from '../pages/CuratedPrograms';
@@ -124,7 +125,9 @@ function App() {
         <Route path="/StressManagement" element={<StressManagementPage />} />
         <Route path="/CoupleTherapy" element={<CouplesTherapyPage />} />
         <Route path="/blog" element={<BlogList />} />
-        <Route path="/blog/:id" element={<BlogPost />} />
+        <Route path="/blog/1" element={<BlogPost />} />
+        <Route path="/blog/2" element={<BlogPostEmotionalHealing />} />
+
 
         {/* Catch-all route for 404 Not Found */}
         <Route path="/404" element={<div className="not-found">404 Not Found</div>} />
