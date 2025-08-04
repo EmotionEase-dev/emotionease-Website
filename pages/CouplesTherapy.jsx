@@ -27,9 +27,9 @@ const CouplesTherapyPage = () => {
 
   return (
     <>
-      <title>Couples Therapy and Relationship Counselling Online | EmotionEase</title>
-      <meta name="description" content="Struggling in a relationship? EmotionEase offers couples therapy & relationship counselling. A fresh perspective can make all the difference." />
-      <meta name="keywords" content="couples therapy, relationship counselling, EmotionEase, online, marriage, interpersonal relationship, harmony, peace, love, stress, anxiety" />
+      <title>Couples Therapy and Relationship Counseling Online | EmotionEase</title>
+      <meta name="description" content="Struggling in a relationship? EmotionEase offers couples therapy & relationship counseling. A fresh perspective can make all the difference." />
+      <meta name="keywords" content="couples therapy, relationship counseling, EmotionEase, online, marriage, interpersonal relationship, harmony, peace, love, stress, anxiety" />
       <meta name="author" content="EmotionEase" />
 
       <div className="couples-therapy-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
@@ -169,14 +169,14 @@ const CouplesTherapyPage = () => {
           </Container>
         </section>
 
-        {/* What is Relationship Counselling Section */}
+        {/* What is Relationship Counseling Section */}
         <section className="py-6">
           <Container>
             <Row className="g-5 align-items-center flex-lg-row-reverse">
               <Col lg={6} className="animate-on-scroll slide-in-right">
                 <img 
                   src="/BenefitCoupleTherapy.png" 
-                  alt="Relationship counselling session" 
+                  alt="Relationship counseling session" 
                   className="img-fluid rounded-4 shadow hover-zoom w-100" 
                 />
               </Col>
@@ -185,11 +185,11 @@ const CouplesTherapyPage = () => {
                   <div className="icon-wrapper bg-indigo bg-opacity-10 text-indigo rounded-circle p-3 me-3">
                     <i className="bi bi-people fs-2"></i>
                   </div>
-                  <h2 className="fw-bold mb-0">What is Relationship Counselling?</h2>
+                  <h2 className="fw-bold mb-0">What is Relationship Counseling?</h2>
                 </div>
                 
                 <p>
-                  Relationship counselling goes beyond romantic partnerships. It's a therapeutic process aimed at healing and strengthening your interpersonal relationships with:
+                  Relationship counseling goes beyond romantic partnerships. It's a therapeutic process aimed at healing and strengthening your interpersonal relationships with:
                 </p>
                 
                 <ListGroup variant="flush" className="mb-4">
@@ -215,14 +215,14 @@ const CouplesTherapyPage = () => {
                   href="/programs" 
                   className="btn btn-indigo btn-lg px-4 py-3 fw-medium"
                 >
-                  Explore Relationship Counselling
+                  Explore Relationship Counseling
                 </Button>
               </Col>
             </Row>
           </Container>
         </section>
 
-        {/* Why Relationship Counselling is Essential Section */}
+        {/* Why Relationship Counseling is Essential Section */}
         <section className="py-6 bg-light-indigo">
           <Container>
             <Row className="g-5">
@@ -231,7 +231,7 @@ const CouplesTherapyPage = () => {
                   <div className="icon-wrapper bg-indigo bg-opacity-10 text-indigo rounded-circle p-3 me-3">
                     <i className="bi bi-lightning-charge fs-2"></i>
                   </div>
-                  <h2 className="fw-bold mb-0">Why is Relationship Counselling Essential in Today's Fast-Paced Life?</h2>
+                  <h2 className="fw-bold mb-0">Why is Relationship Counseling Essential in Today's Fast-Paced Life?</h2>
                 </div>
                 
                 <p className="lead">

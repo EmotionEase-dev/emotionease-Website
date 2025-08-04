@@ -69,7 +69,7 @@ const Home = () => {
 
   useEffect(() => {
 
-    document.title = "EmotionEase: Online Counselling for Emotional & Mental Health";
+    document.title = "EmotionEase: Online Counseling for Emotional & Mental Health";
     // Check if user has already closed the form
     const formClosed = localStorage.getItem('signupFormClosed');
 
@@ -246,7 +246,7 @@ const Home = () => {
                   >
                     <img
                       src={PeacefulMeditation}
-                      alt="Online Emotion Healing and Counselling by EmotionEase"
+                      alt="Online Emotion Healing and Counseling by EmotionEase"
                       className="d-block w-100 h-100 img-fluid object-cover"
                       loading="lazy"
                     />
@@ -271,7 +271,7 @@ const Home = () => {
                   >
                     <img
                       src={Human}
-                      alt="Online Emotion Healing and Counselling by EmotionEase"
+                      alt="Online Emotion Healing and Counseling by EmotionEase"
                       className="d-block w-100 h-100 img-fluid object-cover"
                       loading="lazy"
                     />
@@ -296,7 +296,7 @@ const Home = () => {
                   >
                     <img
                       src={Cage}
-                      alt="Online Emotion Healing and Counselling by EmotionEase"
+                      alt="Online Emotion Healing and Counseling by EmotionEase"
                       className="d-block w-100 h-100 img-fluid object-cover"
                       loading="lazy"
                     />
@@ -321,7 +321,7 @@ const Home = () => {
                   >
                     <img
                       src={Freedom}
-                      alt="Online Emotion Healing and Counselling by EmotionEase"
+                      alt="Online Emotion Healing and Counseling by EmotionEase"
                       className="d-block w-100 h-100 img-fluid object-cover"
                       loading="lazy"
                     />
@@ -1302,7 +1302,7 @@ const Home = () => {
                         rel="noopener noreferrer"
                         className="btn btn-success btn-lg px-4 py-3 fw-medium"
                       >
-                         Book Your 1st Free Counselling with EmotionEase{" "}
+                         Book Your 1st Free Counseling with EmotionEase{" "}
                         <i className="bi bi-arrow-right ms-2"></i>
                       </a>
                     </motion.div>

@@ -28,10 +28,10 @@ const WorkplaceStressManagementPage = () => {
   return (
     <>
     <title>
-        Workplace Stress Management Online Therapy & Counselling | EmotionEase
+        Workplace Stress Management Online Therapy & Counseling | EmotionEase
     </title>
     <meta name="description" content="Over 60% of Indian employees face workplace stress. EmotionEase offers confidential online therapy to help you manage and move forward." />
-    <meta name="keywords" content="workplace stress management, online therapy, counselling, stress relief, mental health, employee wellness, workplace anxiety, burnout therapy" />
+    <meta name="keywords" content="workplace stress management, online therapy, counseling, stress relief, mental health, employee wellness, workplace anxiety, burnout therapy" />
     <meta name="author" content="EmotionEase" />
     <div className="stress-management-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
       <div className="stats-bar bg-white shadow-sm py-4">
@@ -187,7 +187,7 @@ const WorkplaceStressManagementPage = () => {
               </div>
               
               <p>
-                At EmotionEase, we provide confidential, online therapy tailored to your work-related challenges. Your sessions will be led by Elango Annamalai, a highly experienced Emotion Regulation Consultant and Counselling Practitioner with over two decades of experience helping professionals like you.
+                At EmotionEase, we provide confidential, online therapy tailored to your work-related challenges. Your sessions will be led by Elango Annamalai, a highly experienced Emotion Regulation Consultant and Counseling Practitioner with over two decades of experience helping professionals like you.
               </p>
               
               <ListGroup variant="flush" className="mb-4">

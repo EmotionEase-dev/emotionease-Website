@@ -9,7 +9,7 @@ const CuratedPrograms = () => {
       level: "Level 1",
       title: "Emotional Enablement Workshop",
       duration: "5 days (90 mins/day)",
-      price: "$250",
+      price: "$2 50",
       for: "Entrepreneurs, Working Professionals & Students",
       description: "Begin your journey with our foundational workshop where you'll learn powerful techniques to reshape your mindset and handle emotions better in everyday life.",
       features: [

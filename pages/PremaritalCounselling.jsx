@@ -28,13 +28,13 @@ const PremaritalcounsellingPage = () => {
   return (
     <>
     <title>
-        Premarital counselling | EmotionEase
+        Premarital counseling | EmotionEase
     </title>
-    <meta name="description" content="  Marriage is a long-term commitment. EmotionEase’s online premarital counselling helps you build a happy, healthy foundation together." />
-    <meta name="keywords" content="premarital counselling, online counselling, marriage preparation, relationship counselling, conflict resolution, communication skills" />
+    <meta name="description" content="  Marriage is a long-term commitment. EmotionEase’s online premarital counseling helps you build a happy, healthy foundation together." />
+    <meta name="keywords" content="premarital counseling, online counseling, marriage preparation, relationship counseling, conflict resolution, communication skills" />
     <meta name="author" content="EmotionEase" />
 
-    <div className="premarital-counselling-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
+    <div className="premarital-counseling-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
       <div className="stats-bar bg-white shadow-sm py-4">
         <Container>
           <Row className="g-3 text-center">
@@ -56,7 +56,7 @@ const PremaritalcounsellingPage = () => {
         </Container>
       </div>
 
-      {/* Premarital counselling Section */}
+      {/* Premarital counseling Section */}
       <section style={{paddingTop: '10px'}}>
         <Container>
           <Row className="g-5 align-items-center">
@@ -72,11 +72,11 @@ const PremaritalcounsellingPage = () => {
                 <div className="icon-wrapper bg-pink bg-opacity-10 text-pink rounded-circle p-3 me-3">
                   <i className="bi bi-hearts fs-2"></i>
                 </div>
-                <h1 className="fw-bold mb-0">What is Premarital counselling?</h1>
+                <h1 className="fw-bold mb-0">What is Premarital counseling?</h1>
               </div>
               
               <p className="lead text-pink">
-                Premarital counselling is a form of preventive therapy that prepares two individuals for the journey of marriage.
+                Premarital counseling is a form of preventive therapy that prepares two individuals for the journey of marriage.
               </p>
               
               <p>
@@ -86,7 +86,7 @@ const PremaritalcounsellingPage = () => {
               <Card className="border-0 bg-pink bg-opacity-10 mb-4 hover-glow-pink">
                 <Card.Body>
                   <p className="mb-0">
-                    Beyond challenges, premarital counselling highlights each partner's strengths and areas for growth, helping build a strong foundation for marriage.
+                    Beyond challenges, premarital counseling highlights each partner's strengths and areas for growth, helping build a strong foundation for marriage.
                   </p>
                 </Card.Body>
               </Card>
@@ -159,7 +159,7 @@ const PremaritalcounsellingPage = () => {
                 <div className="icon-wrapper bg-purple bg-opacity-10 text-purple rounded-circle p-3 me-3">
                     <i className="bi bi-stars fs-2"></i>
                 </div>
-                <h2 className="fw-bold mb-0">Benefits of Premarital counselling</h2>
+                <h2 className="fw-bold mb-0">Benefits of Premarital counseling</h2>
               </div>
               <Row className="g-4 mt-4">
                 {[

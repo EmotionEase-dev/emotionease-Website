@@ -28,10 +28,10 @@ const BurnoutTherapyPage = () => {
   return (
     <>
     <title>
-        Burnout Therapy and Counselling Online | EmotionEase
+        Burnout Therapy and Counseling Online | EmotionEase
     </title>
     <meta name="description" content="EExperiencing burnout lately? Transform your mental health by connecting with our expert at EmotionEase. We specialize in burnout therapy and counseling."/>
-    <meta name="keywords" content="burnout therapy, online counselling, emotional wellness, stress management, mental health support, burnout recovery" />
+    <meta name="keywords" content="burnout therapy, online counseling, emotional wellness, stress management, mental health support, burnout recovery" />
     <meta name="author" content="EmotionEase" />
 
     <div className="burnout-therapy-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>

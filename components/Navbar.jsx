@@ -18,7 +18,7 @@ const NavItem = ({ item }) => {
       'bi-heart-pulse',         // Stress Management
       'bi-briefcase',           // Work Stress
       'bi-people',              // Parent Coaching
-      'bi-heart-fill',          // Premarital Counselling
+      'bi-heart-fill',          // Premarital Counseling
       'bi-fire',                // Burnout Therapy
     ];
     return serviceIcons[index] || 'bi-file-earmark-text';
@@ -186,8 +186,8 @@ const Navbar = () => {
           icon: "bi-people"
         },
         { 
-          name: "Premarital Counselling", 
-          href: "/PremaritalCounselling",
+          name: "Premarital Counseling", 
+          href: "/PremaritalCounseling",
           description: "Prepare for a strong marriage foundation",
           icon: "bi-people-fill"
         },

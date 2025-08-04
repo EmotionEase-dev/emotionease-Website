@@ -27,14 +27,15 @@ const StressManagementPage = () => {
 
   return (
     <>
-    <title>
-      Stress, Depression & Anxiety Management Online | EmotionEase
-      <meta name="description" content=" If you're dealing with stress, anxiety, or depression, don't hesitate to seek help. EmotionEase is a safe, non-judgmental online space where we listen, support, and work with you to manage and resolve your challenges." />
-      <meta name="keywords" content="stress management, depression counselling, anxiety therapy, online therapy, mental health, emotional well-being, stress relief, depression help, anxiety management" />
-      <meta name="author" content="EmotionEase" />
-    </title>
 
     <div className="stress-management-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
+      <title>
+      Stress, Depression & Anxiety Management Online | EmotionEase
+    </title>
+    <meta name="description" content=" If you're dealing with stress, anxiety, or depression, don't hesitate to seek help. EmotionEase is a safe, non-judgmental online space where we listen, support, and work with you to manage and resolve your challenges." />
+      <meta name="keywords" content="stress management, depression counseling, anxiety therapy, online therapy, mental health, emotional well-being, stress relief, depression help, anxiety management" />
+      <meta name="author" content="EmotionEase" />
+
       <div className="stats-bar bg-white shadow-sm">
         <Container>
           <Row className="g-3 text-center">
@@ -72,7 +73,7 @@ const StressManagementPage = () => {
                 <div className="icon-wrapper bg-green bg-opacity-10 text-green rounded-circle p-3 me-3">
                   <i className="bi bi-activity fs-2"></i>
                 </div>
-                <h2 className="fw-bold mb-0">Online Stress Management Therapy and Counselling</h2>
+                <h2 className="fw-bold mb-0">Online Stress Management Therapy and Counseling</h2>
               </div>
               
               <p className="lead text-green">
@@ -106,7 +107,7 @@ const StressManagementPage = () => {
         </Container>
       </section>
 
-      {/* Depression Counselling Section */}
+      {/* Depression Counseling Section */}
       <section className="py-6 bg-light-green">
         <Container>
           <Row className="g-5 align-items-center flex-lg-row-reverse">
@@ -122,7 +123,7 @@ const StressManagementPage = () => {
                 <div className="icon-wrapper bg-teal bg-opacity-10 text-teal rounded-circle p-3 me-3">
                   <i className="bi bi-emoji-frown fs-2"></i>
                 </div>
-                <h2 className="fw-bold mb-0">Online Counselling and Therapy for Depression</h2>
+                <h2 className="fw-bold mb-0">Online Counseling and Therapy for Depression</h2>
                 <h3 className="h5 text-muted mt-2">Is It Just Sadness, or Something More?</h3>
               </div>
               

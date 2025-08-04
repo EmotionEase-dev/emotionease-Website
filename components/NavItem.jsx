@@ -16,7 +16,7 @@ const NavItem = ({ item }) => {
       'bi-heart-pulse',         // Stress Management
       'bi-briefcase',           // Work Stress
       'bi-people',              // Parent Coaching
-      'bi-heart-fill',          // Premarital Counselling
+      'bi-heart-fill',          // Premarital Counseling
       'bi-fire',                // Burnout Therapy
       'bi-people',    // Couples Therapy
     ];

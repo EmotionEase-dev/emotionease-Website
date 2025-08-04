@@ -10,7 +10,7 @@ const About = () => {
 
 
     useEffect(() => {
-    document.title = "EmotionEase | Online Counselling & Emotional Wellbeing";
+    document.title = "EmotionEase | Online Counseling & Emotional Wellbeing";
   }, []);
 
   // Scroll to top function
