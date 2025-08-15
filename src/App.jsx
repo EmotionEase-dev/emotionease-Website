@@ -12,7 +12,7 @@ import PrivacyPolicy from '../components/PrivacyPolicy';
 import WorkplaceStressManagementPage from '../pages/WorkplaceStress';
 import StressManagementPage from '../pages/StressManagement';
 import ParentCoachingPage from '../pages/ParentCoaching';
-import PremaritalCounsellingPage from '../pages/PremaritalCounselling';
+import PremaritalCounselingPage from '../pages/PremaritalCounselling';
 import BurnoutTherapyPage from '../pages/BurnoutTherapy';
 import CouplesTherapyPage from '../pages/CouplesTherapy';
 
@@ -120,7 +120,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/WorkStress" element={<WorkplaceStressManagementPage />} />
         <Route path="/ParentCoaching" element={<ParentCoachingPage />} />
-        <Route path="/PremaritalCounselling" element={<PremaritalCounsellingPage/>} />
+        <Route path="/PremaritalCounseling" element={<PremaritalCounselingPage/>} />
         <Route path="/BurnoutTherapy" element={<BurnoutTherapyPage />} />
         <Route path="/StressManagement" element={<StressManagementPage />} />
         <Route path="/CoupleTherapy" element={<CouplesTherapyPage />} />

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
 import './StressManagement.css';
 
-const PremaritalcounsellingPage = () => {
+const PremaritalcounselingPage = () => {
   useEffect(() => {
     // Initialize tooltips
     const tooltips = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -240,4 +240,4 @@ const PremaritalcounsellingPage = () => {
   );
 };
 
-export default PremaritalcounsellingPage;
+export default PremaritalcounselingPage;
