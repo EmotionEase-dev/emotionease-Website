@@ -34,7 +34,7 @@ const CuratedPrograms = () => {
       level: "Level 2",
       title: "Personalized Emotional Resilience Program",
       duration: "4-6 weeks (flexible scheduling)",
-      price: "$100",
+      price: "$150",
       for: "Individuals Seeking Deeper Healing",
       description: "Our tailored program for those dealing with long-term stress, trauma, identity crisis, low self-esteem, or strained relationships.",
       features: [
@@ -408,3 +408,4 @@ Book First Free Session
 
 
 export default CuratedPrograms;
+
