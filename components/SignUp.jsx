@@ -38,13 +38,7 @@ function SignupForm({ show, onClose }) {  // Added show prop here
     } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
       newErrors.email = 'Please enter a valid email address';
     }
-    
-    if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone number is required';
-    } else if (!/^[0-9]{10}$/.test(formData.phone)) {
-      newErrors.phone = 'Please enter a valid 10-digit phone number';
-    }
-    
+       
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -256,5 +250,6 @@ function SignupForm({ show, onClose }) {  // Added show prop here
     </Modal>
   );
 }
+
 
 export default SignupForm;
