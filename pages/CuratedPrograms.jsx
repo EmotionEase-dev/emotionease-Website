@@ -150,7 +150,7 @@ const CuratedPrograms = () => {
                   <a href="https://forms.gle/YbcSchKPpTkaxu1ZA" className="btn btn-light btn-lg px-4" target="_blank" 
   rel="noopener noreferrer"
 >
-Book First Free Session
+Book Level 2 First Free Session
               </a>
                 </motion.div>
               </motion.div>
@@ -408,4 +408,5 @@ Book First Free Session
 
 
 export default CuratedPrograms;
+
 
