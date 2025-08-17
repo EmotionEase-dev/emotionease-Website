@@ -692,7 +692,7 @@ const Home = () => {
                 </div>
                 <div className="d-flex align-items-center">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
-                  <span>Free "Level 2" first session</span>
+                  <span>Free Level 2 first session</span>
                 </div>
                 <div className="d-flex align-items-center">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
@@ -820,7 +820,7 @@ const Home = () => {
       }}
     >
       {[
-        { number: '1', title: "Book a Free "Level 2" First Session", icon: "bi-calendar" },
+        { number: '1', title: "Book a Free Level 2 First Session", icon: "bi-calendar" },
         { number: '2', title: "Understand Your Emotional Patterns", icon: "bi-graph-up" },
         { number: '3', title: "Start Customized Sessions", icon: "bi-person" },
         { number: '4', title: "Gain Confidence, Empower your Mental & Emotional Health", icon: "bi-heart" },
@@ -1286,7 +1286,7 @@ const Home = () => {
                     style={{ maxWidth: "600px" }}
                     variants={itemVariants}
                   >
-                    Your first "Level 2" session is free, and there’s zero pressure to continue
+                    Your first Level 2 session is free, and there’s zero pressure to continue
                   </motion.p>
                   <motion.div
                     className="d-flex justify-content-center gap-3 flex-wrap"
@@ -1302,7 +1302,7 @@ const Home = () => {
                         rel="noopener noreferrer"
                         className="btn btn-success btn-lg px-4 py-3 fw-medium"
                       >
-                         Book Your "Level 2" 1st Free Counseling with EmotionEase{" "}
+                         Book Your Level 2 1st Free Counseling with EmotionEase{" "}
                         <i className="bi bi-arrow-right ms-2"></i>
                       </a>
                     </motion.div>
@@ -1469,4 +1469,5 @@ const Home = () => {
 
 
 export default Home;
+
 
