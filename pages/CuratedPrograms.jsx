@@ -17,7 +17,7 @@ const CuratedPrograms = () => {
         "Healthy emotional management",
         "Improved rapport building",
         "Basic stress reduction techniques",
-        "Daily practice exercises"
+        "Achieve heart-aligned goals"
       ],
       outcomes: [
         "Handle daily stressors effectively",
@@ -42,6 +42,7 @@ const CuratedPrograms = () => {
         "Unlimited support during program",
         "Trauma-informed techniques",
         "Customized emotional regulation tools",
+        "Regular practice exercises",
         "3-month follow-up included"
       ],
       outcomes: [
@@ -408,6 +409,7 @@ Book Level 2 First Free Session
 
 
 export default CuratedPrograms;
+
 
 
 
