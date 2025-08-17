@@ -7,7 +7,7 @@ const CuratedPrograms = () => {
   const programs = [
     {
       level: "Level 1",
-      title: "Emotional Enablement Workshop",
+      title: "Emotional Enablement Group Workshop",
       duration: "3 days (90 mins/day)",
       price: "$50",
       for: "Entrepreneurs, Working Professionals & Students",
@@ -408,5 +408,6 @@ Book Level 2 First Free Session
 
 
 export default CuratedPrograms;
+
 
 
