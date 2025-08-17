@@ -1450,7 +1450,7 @@ const Home = () => {
                   whileHover={{ x: 5 }}
                 >
                   <i className="bi bi-envelope-fill text-success me-2"></i>
-                  <span>emotionease@gmail.com</span>
+                  <span>admin@emotionease.in</span>
                 </motion.li>
               </ul>
             </div>
@@ -1466,5 +1466,6 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;
