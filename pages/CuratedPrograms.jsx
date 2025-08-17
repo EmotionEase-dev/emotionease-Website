@@ -33,8 +33,8 @@ const CuratedPrograms = () => {
     {
       level: "Level 2",
       title: "Personalized Emotional Resilience Program",
-      duration: "8-12 weeks (flexible scheduling)",
-      price: "$350",
+      duration: "4-6 weeks (flexible scheduling)",
+      price: "$100",
       for: "Individuals Seeking Deeper Healing",
       description: "Our tailored program for those dealing with long-term stress, trauma, identity crisis, low self-esteem, or strained relationships.",
       features: [
@@ -57,8 +57,8 @@ const CuratedPrograms = () => {
     {
       level: "Level 3",
       title: "Wholesome Relationships Program",
-      duration: "4-6 weeks (couple's schedule)",
-      price: "$150/person",
+      duration: "2-3 weeks (couple's schedule)",
+      price: "$50/person",
       for: "Couples, Business Partners & Close Friends",
       description: "This advanced program helps deepen emotional bonds, set healthy boundaries, and create thriving personal and professional relationships.",
       features: [
@@ -405,5 +405,6 @@ Book First Free Session
     </div>
   );
 };
+
 
 export default CuratedPrograms;
