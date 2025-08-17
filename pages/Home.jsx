@@ -558,9 +558,8 @@ const Home = () => {
                     "From the very first session, we help you understand your feelings and guide you toward the right solutions",
                     "Our online sessions have no time limits. We listen closely, understand your concerns, and offer simple yet effective psychological and practical solutions; so you start feeling better from the very first session.",
                     "For Level 2 and 3 participants, our online sessions are unlimited. We’re here to support you until you feel confident, empowered, and comfortable applying the approaches that strengthen your mental and emotional health.",
-                    "We follow up with everyone three months after their program because we genuinely care about how they’re doing and want to ensure they’re thriving in life.",
-                    "We offer a 50% refund if you don’t feel helped or empowered after attending the sessions.",
-                    "Our Level 2 first session is free; we want you to understand our approach and feel confident trusting us with your concerns.",
+                    "We follow up with everyone after their program because we genuinely care about how they’re doing and want to ensure they’re thriving in life.",
+                    "Our Level 2 first session is free; we want you to understand our approach and feel confident trusting us with your concerns."
                   ].map((item, index) => (
                     <motion.div
                       key={index}
@@ -1469,6 +1468,7 @@ const Home = () => {
 
 
 export default Home;
+
 
 
 
