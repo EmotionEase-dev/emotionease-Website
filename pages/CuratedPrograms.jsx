@@ -56,7 +56,7 @@ const CuratedPrograms = () => {
     },
     {
       level: "Level 3",
-      title: "Wholesome Relationships Program",
+      title: "Wholesome Relationships Family Program",
       duration: "2-3 weeks (couple's schedule)",
       price: "$50/person",
       for: "Couples, Business Partners & Close Friends",
@@ -408,6 +408,7 @@ Book Level 2 First Free Session
 
 
 export default CuratedPrograms;
+
 
 
 
