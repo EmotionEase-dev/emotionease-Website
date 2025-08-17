@@ -159,11 +159,11 @@ const PrivacyPolicy = () => {
           <ul className="small mb-1 ps-3">
             <li>
               📧 Email: 
-              <a href="mailto:emotionease@gmail.com" className="text-decoration-none ms-1">
-                emotionease@gmail.com
+              <a href="mailto:admin@emotionease.in" className="text-decoration-none ms-1">
+                admin@emotionease.in
               </a>
             </li>
-            <li>📞 Phone: <a href="tel:+919876543210" className="text-decoration-none">+91 98765 43210</a></li>
+            <li>📞 Phone: <a href="tel:+919845330187" className="text-decoration-none">+91 98453 30187</a></li>
             <li>📍 Address: EmotionEase, Chennai, Tamil Nadu, India</li>
           </ul>
         </section>
@@ -174,3 +174,4 @@ const PrivacyPolicy = () => {
 
 
 export default PrivacyPolicy;
+
