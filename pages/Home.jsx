@@ -186,7 +186,7 @@ const Home = () => {
   }}
   transition={{ duration: 0.3 }}
 >
-  <h2 className="text-success fw-bold mb-3">BOOK AUGUST "GROUP WORKSHOP" FOR $50</h2>
+  <h2 className="text-success fw-bold mb-3">BOOK AUGUST "GROUP WORKSHOP" SLOT FOR $50</h2>
   <p className="mb-4">
     Our unique, structured programs are designed to empower you
     to take control of your emotional wellbeing and live a more
@@ -1469,6 +1469,7 @@ const Home = () => {
 
 
 export default Home;
+
 
 
 
