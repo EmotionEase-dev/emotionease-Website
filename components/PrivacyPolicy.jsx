@@ -80,10 +80,10 @@ const PrivacyPolicy = () => {
 
           <h6 className="fw-bold small mt-2 mb-1">Refund Policy:</h6>
           <ul className="small mb-1 ps-3">
-            <li>If you end a paid session before the halfway point, you may request a 50% refund</li>
+            <li>If you end a paid program before the halfway point, you may request a 50% refund</li>
             <li>No refunds will be issued after more than half of the session has been completed</li>
             <li>Refunds are processed within 5-7 business days</li>
-            <li>Free sessions require no payment information</li>
+            <li>Level 2 Free session require no payment information</li>
             <li>Missed free sessions may disqualify you from future free session offers</li>
           </ul>
         </section>
@@ -171,5 +171,6 @@ const PrivacyPolicy = () => {
     </div>
   );
 };
+
 
 export default PrivacyPolicy;
