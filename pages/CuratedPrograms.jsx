@@ -330,7 +330,7 @@ Book Level 2 First Free Session
                   <td>Follow-up Period</td>
                   <td>1 month</td>
                   <td>3 months</td>
-                  <td>3 months</td>
+                  <td>1 month</td>
                 </tr>
                 <tr>
                   <td>Location</td>
@@ -408,6 +408,7 @@ Book Level 2 First Free Session
 
 
 export default CuratedPrograms;
+
 
 
 
