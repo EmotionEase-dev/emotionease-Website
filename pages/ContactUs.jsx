@@ -286,12 +286,12 @@ const ContactUs = () => {
                       max="50"
                       value={formData.age}
                       onChange={handleChange}
-                      placeholder="Enter your age (25-50)"
+                      placeholder="Enter your age (20-70)"
                       className={`form-control ${errors.age ? 'is-invalid' : ''}`}
                     />
                   </div>
                   {errors.age && <div className="invalid-feedback">{errors.age}</div>}
-                  <small className="text-muted">Note: Age should be between 25-50 years</small>
+                  <small className="text-muted">Note: Age should be between 20-70 years</small>
                 </div>
               </div>
 
@@ -379,3 +379,4 @@ const ContactUs = () => {
 
 
 export default ContactUs;
+
