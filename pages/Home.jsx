@@ -1340,6 +1340,10 @@ const Home = () => {
                     name: "linkedin",
                     url: "https://www.linkedin.com/company/emotionease/",
                   },
+                  {
+                    name: "newsletter",
+                    url: "https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7350806259647885314",
+                  },
                   // { name: 'youtube', url: 'https://www.youtube.com/@emotionease' }
                 ].map((social, index) => (
                   <motion.a
@@ -1468,6 +1472,7 @@ const Home = () => {
 
 
 export default Home;
+
 
 
 
