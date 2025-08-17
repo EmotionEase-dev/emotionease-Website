@@ -134,8 +134,8 @@ const ContactUs = () => {
                   <h3 className="h5 mb-0 ms-2 ms-md-3">Email</h3>
                 </div>
                 <div className="ps-4 ps-md-5">
-                  <a href="mailto:emotionease@gmail.com" className="d-block text-decoration-none mb-1 mb-md-2 transition-all small-text">
-                    <i className="bi bi-envelope me-2"></i> emotionease@gmail.com
+                  <a href="mailto:admin@emotionease.in" className="d-block text-decoration-none mb-1 mb-md-2 transition-all small-text">
+                    <i className="bi bi-envelope me-2"></i> admin@emotionease.in
                   </a>
                   {/* <a href="mailto:admin@emotionease.in" className="d-block text-decoration-none transition-all small-text">
                     <i className="bi bi-envelope me-2"></i> admin@emotionease.in  
@@ -376,5 +376,6 @@ const ContactUs = () => {
     </div>
   );
 };
+
 
 export default ContactUs;

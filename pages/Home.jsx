@@ -73,11 +73,11 @@ const Home = () => {
     // Check if user has already closed the form
     const formClosed = localStorage.getItem('signupFormClosed');
 
-    // Show form automatically after 5 seconds if not previously closed
+    // Show form automatically after 3 seconds if not previously closed
     if (!formClosed) {
       const timer = setTimeout(() => {
         setShowSignup(true);
-      }, 5000);
+      }, 3000);
       
       return () => clearTimeout(timer);
     }
@@ -186,7 +186,7 @@ const Home = () => {
   }}
   transition={{ duration: 0.3 }}
 >
-  <h2 className="text-success fw-bold mb-3">BOOK NOW FOR FREE!!</h2>
+  <h2 className="text-success fw-bold mb-3">BOOK LEVEL 1 "GROUP WORKSHOP" FOR $50</h2>
   <p className="mb-4">
     Our unique, structured programs are designed to empower you
     to take control of your emotional wellbeing and live a more
@@ -560,7 +560,7 @@ const Home = () => {
                     "For Level 2 and 3 participants, our online sessions are unlimited. We’re here to support you until you feel confident, empowered, and comfortable applying the approaches that strengthen your mental and emotional health.",
                     "We follow up with everyone three months after their program because we genuinely care about how they’re doing and want to ensure they’re thriving in life.",
                     "We offer a 50% refund if you don’t feel helped or empowered after attending the sessions.",
-                    "Our first session is free; we want you to understand our approach and feel confident trusting us with your concerns.",
+                    "Our Level 2 first session is free; we want you to understand our approach and feel confident trusting us with your concerns.",
                   ].map((item, index) => (
                     <motion.div
                       key={index}
@@ -692,7 +692,7 @@ const Home = () => {
                 </div>
                 <div className="d-flex align-items-center">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
-                  <span>Free first session</span>
+                  <span>Free "Level 2" first session</span>
                 </div>
                 <div className="d-flex align-items-center">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
@@ -820,7 +820,7 @@ const Home = () => {
       }}
     >
       {[
-        { number: '1', title: "Book a Free First Session", icon: "bi-calendar" },
+        { number: '1', title: "Book a Free "Level 2" First Session", icon: "bi-calendar" },
         { number: '2', title: "Understand Your Emotional Patterns", icon: "bi-graph-up" },
         { number: '3', title: "Start Customized Sessions", icon: "bi-person" },
         { number: '4', title: "Gain Confidence, Empower your Mental & Emotional Health", icon: "bi-heart" },
@@ -1286,7 +1286,7 @@ const Home = () => {
                     style={{ maxWidth: "600px" }}
                     variants={itemVariants}
                   >
-                    Your first session is free, and there’s zero pressure to continue
+                    Your first "Level 2" session is free, and there’s zero pressure to continue
                   </motion.p>
                   <motion.div
                     className="d-flex justify-content-center gap-3 flex-wrap"
@@ -1302,7 +1302,7 @@ const Home = () => {
                         rel="noopener noreferrer"
                         className="btn btn-success btn-lg px-4 py-3 fw-medium"
                       >
-                         Book Your 1st Free Counseling with EmotionEase{" "}
+                         Book Your "Level 2" 1st Free Counseling with EmotionEase{" "}
                         <i className="bi bi-arrow-right ms-2"></i>
                       </a>
                     </motion.div>
@@ -1450,7 +1450,7 @@ const Home = () => {
                   whileHover={{ x: 5 }}
                 >
                   <i className="bi bi-envelope-fill text-success me-2"></i>
-                  <span>emotionease@gmail.com</span>
+                  <span>admin@emotionease.in</span>
                 </motion.li>
               </ul>
             </div>
@@ -1467,4 +1467,6 @@ const Home = () => {
   );
 };
 
+
 export default Home;
+
