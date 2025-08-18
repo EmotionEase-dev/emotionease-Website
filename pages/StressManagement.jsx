@@ -29,12 +29,14 @@ const StressManagementPage = () => {
     <>
 
     <div className="stress-management-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
+      <Helmet>
       <title>
       Stress, Depression & Anxiety Management Online | EmotionEase
     </title>
     <meta name="description" content="  If you're dealing with stress, anxiety, or depression, don't hesitate to seek help. EmotionEase is a safe, non-judgmental online space where we listen, support, and work with you to manage and resolve your challenges." />
       <meta name="keywords" content="stress management, depression counseling, anxiety therapy, online therapy, mental health, emotional well-being, stress relief, depression help, anxiety management" />
       <meta name="author" content="EmotionEase" />
+      </Helmet>
 
       <div className="stats-bar bg-white shadow-sm">
         <Container>

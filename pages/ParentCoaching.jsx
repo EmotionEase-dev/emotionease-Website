@@ -27,12 +27,14 @@ const ParentCoachingPage = () => {
 
   return (
     <>
+    <Helmet>
     <title>
         Parent Coaching and Confidence Building for Kids | EmotionEase
     </title>
     <meta name="description" content="Learn the right approach and techniques to parent your kids and instill confidence in them through EmotionEase’s online sessions." />
     <meta name="keywords" content="parent coaching, confidence building, child development, online coaching, emotional support, parenting skills" />
     <meta name="author" content="EmotionEase" />
+    </Helmet>
 
     <div className="parent-coaching-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
       <div className="stats-bar bg-white shadow-sm py-4">

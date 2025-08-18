@@ -27,12 +27,14 @@ const PremaritalcounselingPage = () => {
 
   return (
     <>
+    <Helmet>
     <title>
         Premarital counseling | EmotionEase
     </title>
     <meta name="description" content="  Marriage is a long-term commitment. EmotionEase’s online premarital counseling helps you build a happy, healthy foundation together." />
     <meta name="keywords" content="premarital counseling, online counseling, marriage preparation, relationship counseling, conflict resolution, communication skills" />
     <meta name="author" content="EmotionEase" />
+    </Helmet>
 
     <div className="premarital-counseling-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
       <div className="stats-bar bg-white shadow-sm py-4">

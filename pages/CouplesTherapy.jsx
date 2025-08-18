@@ -27,10 +27,12 @@ const CouplesTherapyPage = () => {
 
   return (
     <>
+    <Helmet>
       <title>Couples Therapy and Relationship Counseling Online | EmotionEase</title>
       <meta name="description" content="Struggling in a relationship? EmotionEase offers couples therapy & relationship counseling. A fresh perspective can make all the difference." />
       <meta name="keywords" content="couples therapy, relationship counseling, EmotionEase, online, marriage, interpersonal relationship, harmony, peace, love, stress, anxiety" />
       <meta name="author" content="EmotionEase" />
+    </Helmet>
 
       <div className="couples-therapy-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
 
