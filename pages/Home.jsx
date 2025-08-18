@@ -559,7 +559,7 @@ const Home = () => {
                     "Our online sessions have no time limits. We listen closely, understand your concerns, and offer simple yet effective psychological and practical solutions; so you start feeling better from the very first session.",
                     "For Level 2 and 3 participants, our online sessions are unlimited. We’re here to support you until you feel confident, empowered, and comfortable applying the approaches that strengthen your mental and emotional health.",
                     "We follow up with everyone after their program because we genuinely care about how they’re doing and want to ensure they’re thriving in life.",
-                    "Our Level 2 first session is free; we want you to understand our approach and feel confident trusting us with your concerns."
+                    "At Level 2, our first assessment session is free; we want you to understand our approach and feel confident trusting us with your concerns."
                   ].map((item, index) => (
                     <motion.div
                       key={index}
@@ -618,7 +618,7 @@ const Home = () => {
             {[
               {
                 title: "Foundation Workshop",
-                desc: "Start with our 5-day intensive to build emotional awareness and basic regulation skills.",
+                desc: "Start with our 3-day workshop  to build emotional awareness and basic regulation skills.",
                 features: ["Group Sessions", "Daily Exercises"],
                 icon: "bi-layers",
               },
@@ -691,7 +691,7 @@ const Home = () => {
                 </div>
                 <div className="d-flex align-items-center">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
-                  <span>Free Level 2 first session</span>
+                  <span>Level 2 free assessment session</span>
                 </div>
                 <div className="d-flex align-items-center">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
@@ -820,13 +820,13 @@ const Home = () => {
     >
       {[
 <<<<<<< HEAD
-        { number: '1', title: `Book a Free "Level 2" First Session`, icon: "bi-calendar" },
+        { number: '1', title: `Book a Free "Level 2" Assessment Session`, icon: "bi-calendar" },
 { number: '2', title: "Understand Your Emotional Patterns", icon: "bi-graph-up" },
 { number: '3', title: "Start Customized Sessions", icon: "bi-person" },
 { number: '4', title: "Gain Confidence, Empower your Mental & Emotional Health", icon: "bi-heart" },
 { number: '5', title: "Give us feedback and let us know if you want more from us during our 3-Month Follow-Up call", icon: "bi-chat" },
 =======
-        { number: '1', title: "Book a Free Level 2 First Session", icon: "bi-calendar" },
+        { number: '1', title: "Book a Free Level 2 Assessment Session", icon: "bi-calendar" },
         { number: '2', title: "Understand Your Emotional Patterns", icon: "bi-graph-up" },
         { number: '3', title: "Start Customized Sessions", icon: "bi-person" },
         { number: '4', title: "Gain Confidence, Empower your Mental & Emotional Health", icon: "bi-heart" },
@@ -1293,7 +1293,7 @@ const Home = () => {
                     style={{ maxWidth: "600px" }}
                     variants={itemVariants}
                   >
-                    Your first Level 2 session is free, and there’s zero pressure to continue
+                    Your first assessment session at Level 2 is free, and there’s zero pressure to continue
                   </motion.p>
                   <motion.div
                     className="d-flex justify-content-center gap-3 flex-wrap"
@@ -1309,7 +1309,7 @@ const Home = () => {
                         rel="noopener noreferrer"
                         className="btn btn-success btn-lg px-4 py-3 fw-medium"
                       >
-                         Book Your Level 2 1st Free Counseling with EmotionEase{" "}
+                         Book Your Level 2 Free Assessment with EmotionEase{" "}
                         <i className="bi bi-arrow-right ms-2"></i>
                       </a>
                     </motion.div>
@@ -1496,6 +1496,7 @@ const Home = () => {
 
 
 export default Home;
+
 
 
 
