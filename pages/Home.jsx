@@ -820,7 +820,7 @@ const Home = () => {
     >
       {[
 <<<<<<< HEAD
-        { number: '1', title: `Book a Free "Level 2" Assessment Session`, icon: "bi-calendar" },
+        { number: '1', title: Book a Free Level 2 Assessment Session, icon: "bi-calendar" },
 { number: '2', title: "Understand Your Emotional Patterns", icon: "bi-graph-up" },
 { number: '3', title: "Start Customized Sessions", icon: "bi-person" },
 { number: '4', title: "Gain Confidence, Empower your Mental & Emotional Health", icon: "bi-heart" },
@@ -1496,6 +1496,7 @@ const Home = () => {
 
 
 export default Home;
+
 
 
 
