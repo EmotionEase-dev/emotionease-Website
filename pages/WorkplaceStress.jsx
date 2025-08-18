@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 import './StressManagement.css';
 
 const WorkplaceStressManagementPage = () => {
@@ -27,12 +28,14 @@ const WorkplaceStressManagementPage = () => {
 
   return (
     <>
+    <Helmet>
     <title>
         Workplace Stress Management Online Therapy & Counseling | EmotionEase
     </title>
     <meta name="description" content="Over 60% of Indian employees face workplace stress. EmotionEase offers confidential online therapy to help you manage and move forward." />
     <meta name="keywords" content="workplace stress management, online therapy, counseling, stress relief, mental health, employee wellness, workplace anxiety, burnout therapy" />
     <meta name="author" content="EmotionEase" />
+    </Helmet>
     <div className="stress-management-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
       <div className="stats-bar bg-white shadow-sm py-4">
         <Container>
