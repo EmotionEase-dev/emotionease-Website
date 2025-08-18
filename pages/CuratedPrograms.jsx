@@ -38,6 +38,7 @@ const CuratedPrograms = () => {
       for: "Individuals Seeking Deeper Healing",
       description: "Our tailored program for those dealing with long-term stress, trauma, identity crisis, low self-esteem, or strained relationships.",
       features: [
+        "A free Assessment session",
         "One-on-one personalized sessions",
         "Unlimited support during program",
         "Trauma-informed techniques",
@@ -151,7 +152,7 @@ const CuratedPrograms = () => {
                   <a href="https://forms.gle/YbcSchKPpTkaxu1ZA" className="btn btn-light btn-lg px-4" target="_blank" 
   rel="noopener noreferrer"
 >
-Book Level 2 First Free Session
+Book Level 2 Free Assessment Session
               </a>
                 </motion.div>
               </motion.div>
@@ -323,7 +324,7 @@ Book Level 2 First Free Session
                 </tr>
                 <tr>
                   <td>Format</td>
-                  <td>Group / 1:1 Workshop</td>
+                  <td>Group Workshop</td>
                   <td>1-on-1 Sessions</td>
                   <td>Dyadic Sessions</td>
                 </tr>
@@ -409,6 +410,7 @@ Book Level 2 First Free Session
 
 
 export default CuratedPrograms;
+
 
 
 
