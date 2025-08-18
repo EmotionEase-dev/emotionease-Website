@@ -7,8 +7,7 @@ function SignupForm({ show, onClose }) {  // Added show prop here
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: ''
-  });
+    });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -17,7 +16,7 @@ function SignupForm({ show, onClose }) {  // Added show prop here
   useEffect(() => {
     // Reset form state when modal is opened
     if (show) {
-      setFormData({ name: '', email: '', phone: '' });
+      setFormData({name: '', email: ''});
       setErrors({});
       setSubmitSuccess(false);
       setShowAlert(true);
@@ -38,13 +37,7 @@ function SignupForm({ show, onClose }) {  // Added show prop here
     } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
       newErrors.email = 'Please enter a valid email address';
     }
-    
-    if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone number is required';
-    } else if (!/^[0-9]{10}$/.test(formData.phone)) {
-      newErrors.phone = 'Please enter a valid 10-digit phone number';
-    }
-    
+       
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -200,28 +193,7 @@ function SignupForm({ show, onClose }) {  // Added show prop here
               )}
             </div>
             
-            <div className="mb-4">
-              <label htmlFor="phone" className="form-label fw-medium">
-                Phone Number <span className="text-danger">*</span>
-              </label>
-              <input
-                type="tel"
-                className={`form-control ${errors.phone ? 'is-invalid' : ''}`}
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="Enter your 10-digit phone number"
-                maxLength="10"
-              />
-              {errors.phone && (
-                <div className="invalid-feedback d-block">
-                  <i className="bi bi-exclamation-circle me-1"></i>
-                  {errors.phone}
-                </div>
-              )}
-            </div>
-            
+                     
             <div className="d-flex justify-content-end gap-2 mt-4">
               <motion.button
                 type="button"
@@ -257,4 +229,6 @@ function SignupForm({ show, onClose }) {  // Added show prop here
   );
 }
 
+
 export default SignupForm;
+

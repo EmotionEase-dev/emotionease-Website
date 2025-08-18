@@ -7,7 +7,7 @@ const CuratedPrograms = () => {
   const programs = [
     {
       level: "Level 1",
-      title: "Emotional Enablement Workshop",
+      title: "Emotional Enablement Group Workshop",
       duration: "3 days (90 mins/day)",
       price: "$50",
       for: "Entrepreneurs, Working Professionals & Students",
@@ -17,7 +17,7 @@ const CuratedPrograms = () => {
         "Healthy emotional management",
         "Improved rapport building",
         "Basic stress reduction techniques",
-        "Daily practice exercises"
+        "Achieve heart-aligned goals"
       ],
       outcomes: [
         "Handle daily stressors effectively",
@@ -34,7 +34,7 @@ const CuratedPrograms = () => {
       level: "Level 2",
       title: "Personalized Emotional Resilience Program",
       duration: "4-6 weeks (flexible scheduling)",
-      price: "$100",
+      price: "$150",
       for: "Individuals Seeking Deeper Healing",
       description: "Our tailored program for those dealing with long-term stress, trauma, identity crisis, low self-esteem, or strained relationships.",
       features: [
@@ -42,6 +42,7 @@ const CuratedPrograms = () => {
         "Unlimited support during program",
         "Trauma-informed techniques",
         "Customized emotional regulation tools",
+        "Regular practice exercises",
         "3-month follow-up included"
       ],
       outcomes: [
@@ -56,7 +57,7 @@ const CuratedPrograms = () => {
     },
     {
       level: "Level 3",
-      title: "Wholesome Relationships Program",
+      title: "Wholesome Relationships Family Program",
       duration: "2-3 weeks (couple's schedule)",
       price: "$50/person",
       for: "Couples, Business Partners & Close Friends",
@@ -150,7 +151,7 @@ const CuratedPrograms = () => {
                   <a href="https://forms.gle/YbcSchKPpTkaxu1ZA" className="btn btn-light btn-lg px-4" target="_blank" 
   rel="noopener noreferrer"
 >
-Book First Free Session
+Book Level 2 First Free Session
               </a>
                 </motion.div>
               </motion.div>
@@ -330,7 +331,7 @@ Book First Free Session
                   <td>Follow-up Period</td>
                   <td>1 month</td>
                   <td>3 months</td>
-                  <td>3 months</td>
+                  <td>1 month</td>
                 </tr>
                 <tr>
                   <td>Location</td>
@@ -408,3 +409,9 @@ Book First Free Session
 
 
 export default CuratedPrograms;
+
+
+
+
+
+

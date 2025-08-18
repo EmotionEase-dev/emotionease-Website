@@ -186,7 +186,7 @@ const Home = () => {
   }}
   transition={{ duration: 0.3 }}
 >
-  <h2 className="text-success fw-bold mb-3">BOOK LEVEL 1 "GROUP WORKSHOP" FOR $50</h2>
+  <h2 className="text-success fw-bold mb-3">BOOK AUGUST "GROUP WORKSHOP" SLOT FOR $50</h2>
   <p className="mb-4">
     Our unique, structured programs are designed to empower you
     to take control of your emotional wellbeing and live a more
@@ -558,9 +558,8 @@ const Home = () => {
                     "From the very first session, we help you understand your feelings and guide you toward the right solutions",
                     "Our online sessions have no time limits. We listen closely, understand your concerns, and offer simple yet effective psychological and practical solutions; so you start feeling better from the very first session.",
                     "For Level 2 and 3 participants, our online sessions are unlimited. We’re here to support you until you feel confident, empowered, and comfortable applying the approaches that strengthen your mental and emotional health.",
-                    "We follow up with everyone three months after their program because we genuinely care about how they’re doing and want to ensure they’re thriving in life.",
-                    "We offer a 50% refund if you don’t feel helped or empowered after attending the sessions.",
-                    "Our Level 2 first session is free; we want you to understand our approach and feel confident trusting us with your concerns.",
+                    "We follow up with everyone after their program because we genuinely care about how they’re doing and want to ensure they’re thriving in life.",
+                    "Our Level 2 first session is free; we want you to understand our approach and feel confident trusting us with your concerns."
                   ].map((item, index) => (
                     <motion.div
                       key={index}
@@ -692,7 +691,7 @@ const Home = () => {
                 </div>
                 <div className="d-flex align-items-center">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
-                  <span>Free "Level 2" first session</span>
+                  <span>Free Level 2 first session</span>
                 </div>
                 <div className="d-flex align-items-center">
                   <i className="bi bi-check-circle-fill text-success me-2"></i>
@@ -820,11 +819,19 @@ const Home = () => {
       }}
     >
       {[
+<<<<<<< HEAD
         { number: '1', title: `Book a Free "Level 2" First Session`, icon: "bi-calendar" },
 { number: '2', title: "Understand Your Emotional Patterns", icon: "bi-graph-up" },
 { number: '3', title: "Start Customized Sessions", icon: "bi-person" },
 { number: '4', title: "Gain Confidence, Empower your Mental & Emotional Health", icon: "bi-heart" },
 { number: '5', title: "Give us feedback and let us know if you want more from us during our 3-Month Follow-Up call", icon: "bi-chat" },
+=======
+        { number: '1', title: "Book a Free Level 2 First Session", icon: "bi-calendar" },
+        { number: '2', title: "Understand Your Emotional Patterns", icon: "bi-graph-up" },
+        { number: '3', title: "Start Customized Sessions", icon: "bi-person" },
+        { number: '4', title: "Gain Confidence, Empower your Mental & Emotional Health", icon: "bi-heart" },
+        { number: '5', title: "Give us feedback and let us know if you want more from us during our 3-Month Follow-Up call", icon: "bi-chat" },
+>>>>>>> ddd290af9ba114f1410b5b7553acc969c03fc39f
       ].map((step, i) => (
         <motion.div 
           key={i} 
@@ -1286,7 +1293,7 @@ const Home = () => {
                     style={{ maxWidth: "600px" }}
                     variants={itemVariants}
                   >
-                    Your first "Level 2" session is free, and there’s zero pressure to continue
+                    Your first Level 2 session is free, and there’s zero pressure to continue
                   </motion.p>
                   <motion.div
                     className="d-flex justify-content-center gap-3 flex-wrap"
@@ -1302,7 +1309,7 @@ const Home = () => {
                         rel="noopener noreferrer"
                         className="btn btn-success btn-lg px-4 py-3 fw-medium"
                       >
-                         Book Your "Level 2" 1st Free Counseling with EmotionEase{" "}
+                         Book Your Level 2 1st Free Counseling with EmotionEase{" "}
                         <i className="bi bi-arrow-right ms-2"></i>
                       </a>
                     </motion.div>
@@ -1340,6 +1347,26 @@ const Home = () => {
                   {
                     name: "linkedin",
                     url: "https://www.linkedin.com/company/emotionease/",
+                  },
+                  {
+                    <style>
+                      .libutton {
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      padding: 7px;
+                      text-align: center;
+                      outline: none;
+                      text-decoration: none !important;
+                      color: #ffffff !important;
+                      width: 200px;
+                      height: 32px;
+                      border-radius: 16px;
+                      background-color: #0A66C2;
+                      font-family: "SF Pro Text", Helvetica, sans-serif;
+                              }
+                    </style>
+                  <a className="libutton" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7350806259647885314" target="_blank">Subscribe on LinkedIn</a>,
                   },
                   // { name: 'youtube', url: 'https://www.youtube.com/@emotionease' }
                 ].map((social, index) => (
@@ -1469,4 +1496,10 @@ const Home = () => {
 
 
 export default Home;
+
+
+
+
+
+
 

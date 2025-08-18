@@ -198,7 +198,7 @@ const Navbar = () => {
           icon: "bi-fire"
         },
         { 
-          name: " Couple Therapy", 
+          name: " Couples Therapy", 
           href: "/CoupleTherapy",
           description: "Rebuild connection and resolve conflicts",
           icon: "bi-people"
@@ -326,5 +326,6 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 export default Navbar;
