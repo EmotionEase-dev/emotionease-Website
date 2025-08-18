@@ -68,7 +68,6 @@ const Home = () => {
   const [showSignup, setShowSignup] = useState(false);
 
   useEffect(() => {
-
     document.title = "EmotionEase: Online Counseling for Emotional & Mental Health";
     // Check if user has already closed the form
     const formClosed = localStorage.getItem('signupFormClosed');
@@ -1496,6 +1495,7 @@ const Home = () => {
 
 
 export default Home;
+
 
 
 
