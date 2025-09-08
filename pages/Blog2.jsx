@@ -15,7 +15,7 @@ import {
   faClock
 } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-
+import { Helmet } from "react-helmet-async";
 const BlogPostEmotionalHealing = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -97,6 +97,11 @@ const BlogPostEmotionalHealing = () => {
 
   return (
     <div style={{ backgroundColor: '#f8f9fa', minHeight: '100vh' }}>
+      <Helmet>
+                <title>
+                   A Step-by-Step Guide To Heal Your Emotional Wounds
+                </title>
+              </Helmet>
       {/* Navigation Back Button */}
       <Container className="pt-4">
         <Button 

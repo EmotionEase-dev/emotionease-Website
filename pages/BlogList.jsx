@@ -14,7 +14,8 @@ const BlogList = () => {
       excerpt: "Why Unlimited Therapy Sessions Transform Filipino Mental Health Recovery",
       image: blogImage,
       date: 'June 15, 2023',
-      readTime: '5 min read'
+      readTime: '5 min read',
+      slug:"solving-mental-health-with-unlimited-therapy-sessions"
     },
     {
       id: 2,
@@ -22,7 +23,8 @@ const BlogList = () => {
       excerpt: "A Step-by-Step Guide to Lasting Well-Being",
       image: blogImage,
       date: 'July 22, 2023',
-      readTime: '7 min read'
+      readTime: '7 min read',
+      slug:"step-by-step-guide-to-heal-emotional-wounds"
     }
   ];
 
@@ -78,7 +80,7 @@ const BlogList = () => {
                       <div className="mt-auto">
                         <Button 
                           as={Link} 
-                          to={`/blog/${blog.id}`}
+                          to={`/${blog.slug}`}
                           variant="success" 
                           style={{ 
                             backgroundColor: '#28a745', 

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
 import './StressManagement.css';
-
+import { Helmet } from "react-helmet-async";
 const PremaritalcounselingPage = () => {
   useEffect(() => {
     // Initialize tooltips
@@ -31,7 +31,8 @@ const PremaritalcounselingPage = () => {
     <title>
         Premarital counseling | EmotionEase
     </title>
-    <meta name="description" content="  Marriage is a long-term commitment. EmotionEase’s online premarital counseling helps you build a happy, healthy foundation together." />
+    <meta name="description" content="Marriage is a long-term commitment. EmotionEase’s online premarital counselling helps you build a happy, healthy foundation together.
+" />
     <meta name="keywords" content="premarital counseling, online counseling, marriage preparation, relationship counseling, conflict resolution, communication skills" />
     <meta name="author" content="EmotionEase" />
     </Helmet>

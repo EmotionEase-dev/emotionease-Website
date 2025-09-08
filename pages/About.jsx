@@ -7,8 +7,6 @@ import SuchetaImage from '../public/SuchetaImage.jpg';
 import ThilagaMC from '../public/ThilagaMC.jpg';
 
 const About = () => {
-
-
     useEffect(() => {
     document.title = "EmotionEase | Online Counseling & Emotional Wellbeing";
   }, []);

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
 import './StressManagement.css';
+import { Helmet } from "react-helmet-async";
 
 const StressManagementPage = () => {
   useEffect(() => {
@@ -33,7 +34,10 @@ const StressManagementPage = () => {
       <title>
       Stress, Depression & Anxiety Management Online | EmotionEase
     </title>
-    <meta name="description" content="  If you're dealing with stress, anxiety, or depression, don't hesitate to seek help. EmotionEase is a safe, non-judgmental online space where we listen, support, and work with you to manage and resolve your challenges." />
+     <meta
+          name="description"
+          content="If you're dealing with stress, anxiety, or depression, don't hesitate to seek help. EmotionEase is a safe, non-judgmental online space where we listen, support, and work with you to manage and resolve your challenges."
+        />
       <meta name="keywords" content="stress management, depression counseling, anxiety therapy, online therapy, mental health, emotional well-being, stress relief, depression help, anxiety management" />
       <meta name="author" content="EmotionEase" />
       </Helmet>

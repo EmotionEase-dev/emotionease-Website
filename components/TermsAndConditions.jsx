@@ -169,7 +169,7 @@ const TermsAndConditions = ({ onClose }) => {
     {/* <a href="mailto:admin@emotionease.in" className="text-decoration-none ms-1">
       admin@emotionease.in
     </a>,  */}
-    <a href="mailto:admin@emotionease.in className="text-decoration-none ms-1">
+    <a href="mailto:admin@emotionease.in" className="text-decoration-none ms-1">
       admin@emotionease.in
     </a>
   </li>

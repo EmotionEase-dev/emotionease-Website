@@ -118,15 +118,15 @@ function App() {
         <Route path="/programs" element={<CuratedPrograms />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/WorkStress" element={<WorkplaceStressManagementPage />} />
-        <Route path="/ParentCoaching" element={<ParentCoachingPage />} />
-        <Route path="/PremaritalCounseling" element={<PremaritalCounselingPage/>} />
-        <Route path="/BurnoutTherapy" element={<BurnoutTherapyPage />} />
-        <Route path="/StressManagement" element={<StressManagementPage />} />
-        <Route path="/CoupleTherapy" element={<CouplesTherapyPage />} />
+        <Route path="/work-stress" element={<WorkplaceStressManagementPage />} />
+        <Route path="/parent-coaching" element={<ParentCoachingPage />} />
+        <Route path="/premarital-counseling" element={<PremaritalCounselingPage/>} />
+        <Route path="/burnout-therapy" element={<BurnoutTherapyPage />} />
+        <Route path="/stress-depression-anxiety-management-online" element={<StressManagementPage />} />
+        <Route path="/couple-therapy" element={<CouplesTherapyPage />} />
         <Route path="/blog" element={<BlogList />} />
-        <Route path="/blog/1" element={<BlogPost />} />
-        <Route path="/blog/2" element={<BlogPostEmotionalHealing />} />
+        <Route path="/solving-mental-health-with-unlimited-therapy-sessions" element={<BlogPost />} />
+        <Route path="/step-by-step-guide-to-heal-emotional-wounds" element={<BlogPostEmotionalHealing />} />
 
 
         {/* Catch-all route for 404 Not Found */}

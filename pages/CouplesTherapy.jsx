@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
 import './StressManagement.css';
-
+import { Helmet } from "react-helmet-async";
 const CouplesTherapyPage = () => {
   useEffect(() => {
     // Initialize tooltips
@@ -29,7 +29,8 @@ const CouplesTherapyPage = () => {
     <>
     <Helmet>
       <title>Couples Therapy and Relationship Counseling Online | EmotionEase</title>
-      <meta name="description" content="Struggling in a relationship? EmotionEase offers couples therapy & relationship counseling. A fresh perspective can make all the difference." />
+      <meta name="description" content="Struggling in a relationship? EmotionEase offers couples therapy & relationship counselling. A fresh perspective can make all the difference.
+" />
       <meta name="keywords" content="couples therapy, relationship counseling, EmotionEase, online, marriage, interpersonal relationship, harmony, peace, love, stress, anxiety" />
       <meta name="author" content="EmotionEase" />
     </Helmet>

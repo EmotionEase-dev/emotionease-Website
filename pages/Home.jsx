@@ -10,7 +10,7 @@ import Cage from "../public/cage.png";
 import Freedom from "../public/Freedom.png";
 import TermsModal from "../components/TermsModal";
 import SignupForm from "../components/SignUp.jsx";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 
 // Animation variants
@@ -93,7 +93,11 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      
+     <Helmet>
+          <title>EmotionEase: Online Counseling for Emotional & Mental Health</title>
+          <meta name="description" content="Discover EmotionEase – a safe space for emotional healing, self-awareness, and healthier relationships. Led by expert Elango Annamalai. Book a session now.
+    " />
+        </Helmet>
       {/* Signup Form Modal */}
       <SignupForm 
         show={showSignup} 
@@ -818,19 +822,11 @@ const Home = () => {
       }}
     >
       {[
-<<<<<<< HEAD
-        { number: '1', title: "Book a Free "Level 2" Assessment Session", icon: "bi-calendar" },
+        { number: '1', title: "Book a Free 'Level 2' Assessment Session", icon: "bi-calendar" },
         { number: '2', title: "Understand Your Emotional Patterns", icon: "bi-graph-up" },
         { number: '3', title: "Start Customized Sessions", icon: "bi-person" },
         { number: '4', title: "Gain Confidence, Empower your Mental & Emotional Health", icon: "bi-heart" },
         { number: '5', title: "Give us feedback and let us know if you want more from us during our 3-Month Follow-Up call", icon: "bi-chat" },
-  
-        { number: '1', title: "Book a Free "Level 2" Assessment Session", icon: "bi-calendar" },
-        { number: '2', title: "Understand Your Emotional Patterns", icon: "bi-graph-up" },
-        { number: '3', title: "Start Customized Sessions", icon: "bi-person" },
-        { number: '4', title: "Gain Confidence, Empower your Mental & Emotional Health", icon: "bi-heart" },
-        { number: '5', title: "Give us feedback and let us know if you want more from us during our 3-Month Follow-Up call", icon: "bi-chat" },
->>>>>>> ddd290af9ba114f1410b5b7553acc969c03fc39f
       ].map((step, i) => (
         <motion.div 
           key={i} 

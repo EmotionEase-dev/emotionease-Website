@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet-async";
 import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
 import './StressManagement.css';
 
@@ -32,7 +32,8 @@ const BurnoutTherapyPage = () => {
     <title>
         Burnout Therapy and Counseling Online | EmotionEase
     </title>
-    <meta name="description" content="EExperiencing burnout lately? Transform your mental health by connecting with our expert at EmotionEase. We specialize in burnout therapy and counseling."/>
+    <meta name="description" content="Experiencing burnout lately? Transform your mental health by connecting with our expert at EmotionEase. We specialize in burnout therapy and counseling.
+"/>
     <meta name="keywords" content="burnout therapy, online counseling, emotional wellness, stress management, mental health support, burnout recovery" />
     <meta name="author" content="EmotionEase" />
     </Helmet>

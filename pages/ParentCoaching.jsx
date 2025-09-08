@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
 import './StressManagement.css';
-
+import { Helmet } from "react-helmet-async";
 const ParentCoachingPage = () => {
   useEffect(() => {
     // Initialize tooltips
@@ -31,7 +31,8 @@ const ParentCoachingPage = () => {
     <title>
         Parent Coaching and Confidence Building for Kids | EmotionEase
     </title>
-    <meta name="description" content="Learn the right approach and techniques to parent your kids and instill confidence in them through EmotionEase’s online sessions." />
+    <meta name="description" content=" Learn the right approach and techniques to parent your kids and instill confidence in them through EmotionEase’s online sessions.
+" />
     <meta name="keywords" content="parent coaching, confidence building, child development, online coaching, emotional support, parenting skills" />
     <meta name="author" content="EmotionEase" />
     </Helmet>

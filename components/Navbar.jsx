@@ -160,7 +160,7 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { name: "Home", href: "/home" },
+    { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Blogs", href: "/blog" },
 
@@ -169,37 +169,37 @@ const Navbar = () => {
       dropdown: [
         { 
           name: "Depression & Anxiety", 
-          href: "/StressManagement",
+          href: "/stress-depression-anxiety-management-online",
           description: "Learn to manage stress effectively",
           icon: "bi-heart-pulse"
         },
         { 
           name: "Work Stress", 
-          href: "/WorkStress",
+          href: "/work-stress",
           description: "Deal with workplace stress and anxiety",
           icon: "bi-briefcase"
         },
         { 
           name: "Parent Coaching", 
-          href: "/ParentCoaching",
+          href: "/parent-coaching",
           description: "Guidance for modern parenting challenges",
           icon: "bi-people"
         },
         { 
           name: "Premarital Counseling", 
-          href: "/PremaritalCounseling",
+          href: "/premarital-counseling",
           description: "Prepare for a strong marriage foundation",
           icon: "bi-people-fill"
         },
         { 
           name: "Burnout Therapy", 
-          href: "/BurnoutTherapy",
+          href: "/burnout-therapy",
           description: "Recover from professional burnout",
           icon: "bi-fire"
         },
         { 
           name: " Couples Therapy", 
-          href: "/CoupleTherapy",
+          href: "/couple-therapy",
           description: "Rebuild connection and resolve conflicts",
           icon: "bi-people"
         },
