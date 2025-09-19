@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Container, Row, Col, Card, Button, ListGroup, Badge,Accordion } from 'react-bootstrap';
 import './CuratedPrograms.css';
 import { motion } from 'framer-motion';
 
@@ -351,53 +352,7 @@ Book Level 2 Free Assessment Session
           </motion.div>
         </div>
       </section>
-   <section className="py-5 bg-light">
-        <Container>
-          <div className="animate-on-scroll fade-in-up text-center mb-5">
-            <h2 className="fw-bold mb-3">Frequently Asked Questions</h2>
-            <p className="text-muted">
-              Here are some of the most common questions people ask about stress, depression, and anxiety therapy.
-            </p>
-          </div>
 
-          <Row className="animate-on-scroll fade-in-up justify-content-center">
-            <Col lg={10}>
-              <Accordion defaultActiveKey="0" flush>
-                <Accordion.Item eventKey="0" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
-                  <Accordion.Header >How do I know if I need therapy for stress?</Accordion.Header>
-                  <Accordion.Body>
-                    If you feel overwhelmed, unable to manage daily responsibilities, or notice physical/emotional exhaustion, 
-                    it may be the right time to seek therapy. Talking to a professional can give you clarity and coping strategies.
-                  </Accordion.Body>
-                </Accordion.Item>
-
-                <Accordion.Item eventKey="1" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
-                  <Accordion.Header>Is online therapy effective for depression and anxiety?</Accordion.Header>
-                  <Accordion.Body>
-                    Yes, research shows online therapy can be just as effective as in-person sessions. 
-                    It offers flexibility and comfort while ensuring confidentiality and expert support.
-                  </Accordion.Body>
-                </Accordion.Item>
-
-                <Accordion.Item eventKey="2" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
-                  <Accordion.Header>Are the sessions confidential?</Accordion.Header>
-                  <Accordion.Body>
-                    Absolutely. At EmotionEase, we maintain strict confidentiality. Your privacy and trust are our top priorities.
-                  </Accordion.Body>
-                </Accordion.Item>
-
-                <Accordion.Item eventKey="3" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
-                  <Accordion.Header>How long does it take to see improvement?</Accordion.Header>
-                  <Accordion.Body>
-                    The timeline varies for each person. Some feel improvement after a few sessions, while others 
-                    may need a longer journey. Our experts will guide you with a personalized plan.
-                  </Accordion.Body>
-                </Accordion.Item>
-              </Accordion>
-            </Col>
-          </Row>
-        </Container>
-      </section>
       {/* CTA Section */}
       <motion.section 
         className="program-cta py-5"
