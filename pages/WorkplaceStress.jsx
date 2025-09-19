@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, ListGroup, Badge,Accordion } from 'react-bootstrap';
 import { Helmet } from "react-helmet-async";
 import './StressManagement.css';
 
@@ -250,7 +250,64 @@ const WorkplaceStressManagementPage = () => {
         </Container>
       </section>
     </div>
+   <section className="py-5 bg-light">
+        <Container>
+          <div className="animate-on-scroll fade-in-up text-center mb-5">
+            <h2 className="fw-bold mb-3">Frequently Asked Questions</h2>
+            <p className="text-muted">
+              Here are some of the most common questions people ask about stress, depression, and anxiety therapy.
+            </p>
+          </div>
 
+          <Row className="animate-on-scroll fade-in-up justify-content-center">
+            <Col lg={10}>
+              <Accordion defaultActiveKey="0" flush>
+                <Accordion.Item eventKey="0" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header >Why do you need counseling or therapy for workplace/office stress management?</Accordion.Header>
+                  <Accordion.Body>
+                   Because, counseling for workplace stress helps you manage pressure, prevent burnout, and maintain emotional balance. It equips you with coping tools to stay productive and resilient at work.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="1" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How will I benefit from EmotionEase’s workplace stress management therapy?</Accordion.Header>
+                  <Accordion.Body>
+                   You’ll learn to identify stress triggers, set healthy boundaries, and build resilience, helping you stay balanced, focused, and productive at work.
+
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="2" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>Is my privacy and confidentiality protected during online counseling?</Accordion.Header>
+                  <Accordion.Body>
+                    Yes, absolutely! We respect our clients’ right to privacy and ensure that their personal information is never shared or disclosed under any circumstances.
+
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="3" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How soon can I start sessions with EmotionEase?</Accordion.Header>
+                  <Accordion.Body>
+                    You can get in touch with EmotionEase via email at admin@emotionease.com or call/whatsapp us on these numbers  +91 9345330187 and +91 9677198550. We will reach out to you personally as soon as possible and schedule a consultation at your convenience.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="4" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How long is each online counseling or therapy session with EmotionEase?</Accordion.Header>
+                  <Accordion.Body>
+                   Each online counseling session typically lasts 45 minutes to 1 hour, giving you enough time to address key concerns in a focused and meaningful way.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="5" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>For which nationalities are your therapy and counseling services available?</Accordion.Header>
+                  <Accordion.Body>
+                    We offer our workplace or office related stress management therapy cum counseling sessions to people based in India, UAE (Dubai), Saudi Arabia, the Philippines, Singapore, the United States, and the United Kingdom.
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          </Row>
+        </Container>
+      </section>
         {/* Final CTA */}
           <section className="py-6 bg-success text-light text-center">
             <Container>

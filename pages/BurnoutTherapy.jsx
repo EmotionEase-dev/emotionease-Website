@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet-async";
-import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, ListGroup, Badge,Accordion } from 'react-bootstrap';
 import './StressManagement.css';
 
 const BurnoutTherapyPage = () => {
@@ -242,7 +242,77 @@ const BurnoutTherapyPage = () => {
         </Container>
       </section>
     </div>
+<section className="py-5 bg-light">
+        <Container>
+          <div className="animate-on-scroll fade-in-up text-center mb-5">
+            <h2 className="fw-bold mb-3">Frequently Asked Questions</h2>
+            <p className="text-muted">
+              Here are some of the most common questions people ask about stress, depression, and anxiety therapy.
+            </p>
+          </div>
 
+          <Row className="animate-on-scroll fade-in-up justify-content-center">
+            <Col lg={10}>
+              <Accordion defaultActiveKey="0" flush>
+                <Accordion.Item eventKey="0" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header >Who can enroll for burnout therapy?
+</Accordion.Header>
+                  <Accordion.Body>
+                   Our burnout therapy and counseling sessions are designed for individuals who feel less motivated in life, have a reduced desire to socialize, struggle with procrastination, or feel uninspired in different areas of life.
+
+
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="1" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How will burnout therapy help?
+
+</Accordion.Header>
+                  <Accordion.Body>
+                  Burnout therapy provides you with practical strategies and techniques to regain a sense of purpose and emotional balance. The causes and symptoms of burnout will be addressed, and you’ll receive a structured plan to support your recovery.
+
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="2" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>Is burnout common among individuals?
+</Accordion.Header>
+                  <Accordion.Body>
+                    Yes, burnout is very common and can affect people of all ages and walks of life. When the mind and body feel overwhelmed, you may experience lethargy, demotivation, and difficulty managing daily responsibilities. Our burnout therapy helps you relax, rebuild resilience, and rediscover a sense of purpose in life.
+
+
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="3" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How soon can I start burnout therapy sessions with EmotionEase?</Accordion.Header>
+                  <Accordion.Body>
+                    You can get in touch with EmotionEase via email at admin@emotionease.com or call/whatsapp us on these numbers  +91 9345330187 and +91 9677198550. We will reach out to you personally as soon as possible and schedule a consultation at your convenience.
+
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="4" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>Who can enroll for the burnout therapy session worldwide?
+                 </Accordion.Header>
+                  <Accordion.Body>
+                  Our burnout therapy sessions are held online and we offer them to people based in India, UAE (Dubai), Saudi Arabia, the Philippines, Singapore, the United States, and the United Kingdom.
+
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="5" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How long does each burnout therapy session with EmotionEase last?
+
+              </Accordion.Header>
+                  <Accordion.Body>
+                    Each burnout therapy session will last 45 minutes to 1 hour, giving you enough time to speak about your issues unhesitantly.
+
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          </Row>
+        </Container>
+      </section>
      {/* Final CTA */}
               <section className="py-6 bg-success text-light text-center">
                 <Container>

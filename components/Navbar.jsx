@@ -175,7 +175,7 @@ const Navbar = () => {
         },
         { 
           name: "Work Stress", 
-          href: "/work-stress",
+          href: "/work-stress-management-therapy",
           description: "Deal with workplace stress and anxiety",
           icon: "bi-briefcase"
         },
@@ -203,6 +203,12 @@ const Navbar = () => {
           description: "Rebuild connection and resolve conflicts",
           icon: "bi-people"
         },
+        { 
+          name: " Corporate Wellness", 
+          href: "/corporate-wellness",
+          description: "Thriving business with prime performance",
+          icon: "bi-people"
+        },
       ] 
     },
     { 
@@ -224,7 +230,7 @@ const Navbar = () => {
     },
     { 
       name: "Programs", 
-      href: "/programs",
+      href: "/emotional-wellness-workshops-and-program-plans",
     },
     { 
       name: "Follow Us",

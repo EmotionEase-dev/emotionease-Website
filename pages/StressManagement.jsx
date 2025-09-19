@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, ListGroup, Badge,Accordion  } from 'react-bootstrap';
 import './StressManagement.css';
 import { Helmet } from "react-helmet-async";
 
@@ -244,6 +244,81 @@ You could be sitting at a café with close friends, enjoying yourself, when sudd
         </Container>
       </section>
     </div>
+
+          {/* FAQ Section */}
+      <section className="py-5 bg-light">
+        <Container>
+          <div className="animate-on-scroll fade-in-up text-center mb-5">
+            <h2 className="fw-bold mb-3">Frequently Asked Questions</h2>
+            <p className="text-muted">
+              Here are some of the most common questions people ask about stress, depression, and anxiety therapy.
+            </p>
+          </div>
+
+          <Row className="animate-on-scroll fade-in-up justify-content-center">
+            <Col lg={10}>
+              <Accordion defaultActiveKey="0" flush>
+                <Accordion.Item eventKey="0" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header >What is online counseling for stress, depression, and anxiety?</Accordion.Header>
+                  <Accordion.Body>
+                    Online counseling/therapy for anxiety, depression, and stress is designed to support individuals struggling with persistent sadness (doesn’t matter if the cause of sadness is identified or unidentified), overwhelming stress at home or workplace, and those who experience excessive anxiety even in low-pressure situations.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="1" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>Is online therapy as effective as in-person sessions?</Accordion.Header>
+                  <Accordion.Body>
+                    EmotionEase’s online therapy and counseling sessions are as effective as in-person sessions. First, they are conducted via voice or video calls. Secondly, all sessions are confidential, and individuals can talk to our experts from their preferred location.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="2" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How many therapy or counseling sessions will I need to feel better?</Accordion.Header>
+                  <Accordion.Body>
+                    The number of sessions varies for each person. In the first few sessions, your therapist will assess the root cause, your coping style, and how well strategies are working. At EmotionEase, we aim to make a difference from the very first session and guide you toward recovery.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="3" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>What sort of outcomes can I expect from stress/depression/anxiety counseling sessions?</Accordion.Header>
+                  <Accordion.Body>
+                      1.You will be able to identify the cause of your sadness/depression (if you haven’t already)
+                      2.You will be able to identify and cope with your behavioral symptoms early on..
+                      3.You will be able to establish measurable goals for yourself 
+                      4.You will have realistic expectations from yourself and others around you
+                      5.You will be kinder to yourself and others around you
+                  </Accordion.Body>
+                </Accordion.Item>
+                 <Accordion.Item eventKey="4" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>Is my privacy and confidentiality protected during online counseling?</Accordion.Header>
+                  <Accordion.Body>
+                     Yes, absolutely! We respect our clients’ right to privacy and ensure that their personal information is never shared or disclosed under any circumstances.
+                  </Accordion.Body>
+                </Accordion.Item>
+                 <Accordion.Item eventKey="5" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How soon can I start sessions with EmotionEase?</Accordion.Header>
+                  <Accordion.Body>
+                      You can get in touch with EmotionEase via email at admin@emotionease.com or call/whatsapp us on these numbers  +91 9345330187 and +91 9677198550. We will reach out to you personally as soon as possible and schedule a consultation at your convenience.
+                  </Accordion.Body>
+                </Accordion.Item>
+                 <Accordion.Item eventKey="6" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How long is each online counseling or therapy session?</Accordion.Header>
+                  <Accordion.Body>
+                    Each online counseling session typically lasts 45 minutes to 1 hour, giving you enough time to address key concerns in a focused and meaningful way.
+                  </Accordion.Body>
+                </Accordion.Item>
+                 <Accordion.Item eventKey="7" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>For which nationalities are your therapy and counseling services available?</Accordion.Header>
+                  <Accordion.Body>
+                     We offer emotional healing and counseling sessions for stress, depression, and anxiety to people based in India, UAE (Dubai), Saudi Arabia, the Philippines, Singapore, the United States, and the United Kingdom.
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
         {/* Final CTA */}
           <section className="py-6 bg-success text-light text-center">
             <Container>

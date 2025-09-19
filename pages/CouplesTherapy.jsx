@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, ListGroup, Badge,Accordion } from 'react-bootstrap';
 import './StressManagement.css';
 import { Helmet } from "react-helmet-async";
 const CouplesTherapyPage = () => {
@@ -292,7 +292,68 @@ const CouplesTherapyPage = () => {
           </Container>
         </section>
       </div>
+   <section className="py-5 bg-light">
+        <Container>
+          <div className="animate-on-scroll fade-in-up text-center mb-5">
+            <h2 className="fw-bold mb-3">Frequently Asked Questions</h2>
+            <p className="text-muted">
+              Here are some of the most common questions people ask about stress, depression, and anxiety therapy.
+            </p>
+          </div>
 
+          <Row className="animate-on-scroll fade-in-up justify-content-center">
+            <Col lg={10}>
+              <Accordion defaultActiveKey="0" flush>
+                <Accordion.Item eventKey="0" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header >Who can enroll for couples therapy?</Accordion.Header>
+                  <Accordion.Body>
+                   Couples therapy is designed for married, unmarried, or engaged partners who are experiencing challenges in their relationship and want to resolve them with expert guidance.
+
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="1" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How will couples therapy with EmotionEase help us?
+</Accordion.Header>
+                  <Accordion.Body>
+                   Couples therapy helps you work through conflicts, find common ground, and address difficult topics in a safe space. The goal is to create clarity and harmony so you and your partner can decide what’s best for your relationship.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="2" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>What else is provided other than couples therapy at EmotionEase?</Accordion.Header>
+                  <Accordion.Body>
+                    At EmotionEase, we also offer relationship counseling. Whether you need guidance in handling difficult relatives or close ones, or want support in improving dynamics at home, work, or within your inner circle, our counseling helps you break unhealthy patterns and build stronger connections.
+
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="3" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How soon can we start couples therapy sessions with EmotionEase?</Accordion.Header>
+                  <Accordion.Body>
+                    You can get in touch with EmotionEase via email at admin@emotionease.com or call/whatsapp us on these numbers  +91 9345330187 and +91 9677198550. We will reach out to you personally as soon as possible and schedule a consultation at your convenience.
+
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="4" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>Who can access couples therapy sessions internationally?
+                 </Accordion.Header>
+                  <Accordion.Body>
+                   EmotionEase’s couples therapy sessions are held online. They are offered to people based in India, UAE (Dubai), Saudi Arabia, the Philippines, Singapore, the United States, and the United Kingdom.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="5" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How long does each couples therapy session with EmotionEase last?
+              </Accordion.Header>
+                  <Accordion.Body>
+                    Each couples therapy session lasts 45 minutes to 1 hour, giving you and your partner plenty of time to openly share your concerns in a safe and supportive space.
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          </Row>
+        </Container>
+      </section>
        {/* Final CTA */}
                 <section className="py-6 bg-success text-light text-center">
                   <Container>

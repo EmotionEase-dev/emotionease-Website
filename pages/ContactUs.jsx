@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import './ContactUs.css';
-
+import { Helmet } from "react-helmet-async";
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -110,6 +110,15 @@ const ContactUs = () => {
   };
 
   return (
+    <>
+    <Helmet>
+        <title>
+            Get in Touch with EmotionEase for One-on-One Therapy & Counseling
+        </title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="EmotionEase" />
+    </Helmet>
     <div className="contact-us-container container py-5">
       <div className="row justify-content-center">
         <div className="col-lg-10">
@@ -374,6 +383,7 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

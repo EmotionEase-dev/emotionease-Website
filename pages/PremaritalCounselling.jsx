@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, ListGroup, Badge,Accordion } from 'react-bootstrap';
 import './StressManagement.css';
 import { Helmet } from "react-helmet-async";
 const PremaritalcounselingPage = () => {
@@ -215,7 +215,69 @@ const PremaritalcounselingPage = () => {
         </Container>
       </section>
     </div>
+   <section className="py-5 bg-light">
+        <Container>
+          <div className="animate-on-scroll fade-in-up text-center mb-5">
+            <h2 className="fw-bold mb-3">Frequently Asked Questions</h2>
+            <p className="text-muted">
+              Here are some of the most common questions people ask about stress, depression, and anxiety therapy.
+            </p>
+          </div>
 
+          <Row className="animate-on-scroll fade-in-up justify-content-center">
+            <Col lg={10}>
+              <Accordion defaultActiveKey="0" flush>
+                <Accordion.Item eventKey="0" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header >Who can enroll for the premarital counseling sessions?</Accordion.Header>
+                  <Accordion.Body>
+                    Premarital counseling is designed for couples who are engaged, betrothed, or in a long-term relationship and planning marriage as their next step.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="1" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How does premarital counseling with EmotionEase help us?
+</Accordion.Header>
+                  <Accordion.Body>
+                   Marriage is a big decision, and choosing a life partner involves many factors and uncertainties. At EmotionEase, you and your partner will learn to resolve conflicts, understand each other’s needs, and align future goals on intimacy, family, and finances to build a stronger foundation for marriage.
+
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="2" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How many sessions of premarital counseling with EmotionEase are required?</Accordion.Header>
+                  <Accordion.Body>
+                    There’s no fixed number of sessions. Some couples find clarity in just one session, while others may need two or more. Once you both feel your doubts are addressed and you’re satisfied, you can choose to discontinue. For more details, we recommend visiting our Programs page.
+ </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="3" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How soon can I start premarital counseling sessions with EmotionEase?
+</Accordion.Header>
+                  <Accordion.Body>
+                    You can get in touch with EmotionEase via email at admin@emotionease.com or call/whatsapp us on these numbers  +91 9345330187 and +91 9677198550. We will reach out to you personally as soon as possible and schedule a consultation at your convenience.
+
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="4" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>Who can access your premarital counseling services worldwide?
+</Accordion.Header>
+                  <Accordion.Body>
+                    Our premarital counseling sessions are held online and we offer them to people based in India, UAE (Dubai), Saudi Arabia, the Philippines, Singapore, the United States, and the United Kingdom.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="5" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>Will our conversations during the sessions remain confidential?
+
+</Accordion.Header>
+                  <Accordion.Body>
+                    Yes. Every session at EmotionEase is 100% confidential. Your personal details and discussions will never be shared with anyone under any circumstances, ensuring a safe and trusted space for you.
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          </Row>
+        </Container>
+      </section>
           {/* Final CTA */}
       <section className="py-6 bg-success text-light text-center">
         <Container>

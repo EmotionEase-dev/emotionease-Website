@@ -15,6 +15,7 @@ import ParentCoachingPage from '../pages/ParentCoaching';
 import PremaritalCounselingPage from '../pages/PremaritalCounselling';
 import BurnoutTherapyPage from '../pages/BurnoutTherapy';
 import CouplesTherapyPage from '../pages/CouplesTherapy';
+import CorporateWellnessPage from '../pages/CorporateWellness';
 
 import { useEffect } from 'react';
 import './App.css';
@@ -115,15 +116,16 @@ function App() {
         <Route path="/" element={<Home />} />  
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/programs" element={<CuratedPrograms />} />
+        <Route path="/emotional-wellness-workshops-and-program-plans" element={<CuratedPrograms />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/work-stress" element={<WorkplaceStressManagementPage />} />
+        <Route path="/work-stress-management-therapy" element={<WorkplaceStressManagementPage />} />
         <Route path="/parent-coaching" element={<ParentCoachingPage />} />
         <Route path="/premarital-counseling" element={<PremaritalCounselingPage/>} />
         <Route path="/burnout-therapy" element={<BurnoutTherapyPage />} />
         <Route path="/stress-depression-anxiety-management-online" element={<StressManagementPage />} />
         <Route path="/couple-therapy" element={<CouplesTherapyPage />} />
+        <Route path="/corporate-wellness" element={<CorporateWellnessPage />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/solving-mental-health-with-unlimited-therapy-sessions" element={<BlogPost />} />
         <Route path="/step-by-step-guide-to-heal-emotional-wounds" element={<BlogPostEmotionalHealing />} />

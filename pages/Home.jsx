@@ -95,7 +95,7 @@ const Home = () => {
     <div className="home-page">
      <Helmet>
           <title>EmotionEase: Online Counseling for Emotional & Mental Health</title>
-          <meta name="description" content="Discover EmotionEase – a safe space for emotional healing, self-awareness, and healthier relationships. Led by expert Elango Annamalai. Book a session now.
+          <meta name="description" content="Find emotional balance with EmotionEase. Online counseling for relationships, mental health healing, and long-term support for your emotional well-being.
     " />
         </Helmet>
       {/* Signup Form Modal */}
@@ -124,9 +124,11 @@ const Home = () => {
                 </motion.h1>
 
                 <motion.p className="mission-text">
-                  EmotionEase is a safe & Non Judgemental space for emotional healing, self-regulation, and personal growth. We offer support for emotional overwhelm, anxiety, and stress, helping you build emotional resilience and healthier relationships. Our sessions are held online and can be attended from the comfort of your home or any location that feels right for you. Founded and led by Elango Annamalai, a Certified Counselling Practitioner and specialist in Emotion Regulation; EmotionEase is grounded in deep, real-world understanding of human emotions and mental well-being.
+                  EmotionEase is a safe & non-judgemental space for emotional healing,mental health support, self-regulation, and personal growth. We offer support for emotional overwhelm, anxiety, and stress, helping you build emotional resilience and healthier relationships. 
                 </motion.p>
-
+                    <motion.p className="mission-text">
+                  Our sessions are held online and can be attended from the comfort of your home or any location that feels right for you. Founded and led by Elango Annamalai, a Certified Counselling Practitioner and specialist in Emotion Regulation; EmotionEase is grounded in deep, real-world understanding of human emotions and mental well-being.
+                </motion.p>
                 <motion.div
                   className="hero-questions bg-white p-4 p-lg-5 rounded-4 shadow-sm mb-4"
                   variants={itemVariants}
@@ -249,7 +251,7 @@ const Home = () => {
                   >
                     <img
                       src={PeacefulMeditation}
-                      alt="Online Emotion Healing and Counseling by EmotionEase"
+                      alt="Online counseling for mental and emotional health by EmotioneEase"
                       className="d-block w-100 h-100 img-fluid object-cover"
                       loading="lazy"
                     />
@@ -274,7 +276,7 @@ const Home = () => {
                   >
                     <img
                       src={Human}
-                      alt="Online Emotion Healing and Counseling by EmotionEase"
+                      alt="Online counseling for mental and emotional health by EmotioneEase"
                       className="d-block w-100 h-100 img-fluid object-cover"
                       loading="lazy"
                     />
@@ -299,7 +301,7 @@ const Home = () => {
                   >
                     <img
                       src={Cage}
-                      alt="Online Emotion Healing and Counseling by EmotionEase"
+                      alt="Online counseling for mental and emotional health by EmotioneEase"
                       className="d-block w-100 h-100 img-fluid object-cover"
                       loading="lazy"
                     />
@@ -324,7 +326,7 @@ const Home = () => {
                   >
                     <img
                       src={Freedom}
-                      alt="Online Emotion Healing and Counseling by EmotionEase"
+                      alt="Online counseling for mental and emotional health by EmotioneEase"
                       className="d-block w-100 h-100 img-fluid object-cover"
                       loading="lazy"
                     />
@@ -562,7 +564,8 @@ const Home = () => {
                     "Our online sessions have no time limits. We listen closely, understand your concerns, and offer simple yet effective psychological and practical solutions; so you start feeling better from the very first session.",
                     "For Level 2 and 3 participants, our online sessions are unlimited. We’re here to support you until you feel confident, empowered, and comfortable applying the approaches that strengthen your mental and emotional health.",
                     "We follow up with everyone after their program because we genuinely care about how they’re doing and want to ensure they’re thriving in life.",
-                    "At Level 2, our first assessment session is free; we want you to understand our approach and feel confident trusting us with your concerns."
+                    "At Level 2, our first assessment session is free; we want you to understand our approach and feel confident trusting us with your concerns.",
+                    "We offer our emotional healing, mental health support, and relationship counseling sessions for people based in countries:  India, UAE-Dubai, Saudi Arabia, Philippines, Singapore, United States, United Kingdom"
                   ].map((item, index) => (
                     <motion.div
                       key={index}

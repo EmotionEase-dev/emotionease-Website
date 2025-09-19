@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Card, Button, ListGroup, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, ListGroup, Badge,Accordion } from 'react-bootstrap';
 import './StressManagement.css';
 import { Helmet } from "react-helmet-async";
 const ParentCoachingPage = () => {
@@ -318,6 +318,65 @@ const ParentCoachingPage = () => {
         </Container>
       </section>
     </div>
+       <section className="py-5 bg-light">
+        <Container>
+          <div className="animate-on-scroll fade-in-up text-center mb-5">
+            <h2 className="fw-bold mb-3">Frequently Asked Questions</h2>
+            <p className="text-muted">
+              Here are some of the most common questions people ask about stress, depression, and anxiety therapy.
+            </p>
+          </div>
+
+          <Row className="animate-on-scroll fade-in-up justify-content-center">
+            <Col lg={10}>
+              <Accordion defaultActiveKey="0" flush>
+                <Accordion.Item eventKey="0" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header >Who needs parent coaching?</Accordion.Header>
+                  <Accordion.Body>
+                    Parenting is challenging and ever-evolving. At times, parents may struggle to understand their children’s needs. EmotionEase helps bridge this gap, fostering better understanding and healthier emotional communication between you and your child.
+
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="1" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How does parent coaching help the kids?</Accordion.Header>
+                  <Accordion.Body>
+                    When you gain tools to manage stress, set boundaries, and communicate better, your child feels more understood and supported. Parent coaching at EmotionEase helps create a calmer home environment where your child can thrive emotionally and build healthy confidence.
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="2" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How long does each parent coaching session with EmotionEase last?
+</Accordion.Header>
+                  <Accordion.Body>
+                   Coaching parents or helping them understand them in a better way is not something that can be constricted through time limits. Ideally, each session lasts 45 minutes to 1 hour. However, if you have doubts or need clarity, we won’t rush you — your questions are always welcome..
+
+                  </Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="3" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>How soon can I start parent coaching sessions with EmotionEase?</Accordion.Header>
+                  <Accordion.Body>
+                   You can get in touch with EmotionEase via email at admin@emotionease.com or call/whatsapp us on these numbers +91 9345330187 and +91 9677198550. We will reach out to you personally as soon as possible and schedule a consultation at your convenience.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="3" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>Who can access your parent coaching services worldwide?</Accordion.Header>
+                  <Accordion.Body>
+                   Our parent coaching sessions are held online and we offer them to people based in India, UAE (Dubai), Saudi Arabia, the Philippines, Singapore, the United States, and the United Kingdom.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="3" className="mb-3 btn-primary shadow-sm rounded-3 border-0">
+                  <Accordion.Header>What else does EmotionEase offer other than parent coaching?</Accordion.Header>
+                  <Accordion.Body>
+                   Along with parent coaching, EmotionEase offers specialized programs for children, including confidence-building sessions, fearlessness training, and support in developing better behavioral understanding. These services are designed to help kids grow emotionally strong and resilient.
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+          </Row>
+        </Container>
+      </section>
         {/* Final CTA */}
           <section className="py-6 bg-success text-light text-center">
             <Container>
