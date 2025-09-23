@@ -116,7 +116,7 @@ function App() {
         <Route path="/" element={<Home />} />  
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/emotional-wellness-workshops-and-program-plans" element={<CuratedPrograms />} />
+        <Route path="/programs" element={<CuratedPrograms />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/work-stress-management-therapy" element={<WorkplaceStressManagementPage />} />

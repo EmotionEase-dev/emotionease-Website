@@ -230,7 +230,7 @@ const Navbar = () => {
     },
     { 
       name: "Programs", 
-      href: "/emotional-wellness-workshops-and-program-plans",
+      href: "/programs",
     },
     { 
       name: "Follow Us",
