@@ -119,10 +119,10 @@ EmotionEase/
 │   │   └── CuratedPrograms.jsx / CuratedPrograms.css <-- 3 program sections
 │   │
 │   ├── public/                     <-- Static files served directly
-│   │   └── logo.png                <-- Logo of the site
+│   │   └── logo.webp                <-- Logo of the site
 │   │   └── mission-image.jpg       <-- Image used in Mission section
-│   │   └── Freedom.png             <-- Program-related illustration
-│   │   └── cage.png / Human.png    <-- More images used in UI
+│   │   └── Freedom.webp             <-- Program-related illustration
+│   │   └── cage.webp / Human.webp    <-- More images used in UI
 │   │   └── _redirects              <-- Netlify routing fix file
 │   │
 │   ├── src/                        <-- Vite’s main source folder (may hold App.jsx, main.jsx)

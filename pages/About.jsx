@@ -1,10 +1,10 @@
 import {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './About.css';
-import mission from '../public/mission-image.png';
-import ElangoPhoto from '../public/ElangoPhoto.jpg';
-import SuchetaImage from '../public/SuchetaImage.jpg';
-import ThilagaMC from '../public/ThilagaMC.jpg';
+import mission from '../public/mission-image.webp';
+import ElangoPhoto from '../public/ElangoPhoto.webp';
+import SuchetaImage from '../public/SuchetaImage.webp';
+import ThilagaMC from '../public/ThilagaMC.webp';
 
 const About = () => {
     useEffect(() => {

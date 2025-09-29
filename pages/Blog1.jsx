@@ -4,7 +4,7 @@ import { Container, Row, Col, Card, Button, ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import BlogImage from '../public/Blog1.png';
+import BlogImage from '../public/Blog1.webp';
 import { 
   faArrowLeft, 
   faUsers, 

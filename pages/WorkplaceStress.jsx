@@ -65,7 +65,7 @@ const WorkplaceStressManagementPage = () => {
           <Row className="g-5 align-items-center">
             <Col lg={6} className="animate-on-scroll slide-in-left">
               <img 
-                src="/WorkManage.png" 
+                src="/WorkManage.webp" 
                 alt="Workplace stress management" 
                 className="img-fluid rounded-4 shadow hover-zoom w-100" 
               />
@@ -177,7 +177,7 @@ const WorkplaceStressManagementPage = () => {
           <Row className="g-5 align-items-center flex-lg-row-reverse">
             <Col lg={6} className="animate-on-scroll slide-in-right">
               <img 
-                src="/Therapy.png" 
+                src="/Therapy.webp" 
                 alt="Therapy session" 
                 className="img-fluid rounded-4 shadow hover-zoom w-100" 
               />

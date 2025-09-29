@@ -63,7 +63,7 @@ const CorporateWellnessPage = () => {
             <Row className="g-5 align-items-center">
               <Col lg={6} className="animate-on-scroll slide-in-left">
                 <img 
-                  src="/CoupleTherapy.png" 
+                  src="/CoupleTherapy.webp" 
                   alt="Couples therapy session" 
                   className="img-fluid rounded-4 shadow hover-zoom w-100" 
                 />
@@ -96,7 +96,7 @@ const CorporateWellnessPage = () => {
           <Row className="g-5 align-items-center flex-lg-row-reverse">
             <Col lg={6} className="animate-on-scroll slide-in-right">
               <img 
-                src="/confidentchild.png" 
+                src="/confidentchild.webp" 
                 alt="Confident child" 
                 className="img-fluid rounded-4 shadow hover-zoom w-100" 
               />
@@ -249,7 +249,7 @@ const CorporateWellnessPage = () => {
             <Row className="g-5 align-items-center flex-lg-row-reverse">
               <Col lg={6} className="animate-on-scroll slide-in-right">
                 <img 
-                  src="/BenefitCoupleTherapy.png" 
+                  src="/BenefitCoupleTherapy.webp" 
                   alt="Relationship counseling session" 
                   className="img-fluid rounded-4 shadow hover-zoom w-100" 
                 />
@@ -291,7 +291,7 @@ const CorporateWellnessPage = () => {
             <Row className="g-5 align-items-center">
               <Col lg={6} className="animate-on-scroll slide-in-right">
                 <img 
-                  src="/BenefitCoupleTherapy.png" 
+                  src="/BenefitCoupleTherapy.webp" 
                   alt="Relationship counseling session" 
                   className="img-fluid rounded-4 shadow hover-zoom w-100" 
                 />

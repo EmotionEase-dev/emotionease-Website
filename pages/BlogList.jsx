@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faClock, faBookOpen } from '@fortawesome/free-solid-svg-icons';
-import blogImage from '../public/Blog1Logo.png';
+import blogImage from '../public/Blog1Logo.webp';
 
 const BlogList = () => {
   const blogs = [

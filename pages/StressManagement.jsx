@@ -69,7 +69,7 @@ const StressManagementPage = () => {
           <Row className="g-5 align-items-center">
             <Col lg={6} className="animate-on-scroll slide-in-left">
               <img 
-                src="/stress-management.png" 
+                src="/stress-management.webp" 
                 alt="Stress management" 
                 className="img-fluid rounded-4 shadow hover-zoom w-100" 
               />
@@ -119,7 +119,7 @@ const StressManagementPage = () => {
           <Row className="g-5 align-items-center flex-lg-row-reverse">
             <Col lg={6} className="animate-on-scroll slide-in-right">
               <img 
-                src="/depression-help.png" 
+                src="/depression-help.webp" 
                 alt="Depression help" 
                 className="img-fluid rounded-4 shadow hover-zoom w-100" 
               />
@@ -182,7 +182,7 @@ As we grow, life becomes more layered, we take on responsibilities, form new rel
           <Row className="g-5 align-items-center">
             <Col lg={6} className="animate-on-scroll slide-in-left">
               <img 
-                src="/anxietyHelp.png" 
+                src="/anxietyHelp.webp" 
                 alt="Anxiety help" 
                 className="img-fluid rounded-4 shadow hover-zoom w-100" 
               />

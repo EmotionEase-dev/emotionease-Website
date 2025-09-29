@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { HashLink, NavHashLink } from 'react-router-hash-link';
-import logo from '../public/logo.png';
+import logo from '../public/logo.webp';
 import './Navbar.css';
 
 const NavItem = ({ item }) => {
