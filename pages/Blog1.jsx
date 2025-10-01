@@ -17,6 +17,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 const BlogPost = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -29,8 +30,16 @@ const BlogPost = () => {
     });
   };
 
+function Blog() {
+  useEffect(() => {
+    document.title = "Blog1: Mental Wellness Tips";
+}, []);
+};
+
+
   const blog = {
     id: 1,
+	
     title: "Breaking the 'Hiya' Culture",
     excerpt: "Why Unlimited Therapy Sessions Transform Filipino Mental Health Recovery",
     date: "June 15, 2023",
