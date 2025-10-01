@@ -8,7 +8,7 @@ import ThilagaMC from '../public/ThilagaMC.webp';
 
 const About = () => {
     useEffect(() => {
-    document.title = "EmotionEase | Online Counseling & Emotional Wellbeing";
+    document.title = "Home:Online Mental Health Counseling & Wellness Support";
   }, []);
 
   // Scroll to top function
