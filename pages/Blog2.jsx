@@ -30,7 +30,7 @@ const BlogPostEmotionalHealing = () => {
 
   const blog = {
     id: 2,
-    title: "Healing Your Emotional Wounds",
+    title: "Blog: Mental Wellness Tips & Emotional Healing Isights",
     subtitle: "A Step-by-Step Guide to Lasting Well-Being",
     excerpt: "Emotional healing begins with understanding how your past shapes your present—and how to process pain to build healthier, more resilient responses.",
     date: "July 22, 2023",
