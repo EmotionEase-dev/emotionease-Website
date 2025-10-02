@@ -68,7 +68,7 @@ const Home = () => {
   const [showSignup, setShowSignup] = useState(false);
 
   useEffect(() => {
-    document.title = "EmotionEase: Online Counseling for Emotional & Mental Health";
+    document.title = "Home: Online Mental Health Counseling & Wellness Support";
     // Check if user has already closed the form
     const formClosed = localStorage.getItem('signupFormClosed');
 
@@ -94,7 +94,7 @@ const Home = () => {
   return (
     <div className="home-page">
      <Helmet>
-          <title>EmotionEase: Online Counseling for Emotional & Mental Health</title>
+          <title>Home: Online Mental Health Counseling & Wellness Support</title>
           <meta name="description" content="Find emotional balance with EmotionEase. Online counseling for relationships, mental health healing, and long-term support for your emotional well-being.
     " />
         </Helmet>

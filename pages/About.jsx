@@ -8,7 +8,7 @@ import ThilagaMC from '../public/ThilagaMC.webp';
 
 const About = () => {
     useEffect(() => {
-    document.title = "About:Online Mental Health Counseling & Wellness Support";
+    document.title = "About: Expert Mental Health & Executive Coaching";
   }, []);
 
   // Scroll to top function
@@ -21,6 +21,7 @@ const About = () => {
 
   return (
     <div className="about-page">
+	   
       {/* Mission Section */}
       <section className="mission-section py-5" style={{backgroundColor: 'rgba(63, 230, 102, 0.1)'}}>
         <div className="container">
