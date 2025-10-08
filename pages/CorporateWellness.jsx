@@ -28,14 +28,14 @@ const CorporateWellnessPage = () => {
   return (
     <>
     <Helmet>
-      <title>Couples Therapy and Relationship Counseling Online | EmotionEase</title>
-      <meta name="description" content="Struggling in a relationship? EmotionEase offers couples therapy & relationship counselling. A fresh perspective can make all the difference.
-" />
-      <meta name="keywords" content="couples therapy, relationship counseling, EmotionEase, online, marriage, interpersonal relationship, harmony, peace, love, stress, anxiety" />
+      <title>CorporateWellnessPage | EmotionEase</title>
+      <meta name="description" content="Boost workplace wellbeing with EmotionEase Corporate Wellness programs. Enhance team productivity, reduce stress, and create a healthier, happier work culture."
+     />
+      <meta name="keywords" content="corporate wellness, employee wellbeing, workplace mental health, stress management, team productivity, emotional wellness, burnout prevention, work-life balance, leadership training, mental health programs, EmotionEase" />
       <meta name="author" content="EmotionEase" />
     </Helmet>
 
-      <div className="couples-therapy-page container py-5 py-lg-5" style={{ marginTop: '10px' }}>
+      <div className="CorporateWellnessPage container py-5 py-lg-5" style={{ marginTop: '10px' }}>
 
         <div className="stats-bar bg-white shadow-sm py-4">
           <Container>
@@ -57,14 +57,14 @@ const CorporateWellnessPage = () => {
           </Container>
         </div>
 
-        {/* What is Couples Therapy Section */}
+        {/* What is CorporateWellness Section */}
         <section style={{paddingTop: '10px'}}>
           <Container>
             <Row className="g-5 align-items-center">
               <Col lg={6} className="animate-on-scroll slide-in-left">
                 <img 
                   src="/CoupleTherapy.webp" 
-                  alt="Couples therapy session" 
+                  alt="CorporateWellness Session" 
                   className="img-fluid rounded-4 shadow hover-zoom w-100" 
                 />
               </Col>
@@ -120,7 +120,7 @@ const CorporateWellnessPage = () => {
           </Row>
         </Container>
       </section>
-        {/* Benefits of Couples Therapy Section */}
+        {/* Benefits of CorporateWellness Section */}
         <section className="py-6 bg-light-success">
           <Container>
             <Row className="g-5">
@@ -243,14 +243,14 @@ const CorporateWellnessPage = () => {
           </Row>
         </Container>
       </section>
-        {/* What is Relationship Counseling Section */}
+        {/* What is CorporateWellness Section */}
         <section className="py-6">
           <Container>
             <Row className="g-5 align-items-center flex-lg-row-reverse">
               <Col lg={6} className="animate-on-scroll slide-in-right">
                 <img 
                   src="/BenefitCoupleTherapy.webp" 
-                  alt="Relationship counseling session" 
+                  alt="CorporateWellness session" 
                   className="img-fluid rounded-4 shadow hover-zoom w-100" 
                 />
               </Col>
@@ -285,14 +285,14 @@ const CorporateWellnessPage = () => {
         </section>
 
 
- {/* What is Relationship Counseling Section */}
+ {/* What is CorporateWellness Section */}
         <section className="py-6">
           <Container>
             <Row className="g-5 align-items-center">
               <Col lg={6} className="animate-on-scroll slide-in-right">
                 <img 
                   src="/BenefitCoupleTherapy.webp" 
-                  alt="Relationship counseling session" 
+                  alt="CorporateWellness session" 
                   className="img-fluid rounded-4 shadow hover-zoom w-100" 
                 />
               </Col>
