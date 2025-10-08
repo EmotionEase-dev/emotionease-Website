@@ -68,6 +68,10 @@ const Home = () => {
   const [showSignup, setShowSignup] = useState(false);
 
   useEffect(() => {
+<<<<<<< HEAD
+=======
+    document.title = "Home: Online Mental Health Counseling & Wellness Support";
+>>>>>>> 79fa734afbf45603028fb35137234d36ecf326ea
     // Check if user has already closed the form
     const formClosed = localStorage.getItem('signupFormClosed');
     
@@ -94,10 +98,17 @@ const Home = () => {
   return (
     <div className="home-page">
      <Helmet>
+<<<<<<< HEAD
           <title>Home | EmotionEase</title>
           <meta name="description" content="Find emotional balance with EmotionEase. Online counseling for relationships, mental health healing, and long-term support." />
      </Helmet>
 	 
+=======
+          <title>Home: Online Mental Health Counseling & Wellness Support</title>
+          <meta name="description" content="Find emotional balance with EmotionEase. Online counseling for relationships, mental health healing, and long-term support for your emotional well-being.
+    " />
+        </Helmet>
+>>>>>>> 79fa734afbf45603028fb35137234d36ecf326ea
       {/* Signup Form Modal */}
       <SignupForm 
         show={showSignup} 
