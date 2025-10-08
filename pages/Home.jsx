@@ -68,17 +68,17 @@ const Home = () => {
   const [showSignup, setShowSignup] = useState(false);
 
   useEffect(() => {
-    document.title = "EmotionEase: Online Counseling for Emotional & Mental Health";
     // Check if user has already closed the form
     const formClosed = localStorage.getItem('signupFormClosed');
-
+    
     // Show form automatically after 3 seconds if not previously closed
     if (!formClosed) {
       const timer = setTimeout(() => {
         setShowSignup(true);
       }, 3000);
-      
-      return () => clearTimeout(timer);
+      return () => {
+        clearTimeout(timer);
+      };
     }
   }, []);
 
@@ -90,14 +90,14 @@ const Home = () => {
     setShowSignup(true);
     localStorage.removeItem('signupFormClosed');
   };
-
+  
   return (
     <div className="home-page">
      <Helmet>
-          <title>EmotionEase: Online Counseling for Emotional & Mental Health</title>
-          <meta name="description" content="Find emotional balance with EmotionEase. Online counseling for relationships, mental health healing, and long-term support for your emotional well-being.
-    " />
-        </Helmet>
+          <title>Home | EmotionEase</title>
+          <meta name="description" content="Find emotional balance with EmotionEase. Online counseling for relationships, mental health healing, and long-term support." />
+     </Helmet>
+	 
       {/* Signup Form Modal */}
       <SignupForm 
         show={showSignup} 

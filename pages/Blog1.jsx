@@ -32,7 +32,7 @@ const BlogPost = () => {
 
 function Blog() {
   useEffect(() => {
-    document.title = "Blog1: Mental Wellness Tips";
+    document.title = "Blog:Mental Wellness Tips & Emotional Healing Insights";
 }, []);
 };
 
@@ -90,8 +90,10 @@ function Blog() {
     <div style={{ backgroundColor: '#e8f5e9', minHeight: '100vh' }}>
        <Helmet>
           <title>
-              EmotionEase | Solving Mental Health With Unlimited Therapy Sessions
+              Blog:Mental Wellness Tips & Emotional Healing Insights
           </title>
+		  <meta name="description" content="Mental wellness tips and emotional healing insights to help you manage stress, improve self-awareness, and build resilience for a balanced, healthier life.
+    " />
         </Helmet>
       {/* Navigation Back Button */}
       <Container className="pt-4">
