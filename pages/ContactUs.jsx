@@ -115,8 +115,8 @@ const ContactUs = () => {
         <title>
             Get in Touch with EmotionEase for One-on-One Therapy & Counseling
         </title>
-        <meta name="description" content="Contact EmotionEase for professional online therapy and counseling. Reach out via email, phone, or our contact form. We offer mental health support across India, UAE, USA, UK, and more." />
-        <meta name="keywords" content="contact emotionease, online therapy contact, mental health counseling, therapy consultation, book therapy session, counseling inquiry" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
         <meta name="author" content="EmotionEase" />
     </Helmet>
     <div className="contact-us-container container py-5">
