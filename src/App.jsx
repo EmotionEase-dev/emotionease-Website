@@ -5,6 +5,10 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import BlogPost from '../pages/Blog1';
 import BlogPostEmotionalHealing from '../pages/Blog2';
+import BlogPostPsychoEducational from '../pages/Blog3';
+import BlogPostWealthMindset from '../pages/Blog4';
+import BlogPostInnerChild from '../pages/Blog5';
+import BlogPostDemocratizing from '../pages/Blog6';
 import BlogList from '../pages/BlogList';
 import ContactUs from '../pages/ContactUs';
 import CuratedPrograms from '../pages/CuratedPrograms';
@@ -129,7 +133,10 @@ function App() {
         <Route path="/blog" element={<BlogList />} />
         <Route path="/solving-mental-health-with-unlimited-therapy-sessions" element={<BlogPost />} />
         <Route path="/step-by-step-guide-to-heal-emotional-wounds" element={<BlogPostEmotionalHealing />} />
-
+        <Route path="/Empowering-IT-Leaders-and-CEOs-for-Sustainable-Success-and-Wellbeing" element={<BlogPostPsychoEducational />} />
+        <Route path="/The-Revolutionary-Truth-About-Wealth" element={<BlogPostWealthMindset />} />
+        <Route path="/Understanding-the-Boredom-Wound" element={<BlogPostInnerChild />} />
+        <Route path="/Democratizing-Emotional-Wellness" element={<BlogPostDemocratizing />} />
 
         {/* Catch-all route for 404 Not Found */}
         <Route path="/404" element={<div className="not-found">404 Not Found</div>} />

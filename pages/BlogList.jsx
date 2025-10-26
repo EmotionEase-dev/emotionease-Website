@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faClock, faBookOpen } from '@fortawesome/free-solid-svg-icons';
-import blogImage from '../public/Blog1Logo.webp';
+import blogImage1 from '../src/assets/Breaking the Hiya Culture.webp';
+import blogImage2 from '../src/assets/Healing your Emotional Wounds.webp';
+import blogImage3 from '../src/assets/Psycho-Educational Coaching.webp';
+import blogImage4 from '../src/assets/I am already rich.webp';
+import blogImage5 from '../src/assets/A Complete Healing Guide.webp';
+import blogImage6 from '../src/assets/Democratizing Emotional Wellness.webp';
 
 const BlogList = () => {
   const blogs = [
@@ -12,7 +17,7 @@ const BlogList = () => {
       id: 1,
       title: "Breaking the 'Hiya' Culture",
       excerpt: "Why Unlimited Therapy Sessions Transform Filipino Mental Health Recovery",
-      image: blogImage,
+      image: blogImage1,
       date: 'June 15, 2023',
       readTime: '5 min read',
       slug:"solving-mental-health-with-unlimited-therapy-sessions"
@@ -21,11 +26,52 @@ const BlogList = () => {
       id: 2,
       title: "Healing Your Emotional Wounds",
       excerpt: "A Step-by-Step Guide to Lasting Well-Being",
-      image: blogImage,
+      image: blogImage2,
       date: 'July 22, 2023',
       readTime: '7 min read',
       slug:"step-by-step-guide-to-heal-emotional-wounds"
+    },
+
+    {
+      id: 3,
+      title: "Psycho-Educational Coaching",
+      excerpt: "Coaching for IT Tech Managers: Building Resilience and Team Success",
+      image: blogImage3,
+      date: 'June 22, 2025',
+      readTime: '6 min read',
+      slug:"Empowering-IT-Leaders-and-CEOs-for-Sustainable-Success-and-Wellbeing"
+    },
+
+    {
+      id: 4,
+      title: "I Am Already Rich",
+      excerpt: "The Revolutionary Truth About Wealth That Will Transform Your Life",
+      image: blogImage4,
+      date: 'Aug 12, 2025',
+      readTime: '12 min read',
+      slug:"The-Revolutionary-Truth-About-Wealth"
+    },
+    
+    {
+      id: 5,
+      title: "A Complete Healing Guide",
+      excerpt: "How to Reparent Your Inner Child for Boredom",
+      image: blogImage5,
+      date: 'Aug 22, 2025',
+      readTime: '15 min read',
+      slug:"Understanding-the-Boredom-Wound"
+    },
+
+    {
+      id: 6,
+      title: "Democratizing Emotional Wellness",
+      excerpt: "How EmotionEase is Healing Communities from Within",
+      image: blogImage5,
+      date: 'Sep 15, 2025',
+      readTime: '10 min read',
+      slug:"Democratizing-Emotional-Wellness"
     }
+    
   ];
 
   return (
