@@ -66,7 +66,7 @@ const BlogList = () => {
       id: 6,
       title: "Democratizing Emotional Wellness",
       excerpt: "How EmotionEase is Healing Communities from Within",
-      image: blogImage5,
+      image: blogImage6,
       date: 'Sep 15, 2025',
       readTime: '10 min read',
       slug:"Democratizing-Emotional-Wellness"
