@@ -162,7 +162,7 @@ const PremaritalcounselingPage = () => {
                 <div className="icon-wrapper bg-purple bg-opacity-10 text-purple rounded-circle p-3 me-3">
                     <i className="bi bi-stars fs-2"></i>
                 </div>
-                <h2 className="fw-bold mb-0">Benefits of Premarital counseling</h2>
+                <h3 className="fw-bold mb-0">Benefits of Premarital counseling</h3>
               </div>
               <Row className="g-4 mt-4">
                 {[

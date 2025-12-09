@@ -74,7 +74,7 @@ const CouplesTherapyPage = () => {
                   <div className="icon-wrapper bg-success bg-opacity-10 text-success rounded-circle p-3 me-3">
                     <i className="bi bi-people-fill fs-2"></i>
                   </div>
-                  <h2 className="fw-bold mb-0">What is Couples Therapy?</h2>
+                  <h1 className="fw-bold mb-0">What is Couples Therapy?</h1>
                 </div>
                 
                 <p className="lead text-success">
@@ -188,7 +188,7 @@ const CouplesTherapyPage = () => {
                   <div className="icon-wrapper bg-indigo bg-opacity-10 text-indigo rounded-circle p-3 me-3">
                     <i className="bi bi-people fs-2"></i>
                   </div>
-                  <h2 className="fw-bold mb-0">What is Relationship Counseling?</h2>
+                  <h3 className="fw-bold mb-0">What is Relationship Counseling?</h3>
                 </div>
                 
                 <p>
@@ -234,7 +234,7 @@ const CouplesTherapyPage = () => {
                   <div className="icon-wrapper bg-indigo bg-opacity-10 text-indigo rounded-circle p-3 me-3">
                     <i className="bi bi-lightning-charge fs-2"></i>
                   </div>
-                  <h2 className="fw-bold mb-0">Why is Relationship Counseling Essential in Today's Fast-Paced Life?</h2>
+                  <h3 className="fw-bold mb-0">Why is Relationship Counseling Essential in Today's Fast-Paced Life?</h3>
                 </div>
                 
                 <p className="lead">

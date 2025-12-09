@@ -147,7 +147,7 @@ const BurnoutTherapyPage = () => {
                 <div className="icon-wrapper bg-forest bg-opacity-10 text-forest rounded-circle p-3 me-3">
                   <i className="bi bi-exclamation-triangle fs-2"></i>
                 </div>
-                <h2 className="fw-bold mb-0">Common Signs and Symptoms of Burnout</h2>
+                <h3 className="fw-bold mb-0">Common Signs and Symptoms of Burnout</h3>
               </div>
               
               <p className="mb-4">
@@ -204,7 +204,7 @@ const BurnoutTherapyPage = () => {
                 <div className="icon-wrapper bg-green bg-opacity-10 text-green rounded-circle p-3 me-3">
                   <i className="bi bi-heart-pulse fs-2"></i>
                 </div>
-                <h2 className="fw-bold mb-0">How EmotionEase Can Help</h2>
+                <h3 className="fw-bold mb-0">How EmotionEase Can Help</h3>
               </div>
               
               <p>

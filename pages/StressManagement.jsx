@@ -79,7 +79,7 @@ const StressManagementPage = () => {
                 <div className="icon-wrapper bg-green bg-opacity-10 text-green rounded-circle p-3 me-3">
                   <i className="bi bi-activity fs-2"></i>
                 </div>
-                <h2 className="fw-bold mb-0">Online Stress Management Therapy and Counseling</h2>
+                <h1 className="fw-bold mb-0">Online Stress Management Therapy and Counseling</h1>
               </div>
               
               <p className="lead text-green">
@@ -192,7 +192,7 @@ As we grow, life becomes more layered, we take on responsibilities, form new rel
                 <div className="icon-wrapper bg-forest bg-opacity-10 text-forest rounded-circle p-3 me-3">
                   <i className="bi bi-lightning-charge fs-2"></i>
                 </div>
-                <h2 className="fw-bold mb-0">Personalized Online Therapy for Anxiety Relief and Management</h2>
+                <h3 className="fw-bold mb-0">Personalized Online Therapy for Anxiety Relief and Management</h3>
               </div>
               
               <p>

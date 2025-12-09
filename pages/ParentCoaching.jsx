@@ -155,7 +155,7 @@ const ParentCoachingPage = () => {
                 <div className="icon-wrapper bg-forest bg-opacity-10 text-forest rounded-circle p-3 me-3">
                     <i className="bi bi-exclamation-triangle fs-2"></i>
                 </div>
-                <h2 className="fw-bold mb-0">Common Causes of Low Confidence in Children</h2>
+                <h3 className="fw-bold mb-0">Common Causes of Low Confidence in Children</h3>
               </div>
 
               
@@ -209,7 +209,7 @@ const ParentCoachingPage = () => {
                 <div className="icon-wrapper bg-forest bg-opacity-10 text-forest rounded-circle p-3 me-3">
                                     <i className="bi bi-heart-pulse fs-2"></i>
                 </div>
-                <h2 className="fw-bold mb-0">How EmotionEase Can Help</h2>
+                <h3 className="fw-bold mb-0">How EmotionEase Can Help</h3>
               </div>
 
               <Row className="mb-5">
