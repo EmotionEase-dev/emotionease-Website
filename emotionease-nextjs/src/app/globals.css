@@ -1,0 +1,253 @@
+/* ===== GLOBAL STYLES - Exact Match with React Site ===== */
+
+html {
+  font-size: 90%;
+}
+
+/* ===== BASE FONTS - From index.css ===== */
+body {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  color: #1e293b;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f8fafc;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
+}
+
+img, svg {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* ===== HEADINGS - From Home.css ===== */
+h1, h2, h3, h4, .display-font {
+  font-family: 'Comfortaa', cursive !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+h1 {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-weight: 600 !important;
+}
+
+h3 {
+  font-weight: 600 !important;
+}
+
+h4 {
+  font-weight: 600 !important;
+}
+
+h5, h6 {
+  font-family: 'Comfortaa', cursive !important;
+  font-weight: 600 !important;
+}
+
+/* ===== PARAGRAPHS & TEXT ===== */
+p, li, .text-font {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 500;
+}
+
+span {
+  font-family: inherit;
+}
+
+/* ===== NAVBAR ===== */
+.navbar, .navbar-brand, .nav-link {
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+/* ===== DISPLAY HEADINGS ===== */
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: 'Comfortaa', cursive !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+}
+
+/* ===== GREEN TEXT COLORS ===== */
+.text-success {
+  color: #047857 !important;
+}
+
+.text-gradient-success,
+.text-primary-gradient {
+  background: linear-gradient(90deg, #047857, #059669);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  font-family: 'Quicksand', sans-serif !important;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.footer p, .footer a, .footer h5, .footer h6 {
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+/* ===== CARDS ===== */
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  background: #ffffff;
+}
+
+.card:hover {
+  box-shadow: 0 20px 40px rgba(5, 150, 105, 0.15);
+  transform: translateY(-5px);
+}
+
+/* ===== BUTTONS ===== */
+.btn-success {
+  background: linear-gradient(135deg, #047857, #059669) !important;
+  border: none !important;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.4);
+}
+
+/* ===== STEP/BENEFIT ICONS ===== */
+.step-number,
+.benefit-number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #047857, #059669);
+  color: #ffffff;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  box-shadow: 0 5px 15px rgba(5, 150, 105, 0.2);
+}
+
+.uniqueness-number {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #047857, #059669);
+  color: #ffffff;
+  border-radius: 50%;
+  font-weight: bold;
+  transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  box-shadow: 0 5px 15px rgba(5, 150, 105, 0.2);
+}
+
+/* ===== TESTIMONIAL CARDS ===== */
+.testimonial-card {
+  border-left: 4px solid #047857;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  border-left-color: #059669;
+  box-shadow: 0 15px 35px rgba(5, 150, 105, 0.1);
+}
+
+/* ===== LIST STYLES ===== */
+ul, ol {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+ul li::before {
+  content: none;
+}
+
+/* ===== CUSTOM SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #047857, #059669);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #065f46, #047857);
+}
+
+/* ===== WATERMARK ===== */
+.permanent-watermark {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  z-index: 9999;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: rgba(0, 100, 50, 0.9);
+  background-color: rgba(245, 245, 245, 0.7);
+  border: 1px solid rgba(200, 200, 200, 0.4);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.permanent-watermark:hover {
+  opacity: 0.95;
+  color: rgba(0, 80, 40, 1);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 80%;
+  }
+}

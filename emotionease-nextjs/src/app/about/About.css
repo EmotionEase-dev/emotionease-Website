@@ -1,0 +1,542 @@
+/* About Page Styles */
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* ================ */
+/* SECTION TITLE */
+/* ================ */
+.section-title {
+  font-family: 'Comfortaa', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #28a745;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #28a745;
+  border-radius: 3px;
+}
+
+/* ================ */
+/* MISSION SECTION */
+/* ================ */
+.mission-section {
+  background: linear-gradient(135deg, rgba(40, 167, 69, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #495057;
+  margin-bottom: 2rem;
+}
+
+.mission-values h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 1rem;
+}
+
+.values-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0;
+}
+
+.values-list li {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding-left: 0 !important;
+}
+
+.values-list li::before {
+  content: none !important;
+}
+
+.values-list li i {
+  color: #28a745;
+  font-size: 1rem;
+  margin-top: 3px;
+}
+
+/* Video Buttons */
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-dark:hover {
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+/* ================ */
+/* STORY TIMELINE SECTION */
+/* ================ */
+.story-section {
+  background-color: #ffffff;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 80px;
+  margin-top: 2rem;
+}
+
+/* Vertical Line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #28a745 0%, #5cb85c 100%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 40px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Year Badge Circle */
+.timeline-marker {
+  position: absolute;
+  left: -80px;
+  top: 0;
+  z-index: 2;
+}
+
+.timeline-year-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, #28a745 0%, #5cb85c 100%);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+/* Timeline Content Box */
+.timeline-content {
+  background: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #28a745;
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.15);
+}
+
+.timeline-title {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #28a745;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ================ */
+/* TEAM SECTION */
+/* ================ */
+.team-section {
+  background-color: #f8f9fa;
+}
+
+.team-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.15);
+}
+
+.team-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e8f5e9 !important;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover .team-photo {
+  border-color: #28a745 !important;
+  transform: scale(1.05);
+}
+
+.team-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.team-role {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+/* Skill Badges */
+.team-qualifications {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.skill-badge {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #28a745;
+  background-color: rgba(40, 167, 69, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(40, 167, 69, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.team-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* ================ */
+/* METHODOLOGY SECTION */
+/* ================ */
+.methodology-section {
+  background-color: #ffffff;
+}
+
+.method-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  text-align: center;
+  border-top: 4px solid #28a745;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.method-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(40, 167, 69, 0.2);
+}
+
+.method-icon-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.method-icon {
+  font-size: 2.5rem;
+  color: #28a745;
+  transition: all 0.3s ease;
+}
+
+.method-card:hover .method-icon {
+  transform: scale(1.2);
+}
+
+.method-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 1rem;
+}
+
+.method-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* ================ */
+/* CTA SECTION */
+/* ================ */
+.cta-section {
+  background: linear-gradient(135deg, #218838 0%, #28a745 50%, #5cb85c 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+}
+
+.cta-section::after {
+  content: '';
+  position: absolute;
+  bottom: -150px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+}
+
+.cta-section h2 {
+  font-family: 'Comfortaa', cursive;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-section .lead {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-section .btn {
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.cta-section .btn-light {
+  background-color: white;
+  color: #28a745;
+  border: 2px solid white;
+}
+
+.cta-section .btn-light:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.cta-section .btn-outline-light {
+  color: white;
+  border: 2px solid white;
+  background: transparent;
+}
+
+.cta-section .btn-outline-light:hover {
+  background-color: white;
+  color: #28a745;
+}
+
+/* ================ */
+/* RESPONSIVE */
+/* ================ */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .timeline {
+    padding-left: 70px;
+  }
+  
+  .timeline::before {
+    left: 25px;
+  }
+  
+  .timeline-marker {
+    left: -70px;
+  }
+  
+  .timeline-year-badge {
+    width: 50px;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+  
+  .team-photo {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .timeline {
+    padding-left: 60px;
+  }
+  
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-marker {
+    left: -55px;
+  }
+  
+  .timeline-year-badge {
+    width: 45px;
+    height: 45px;
+    font-size: 0.75rem;
+  }
+  
+  .timeline-content {
+    padding: 1.25rem;
+  }
+  
+  .timeline-title {
+    font-size: 1.2rem;
+  }
+  
+  .team-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .team-photo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .method-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-page {
+    padding-top: 60px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .mission-text {
+    font-size: 1rem;
+  }
+  
+  .timeline {
+    padding-left: 50px;
+  }
+  
+  .timeline::before {
+    left: 15px;
+  }
+  
+  .timeline-marker {
+    left: -45px;
+  }
+  
+  .timeline-year-badge {
+    width: 40px;
+    height: 40px;
+    font-size: 0.7rem;
+  }
+  
+  .timeline-item {
+    padding-left: 25px;
+  }
+  
+  .team-photo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .cta-section .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+  
+  .cta-section .btn.me-3 {
+    margin-right: 0 !important;
+  }
+  
+  .mt-3.d-flex {
+    flex-direction: column;
+  }
+  
+  .mt-3.d-flex .btn {
+    width: 100%;
+  }
+}

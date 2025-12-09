@@ -1,0 +1,443 @@
+/* Premarital Counseling Page - Gradient Styling */
+
+/* CSS Variables for consistent theming */
+:root {
+  --primary: #198754;
+  --primary-dark: #146c43;
+  --primary-light: #28a745;
+  --secondary: #20c997;
+  /* DARK to LIGHT green gradient */
+  --gradient-green: linear-gradient(135deg, #146c43 0%, #198754 50%, #28a745 100%);
+  --gradient-green-hover: linear-gradient(135deg, #0f5132 0%, #157347 50%, #218838 100%);
+  --dark: #212529;
+  --light: #f8f9fa;
+  --lighter: #ffffff;
+  --light-gray: #e9ecef;
+  --transition-base: all 0.3s ease;
+  --transition-smooth: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --shadow-md: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.125);
+  --shadow-primary: 0 0.5rem 1.5rem rgba(25, 135, 84, 0.3);
+}
+
+/* Base Styles */
+.premarital-counseling-page {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.premarital-counseling-page p {
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+}
+
+/* Stats Bar */
+.stats-bar {
+  position: relative;
+  z-index: 2;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  background: var(--lighter);
+  border: 1px solid var(--light-gray);
+}
+
+.stat-item {
+  transition: var(--transition-base);
+  background: var(--lighter);
+  border: 1px solid var(--light-gray);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gradient-green);
+}
+
+.stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+/* Section Header */
+.section-header {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.bg-success-subtle {
+  background-color: rgba(25, 135, 84, 0.1) !important;
+}
+
+/* Text Colors */
+.text-success {
+  color: var(--primary) !important;
+}
+
+/* ============================================
+   GRADIENT GREEN BUTTONS (Dark to Light)
+   ============================================ */
+.btn-success {
+  background: var(--gradient-green) !important;
+  border: none !important;
+  color: var(--lighter) !important;
+  transition: var(--transition-base);
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background: var(--gradient-green-hover) !important;
+  color: var(--lighter) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-primary);
+}
+
+.btn-success:active {
+  transform: translateY(0);
+}
+
+.btn-light {
+  background-color: var(--lighter);
+  border-color: var(--lighter);
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.btn-light:hover {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* Card Styles */
+.card {
+  border-radius: 12px;
+}
+
+/* Hover Effects */
+.hover-lift {
+  transition: var(--transition-base);
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-primary);
+}
+
+.hover-zoom {
+  transition: var(--transition-smooth);
+  transform-origin: center;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.02);
+}
+
+/* Image Styles */
+.img-fluid {
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+}
+
+/* Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transition: var(--transition-smooth);
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+}
+
+.fade-in-down.animated {
+  animation: fadeInDown 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.fade-in-up.animated {
+  animation: fadeInUp 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.fade-in.animated {
+  animation: fadeIn 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.slide-in-left.animated {
+  animation: slideInLeft 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.slide-in-right.animated {
+  animation: slideInRight 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+
+@keyframes fadeInDown {
+  from { 
+    opacity: 0; 
+    transform: translateY(-30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes fadeInUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { 
+    opacity: 0; 
+    transform: translateX(-50px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
+
+@keyframes slideInRight {
+  from { 
+    opacity: 0; 
+    transform: translateX(50px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
+
+/* ============================================
+   FAQ ACCORDION WITH GRADIENT GREEN
+   Text LEFT aligned, Plus/Minus on RIGHT
+   ============================================ */
+.accordion {
+  --bs-accordion-border-color: transparent;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-item {
+  border: none !important;
+  background: transparent;
+  margin-bottom: 0.75rem;
+}
+
+.accordion-header {
+  margin-bottom: 0;
+}
+
+.accordion-header .accordion-button {
+  background: var(--gradient-green) !important;
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.1rem 1.25rem;
+  border-radius: 10px !important;
+  box-shadow: var(--shadow-sm);
+  border: none;
+  transition: var(--transition-base);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.accordion-header .accordion-button:not(.collapsed) {
+  background: var(--gradient-green) !important;
+  color: #ffffff !important;
+  box-shadow: var(--shadow-md);
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.accordion-header .accordion-button:hover {
+  background: var(--gradient-green-hover) !important;
+  box-shadow: var(--shadow-primary);
+}
+
+.accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1.25rem;
+}
+
+/* Hide the default ::before */
+.accordion-button::before {
+  display: none !important;
+}
+
+/* Plus/Minus Icons on the RIGHT side using ::after */
+.accordion-button::after {
+  content: '' !important;
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: auto !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+  flex-shrink: 0 !important;
+  transition: var(--transition-base) !important;
+  transform: none !important;
+}
+
+/* Collapsed (closed) = PLUS on RIGHT */
+.accordion-button.collapsed::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M8 1a.5.5 0 0 1 .5.5V7h5.5a.5.5 0 0 1 0 1H8.5v5.5a.5.5 0 0 1-1 0V8H2a.5.5 0 0 1 0-1h5.5V1.5A.5.5 0 0 1 8 1z'/%3E%3C/svg%3E") !important;
+}
+
+/* Expanded (open) = MINUS on RIGHT */
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8z'/%3E%3C/svg%3E") !important;
+  transform: none !important;
+}
+
+/* Background Utilities */
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.bg-success {
+  background: var(--gradient-green) !important;
+}
+
+/* CTA Section with Gradient */
+section.bg-success {
+  background: var(--gradient-green) !important;
+}
+
+section.bg-success h2,
+section.bg-success p {
+  color: var(--lighter);
+}
+
+/* CTA Button on green background */
+section.bg-success .btn-light {
+  background-color: #ffffff;
+  color: var(--primary);
+  border: none;
+  font-weight: 600;
+}
+
+section.bg-success .btn-light:hover {
+  background-color: #f8f9fa;
+  color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  
+  .section-header .icon-wrapper {
+    margin-bottom: 1rem;
+  }
+  
+  .section-header h1,
+  .section-header h2,
+  .section-header h3 {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-value {
+    font-size: 1.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
+  }
+  
+  .display-5 {
+    font-size: 1.75rem;
+  }
+  
+  .lead {
+    font-size: 1rem;
+  }
+  
+  .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .accordion-header .accordion-button {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+}
+
+/* Spacing Utilities */
+.py-6 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Print Styles */
+@media print {
+  .animate-on-scroll {
+    opacity: 1 !important;
+  }
+}
